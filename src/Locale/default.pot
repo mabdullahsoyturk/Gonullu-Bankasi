@@ -1,0 +1,676 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-05-31 07:13+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/EventApplicationsController.php:99
+msgid "The event application has been saved."
+msgstr ""
+
+#: Controller/EventApplicationsController.php:103
+msgid "The event application could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/EventApplicationsController.php:123
+msgid "The event application has been deleted."
+msgstr ""
+
+#: Controller/EventApplicationsController.php:125
+msgid "The event application could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/EventsController.php:98;124
+msgid "The event has been saved."
+msgstr ""
+
+#: Controller/EventsController.php:102;128
+msgid "The event could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/EventsController.php:147
+msgid "The event has been deleted."
+msgstr ""
+
+#: Controller/EventsController.php:149
+msgid "The event could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:115;142
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/UsersController.php:120;146
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/UsersController.php:165
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/UsersController.php:167
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Template/EventApplications/edit.ctp:10
+msgid "Edit Event Application"
+msgstr ""
+
+#: Template/EventApplications/edit.ctp:18
+#: Template/Users/add.ctp:19
+#: Template/Users/edit.ctp:40
+#: View/Helper/FormHelper.php:1889
+msgid "Submit"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:7
+msgid "Applications to"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:14
+msgid "No applications submitted yet"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:24
+#: Template/Users/view.ctp:27
+msgid "Username"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:28
+#: Template/EventApplications/view.ctp:22
+#: Template/Events/add.ctp:18
+#: Template/Events/view.ctp:18;82
+msgid "Description"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:29
+msgid "Application Date"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:37
+#: Template/Events/index.ctp:63
+#: Template/Users/index.ctp:62
+msgid "first"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:38
+#: Template/Events/index.ctp:64
+#: Template/Users/index.ctp:63
+msgid "previous"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:40
+#: Template/Events/index.ctp:66
+#: Template/Users/index.ctp:65
+msgid "next"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:41
+#: Template/Events/index.ctp:67
+#: Template/Users/index.ctp:66
+msgid "last"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:44
+#: Template/Events/index.ctp:70
+#: Template/Users/index.ctp:68
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/EventApplications/view.ctp:9
+msgid "User"
+msgstr ""
+
+#: Template/EventApplications/view.ctp:13
+msgid "Event"
+msgstr ""
+
+#: Template/EventApplications/view.ctp:17
+msgid "Application Time"
+msgstr ""
+
+#: Template/Events/add.ctp:7
+msgid "Create an event"
+msgstr ""
+
+#: Template/Events/add.ctp:17
+msgid "Title"
+msgstr ""
+
+#: Template/Events/add.ctp:19
+msgid "Image"
+msgstr ""
+
+#: Template/Events/add.ctp:20
+#: Template/Events/index.ctp:48
+#: Template/Events/view.ctp:21
+msgid "Address"
+msgstr ""
+
+#: Template/Events/add.ctp:25
+msgid "Event date"
+msgstr ""
+
+#: Template/Events/add.ctp:63
+msgid "Save"
+msgstr ""
+
+#: Template/Events/edit.ctp:10
+msgid "Edit the event"
+msgstr ""
+
+#: Template/Events/index.ctp:31
+msgid "Call for Volunteers"
+msgstr ""
+
+#: Template/Events/index.ctp:51
+msgid "Deadline"
+msgstr ""
+
+#: Template/Events/index.ctp:56
+msgid "Details"
+msgstr ""
+
+#: Template/Events/view.ctp:26
+msgid "Call for"
+msgstr ""
+
+#: Template/Events/view.ctp:27;45
+msgid "Applied"
+msgstr ""
+
+#: Template/Events/view.ctp:28
+msgid "Approved"
+msgstr ""
+
+#: Template/Events/view.ctp:29
+msgid "Left"
+msgstr ""
+
+#: Template/Events/view.ctp:41;42
+msgid "I want to apply"
+msgstr ""
+
+#: Template/Events/view.ctp:47
+msgid "Login to apply"
+msgstr ""
+
+#: Template/Events/view.ctp:50
+msgid "See current applications"
+msgstr ""
+
+#: Template/Events/view.ctp:70
+msgid "Application"
+msgstr ""
+
+#: Template/Events/view.ctp:78
+msgid "Please fill the form now"
+msgstr ""
+
+#: Template/Events/view.ctp:83
+msgid "Explain yourself briefly"
+msgstr ""
+
+#: Template/Events/view.ctp:86
+msgid "Explain who you are. Why do you want to apply to this? What makes you different bla bla."
+msgstr ""
+
+#: Template/Events/view.ctp:93
+msgid "Thanks for application."
+msgstr ""
+
+#: Template/Events/view.ctp:110
+msgid "Description should be filled."
+msgstr ""
+
+#: Template/Events/view.ctp:119
+msgid "Application successfully submitted"
+msgstr ""
+
+#: Template/Events/view.ctp:124
+msgid "An error occured"
+msgstr ""
+
+#: Template/Layout/default.ctp:53
+msgid "Log out"
+msgstr ""
+
+#: Template/Layout/default.ctp:59
+msgid "Sign Up"
+msgstr ""
+
+#: Template/Layout/default.ctp:63
+msgid "Sign In"
+msgstr ""
+
+#: Template/Layout/default.ctp:126
+msgid "Homepage"
+msgstr ""
+
+#: Template/Layout/default.ctp:133
+msgid "Volunteams"
+msgstr ""
+
+#: Template/Layout/default.ctp:157
+msgid "Add Event"
+msgstr ""
+
+#: Template/Layout/default.ctp:159
+msgid "Join Us"
+msgstr ""
+
+#: Template/Layout/default.ctp:164
+#: Template/Pages/faq.ctp:2
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: Template/Layout/default.ctp:164
+msgid "FAQ"
+msgstr ""
+
+#: Template/Layout/default.ctp:169
+msgid "Contact"
+msgstr ""
+
+#: Template/Layout/default.ctp:179
+msgid "Be a part of the change! "
+msgstr ""
+
+#: Template/Layout/default.ctp:180
+msgid "You are welcome to join Gonullu Bank to make a difference in the society"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+#: Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Pages/contact.ctp:2
+msgid "Contact Us"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:2
+msgid "How it works?"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:12;16;20;24
+msgid "Student Clubs"
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:12;16;20;24;28;46
+msgid "Sivil Lab"
+msgstr ""
+
+#: Template/Users/add.ctp:7
+msgid "Sign up"
+msgstr ""
+
+#: Template/Users/edit.ctp:8
+#: Template/Users/index.ctp:8;32
+msgid "Actions"
+msgstr ""
+
+#: Template/Users/edit.ctp:10
+#: Template/Users/index.ctp:54
+msgid "Delete"
+msgstr ""
+
+#: Template/Users/edit.ctp:12
+#: Template/Users/index.ctp:54
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Users/edit.ctp:15
+msgid "List Users"
+msgstr ""
+
+#: Template/Users/edit.ctp:16
+#: Template/Users/index.ctp:10
+msgid "List Groups"
+msgstr ""
+
+#: Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:11
+msgid "New Group"
+msgstr ""
+
+#: Template/Users/edit.ctp:23
+msgid "Edit User"
+msgstr ""
+
+#: Template/Users/index.ctp:9
+msgid "New User"
+msgstr ""
+
+#: Template/Users/index.ctp:15
+msgid "Users"
+msgstr ""
+
+#: Template/Users/index.ctp:52
+#: Template/Users/view.ctp:7
+msgid "View"
+msgstr ""
+
+#: Template/Users/index.ctp:53
+msgid "Edit"
+msgstr ""
+
+#: Template/Users/login.ctp:2
+msgid "Login"
+msgstr ""
+
+#: Template/Users/view.ctp:15
+msgid "Not provided"
+msgstr ""
+
+#: Template/Users/view.ctp:31
+msgid "Email"
+msgstr ""
+
+#: Template/Users/view.ctp:35
+msgid "First Name"
+msgstr ""
+
+#: Template/Users/view.ctp:39
+msgid "Last Name"
+msgstr ""
+
+#: Template/Users/view.ctp:43
+msgid "Phone"
+msgstr ""
+
+#: Template/Users/view.ctp:47
+msgid "A member since"
+msgstr ""
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:496
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:155
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:159
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:258
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:260
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: Http/Response.php:2258
+msgid "The requested file contains `..` and will not be read."
+msgstr ""
+
+#: Http/Response.php:2269
+msgid "The requested file was not found"
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr ""
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:899
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:103
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:104
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:1782
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1010
+msgid "New %s"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1013
+msgid "Edit %s"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:793
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr ""
+

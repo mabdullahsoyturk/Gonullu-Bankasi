@@ -1,0 +1,185 @@
+       .nav_icons {
+           display: inline-block;
+           left=50%;
+       }
+
+       #header-logo {
+         height: 70px;
+        margin-left: 30px;
+        margin-top: 15px;
+      }
+
+       .buttonss {
+           text-align: right;
+           margin-top: 35px;
+       }
+
+       .header_name {
+           text-align: center;
+           margin-top: -50px;
+       }
+
+       .header_name:hover {
+           text-decoration: none;
+           color: #777;
+       }
+
+       .header_name h2 {
+         font-family: 'Rambla', sans-serif;
+         color: #bd352f;
+         font-size: 58px;
+       }
+
+
+       .social_media_icons {
+           float: right;
+           margin-top: 25px;
+           margin-left: 10px;
+       }
+
+       .navbarspace {
+           margin-left: 5px;
+           margin-right: 5px;
+       }
+
+       .navbarplace {
+           text-align: center;
+       }
+
+       .navbarplace h4 {
+           margin-bottom: 0;
+           color: #000;
+       }
+
+       .navbarspace:hover {
+           text-decoration: none;
+           background: #f2f2f2!important;
+       }
+
+       .navbarspace img {
+           display: block;
+           width: 64px;
+           height: 64px;
+           margin: 0 auto;
+           margin-top: 5px
+       }
+
+       .navbarplace a.nav_icons.navbarspace {
+           width: 125px;
+           height: 115px;
+           background: #fff;
+           padding: 5px;
+       }
+       /*footer bottom*/
+
+       .footer-bottom {
+           background-color: #15224f;
+           min-height: 30px;
+           width: 100%;
+       }
+
+       .copyright {
+           color: #fff;
+           line-height: 30px;
+           min-height: 30px;
+           padding: 7px 0;
+       }
+
+       .design {
+           color: #fff;
+           line-height: 30px;
+           min-height: 30px;
+           padding: 7px 0;
+           text-align: right;
+       }
+
+       .design a {
+           color: #fff;
+       }
+
+       .footer-bottom {
+         margin-top: 20px;
+       }
+
+       /*DROP DOWN*/
+
+       .icon-with-dropdown {
+         position:relative;
+         display:inline-block;
+         margin-left: 5px;
+         margin-right: 5px;
+       }
+       .icon-with-dropdown .navbarspace {
+         margin: 0;
+         width: 135px!important;
+       }
+       .icon-with-dropdown .dropdown-menu {
+         min-width:125px;
+         width:100%;
+         top:98%;
+         border: none;
+         border-radius: 0;
+         background:#FFF;
+       }
+       .icon-with-dropdown .dropdown-menu li a {
+         font-size: 15px;
+         padding: 5px 8px;
+       }
+       .icon-with-dropdown .dropdown-menu li a:hover {
+         background: #F2F2F2!important;
+       }
+
+
+
+       /*BACKGROUND IMAGE*/
+       #background-image {
+         width:100%;
+         position: fixed;
+         opacity: 0.75;
+         z-index: 3;
+         left: 0;
+         top: 0;
+       }
+       nav {
+         position: relative;
+         z-index:500;
+       }
+
+       section {
+         position:relative;
+         z-index: 200;
+       }
+
+       section>.container {
+         background: #fff;
+         padding-bottom: 20px;
+       }
+       section>.container>.page-header {
+         margin-top: 20px;
+       }
+
+       body>.row{
+         position: relative;
+         z-index:50;
+         background: #fff;
+       }
+
+       body>.footer-bottom {
+         position: relative;
+         z-index: 50;
+       }
+
+       #big-img .jumbotron p {
+         font-size:25px;
+       }
+       #big-img .jumbotron {
+         background-size: cover;
+         color: #fff;
+         text-shadow: 3px 2px 3px #bd372e;
+         height:380px;
+         padding-top: 80px;
+         background-image: url('../img/jumbotron.jpg');
+         background-repeat: no-repeat;
+         background-position: center -200px;
+         background-attachment: scroll;
+       }
