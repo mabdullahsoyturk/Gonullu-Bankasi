@@ -45,6 +45,7 @@ $cakeDescription = 'Gönüllü Bankası';
         <?=$this->Html->link('EN',['controller'=>'language','action'=>'switchTo','en'], ['class' => 'btn btn-link buttonn',]) ?>
       <?php endif;?>
       <?php if($this->request->Session()->read('Auth.User')): ?>
+        <?= $this->Html->link(__('Profile'),['controller'=>'Profiles','action'=>'edit']) ?>
         <a href="<?= $this->Url->build([
               "controller" => "Users",
               "action" => "logout"

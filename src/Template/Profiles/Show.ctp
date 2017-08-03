@@ -1,20 +1,20 @@
 <?php $this->append('page_title'); ?>
-<h1>Burak Usul</h1>
+<h1><?= h($first_name . " " . $last_name) ?></h1>
 <?php $this->end(); ?>
 <div class="row profile-row">
   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 col-lg-offset-0 col-md-offset-0 col-sm-offset-2 col-xs-offset-0" style="border-right: 1px solid #eee; text-align:center">
-    <?= $this->Html->image('sample-pp.jpeg') ?>
+    <?php if($image != null) echo $this->Html->image($image); else echo $this->Html->image("blank-profile-picture.png");  ?>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
     <div style="padding-top:10px">
-      <h4 class="front">Burak Usul</h4>
-      <h4 class="front">Abdullah Gul University</h4>
-      <h4 class="front">Computer Engineering</h4>
+      <h4 class="front"><?= h($first_name . " " . $last_name) ?></h4>
+      <h4 class="front"><?= h($university) ?></h4>
+      <h4 class="front"><?= h($department) ?></h4>
     </div>
   </div>
   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
     <div style="padding-top:10px">
-      <q class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit mattis convallis. Maecenas ornare eleifend quam dictum efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum iaculis leo turpis, quis nullam sodales.</q>
+      <q class="about"><?= h($about) ?></q>
     </div>
   </div>
 </div>
@@ -30,25 +30,27 @@
         <th>&nbsp;</th>
       </thead>
       <tbody>
-        <tr>
-          <td>Sample Event</td>
-          <td>4th of July, 2015</td>
-          <td><a href="#">Show</a>
-        </tr>
+        <?php foreach ($applications as $row): ?>
+          <tr>
+            <td><?= $row->event->title; ?></td>
+            <td><?= $row->event->deadline->nice(); ?></td>
+            <td><?= $this->Html->link(__('See'),['controller'=>'events','action'=>'view',$row->event->id]); ?></td>
+          </tr>
+        <?php endforeach; ?>
       </tbody>
     </table>
   </div>
   <div class="col-lg-3 col-md-3" style="border-left: 1px solid #eee;">
     <div class="events">
-      <div style="text-align:right">Volunteer Power</div>
-      <div style="text-align:right"><?= __("{1}{2}{3} events", ['Burak','<span class="badge">',12,'</span>']) ?>
-        <?= __('{0}{1}{2} votes', ['<span class="badge">',40,'</span>']) ?></div>
+      <div style="text-align:right"><?= __('Volunteer Power') ?></div>
+      <div style="text-align:right"><?= __("{1}{2}{3} events", ['Burak','<span class="badge">',$applications->count(),'</span>']) ?>
+        <?= __('{0}{1}{2} votes', ['<span class="badge">',0,'</span>']) ?></div>
       <fieldset class="rating">
         <input type="radio" id="star5" name="rating" value="5"/><label class = "full" for="star5" title="Awesome - 5 stars"></label>
         <input type="radio" id="star4" name="rating" value="4"/><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
         <input type="radio" id="star3" name="rating" value="3"/><label class = "full" for="star3" title="Average - 3 stars"></label>
         <input type="radio" id="star2" name="rating" value="2"/><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-        <input type="radio" id="star1" name="rating" value="1"/><label class = "full" for="star1" title="S  ucks big time - 1 star"></label>
+        <input type="radio" id="star1" name="rating" value="1"/><label class = "full" for="star1" title="Pretty Bad - 1 stars"></label>
       </fieldset>
       <br>
       <br>
