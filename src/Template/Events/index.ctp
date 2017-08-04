@@ -82,8 +82,8 @@
       <p>
       <?= $this->Html->image('start.jpg', array('border' => '0', 'style'=> 'width:360px;height:220px;')); ?>
 </p>
-<h4><a href="javascript:void(0)">Değişimin Parçası Ol</a></h4>
-<p>Gönüllüye ihtiyaç duyan projelere başvur ve onların hayallerinin bir parçası ol!</p>
+<h4><a href="javascript:void(0)"><?= __('Değişimin Parçası Ol') ?></a></h4>
+<p><?= __('Gönüllüye ihtiyaç duyan projelere başvur ve onların hayallerinin bir parçası ol!') ?></p>
 <p> <br></p>
 </div></div></div></div>
   </div>
@@ -100,8 +100,8 @@
     <div class="fieldable-panels-pane">
     <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>
 <?= $this->Html->image('serve.jpg', array('border' => '0', 'style'=> 'width:360px;height:220px;')); ?>
-    </p><h4><a href="javascript:void(0)">Değişimin Kendisi Ol</a></h4>
-    <p>Projeni paylaş ve beraber yürüyeceğin insanları bul!</p>
+    </p><h4><a href="javascript:void(0)"><?= __('Değişimin Kendisi Ol') ?></a></h4>
+    <p><?= __('Projeni paylaş ve beraber yürüyeceğin insanları bul!') ?></p>
     </div></div></div></div>
   </div>
 
@@ -116,8 +116,8 @@
     <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>
       <?= $this->Html->image('explore.jpg', array('border' => '0', 'style'=> 'width:360px;height:220px;')); ?>
 
-      </p><h4><a href="javascript:void(0)">Keşfet</a></h4>
-    <p>Kendini keşfederek geleceğin nasıl bir parçası olacağına karar ver!</p>
+      </p><h4><a href="javascript:void(0)"><?= __('Keşfet') ?></a></h4>
+    <p><?= __('Kendini keşfederek geleceğin nasıl bir parçası olacağına karar ver!') ?></p>
     </div></div></div></div>
   </div>
 
