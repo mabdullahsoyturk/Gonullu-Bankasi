@@ -45,6 +45,8 @@ $cakeDescription = 'Gönüllü Bankası';
         <?=$this->Html->link('EN',['controller'=>'language','action'=>'switchTo','en'], ['class' => 'btn btn-link buttonn',]) ?>
       <?php endif;?>
       <?php if($this->request->Session()->read('Auth.User')): ?>
+
+        <?= $this->Html->link(__('Add Post'),['controller'=>'Posts','action'=>'add']) ?>
         <?= $this->Html->link(__('Profile'),['controller'=>'Profiles','action'=>'edit']) ?>
         <a href="<?= $this->Url->build([
               "controller" => "Users",
@@ -134,17 +136,15 @@ $cakeDescription = 'Gönüllü Bankası';
 
       </a>
       <ul class="dropdown-menu">
-        <li><a href="<?= $this->Url->build([
-              "controller" => "Pages",
-              "action" => "sivillab"
-          ]); ?>"><?= __('Sivillab') ?></a></li>
+        <?php foreach($posts as $post): ?>
+          <li><a href="<?= $this->Url->build([
+              "controller" => "Posts",
+              "action" => "View",
+              $post['post_id']
+          ]); ?>"><?= $post['title']; ?></a></li>
 
+        <?php endforeach; ?>
         <li><a href="http://www.ihtiyacharitasi.org/"><?= __('İhtiyaç Haritası') ?></a></li>
-
-        <li><a href="<?= $this->Url->build([
-              "controller" => "Pages",
-              "action" => "ogrenci_kulupleri"
-          ]); ?>"><?= __('Öğrenci Kulüpleri') ?></a></li>
       </ul>
       </div>
         <a href="<?= $this->Url->build([

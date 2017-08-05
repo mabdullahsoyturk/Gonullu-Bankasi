@@ -106,7 +106,15 @@ class AppController extends Controller
       I18n::locale($lang);
       $this->set('lang',$lang);
 
-
+      $this->loadModel('VolunteamsPosts');
+      $this->loadModel('PostContents');
+      $posts = $this->PostContents->find('all')->select(['title', 'post_id'])->join([
+        'table' => 'volunteams_posts',
+        'alias' => 'c',
+        'type' => 'INNER',
+        'conditions' => 'c.post_id = PostContents.post_id and language = "' . $lang . '"',
+    ])->toArray();
+      $this->set('posts', $posts);
         if (!array_key_exists('_serialize', $this->viewVars) &&
             in_array($this->response->type(), ['application/json', 'application/xml'])
         ) {
