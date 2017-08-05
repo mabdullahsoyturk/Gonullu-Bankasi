@@ -3,7 +3,7 @@
 <?php $this->end(); ?>
 <div class="row profile-row">
   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 col-lg-offset-0 col-md-offset-0 col-sm-offset-2 col-xs-offset-0" style="border-right: 1px solid #eee; text-align:center">
-    <?php if($image != null) echo $this->Html->image($image); else echo $this->Html->image("blank-profile-picture.png");  ?>
+    <?php if($image != null) echo $this->Html->image('/files/Users/image/'.$image, array('border' => '0', 'style'=> 'width:100%')); else echo $this->Html->image("blank-profile-picture.png");  ?>
   </div>
   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
     <div style="padding-top:10px">

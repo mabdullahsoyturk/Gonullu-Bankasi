@@ -57,6 +57,7 @@ class ProfilesController extends AppController
         $user->university = $this->request->data['university'];
         $user->department = $this->request->data['department'];
         $user->about = $this->request->data['about'];
+        $user->image = $this->request->data['image'];
 
         if($this->Users->save($user))
         {

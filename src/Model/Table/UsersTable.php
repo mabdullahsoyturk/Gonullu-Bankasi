@@ -37,7 +37,16 @@ class UsersTable extends Table
         $this->setTable('users');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
-
+        
+        $this->addBehavior('Josegonzalez/Upload.Upload', [
+           'image' => [
+            'nameCallback' => function(array $data, array $settings) {
+                  $ext = pathinfo($data['name'], PATHINFO_EXTENSION);
+                  $filename = pathinfo($data['name'], PATHINFO_FILENAME );
+                  return substr(preg_replace( '/[^a-z0-9]+/', '-', strtolower( $filename) ), 0, 30).'-'.uniqid().'.'.$ext;
+              },
+            ],
+        ]);
         $this->belongsToMany('Groups', [
             'foreignKey' => 'user_id',
             'targetForeignKey' => 'group_id',

@@ -1,11 +1,11 @@
-<form method="post">
+<form method="post" enctype="multipart/form-data">
 <?php $this->append('page_title'); ?>
 <h1><?= h($first_name . " " . $last_name) ?></h1>
 <h3><?= $this->Html->link(__('Preview'),['action'=>'show', $user_id]) ?></h3> 
 <?php $this->end(); ?>
 <div class="row profile-row">
   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 col-lg-offset-0 col-md-offset-0 col-xs-offset-0" style="border-right: 1px solid #eee; text-align:center">
-    <?php if($image != null) echo $this->Html->image($image); else echo $this->Html->image("blank-profile-picture.png");  ?>
+    <?php if($image != null) echo $this->Html->image('/files/Users/image/'.$image, array('border' => '0', 'style'=> 'width:100%')); else echo $this->Html->image("blank-profile-picture.png");  ?>
     <?= $this->Form->control('image', ['type'=>'file']) ?>
   </div>
   <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12">
