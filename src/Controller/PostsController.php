@@ -72,6 +72,7 @@ find()
 
             if ($result) {
                 $postId = $result->id;
+
                 foreach(array('en', 'tr') as $language) {
                     $postContent = $this->PostContents->patchEntity(
                                 $this->PostContents->newEntity(),
@@ -91,7 +92,7 @@ find()
 
                 $this->Flash->success(__('The post has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['action' => 'view', $postId]);
             }
             $this->Flash->error(__('The post could not be saved. Please, try again.'));
         }

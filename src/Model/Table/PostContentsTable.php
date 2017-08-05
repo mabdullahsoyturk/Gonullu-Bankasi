@@ -43,8 +43,7 @@ class PostcontentsTable extends Table
 
         $this->belongsTo('VolunteamsPosts', [
             'foreignKey' => 'post_id',
-            'joinType' => 'INNER',
-            'propertyName' => 'post_id'
+            'joinType' => 'INNER'
         ]);
         
     }
