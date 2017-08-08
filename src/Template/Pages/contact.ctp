@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-sm-12 col-lg-12">
                 <h1 class="h1">
-                    <?= __('Bize ulaşın <small>Her zaman iletişime geçebilirsiniz</small>') ?></h1>
+                    <?= __('Contact us <small>You can send us message anytime you want</small>') ?></h1>
             </div>
         </div>
     </div>
@@ -22,12 +22,12 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
-                                <?= __('İsminiz') ?></label>
+                                <?= __('Name') ?></label>
                             <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="email">
-                                <?= __('Email Adresi') ?></label>
+                                <?= __('Email Adress') ?></label>
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
@@ -35,26 +35,26 @@
                         </div>
                         <div class="form-group">
                             <label for="subject">
-                                <?= __('Konu') ?></label>
+                                <?= __('Subject') ?></label>
                             <select id="subject" name="subject" class="form-control" required="required">
-                                <option value="na" selected="">Birini seçin:</option>
-                                <option value="service">Etkinlik ekleme</option>
-                                <option value="suggestions">Öneriler</option>
-                                <option value="product">Ürün desteği</option>
+                                <option value="na" selected=""><?= __('Select one:') ?></option>
+                                <option value="service"><?= __('Adding events') ?></option>
+                                <option value="suggestions"><?= __('Suggestions') ?></option>
+                                <option value="product"><?= __('Product support') ?></option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
-                                <?= __('Mesaj') ?></label>
+                                <?= __('Message') ?></label>
                             <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
                                 placeholder="Message"></textarea>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-                            <?= __('Mesajı gönder') ?></button>
+                            <?= __('Send Message') ?></button>
                     </div>
                 </div>
                 </form>
@@ -64,9 +64,9 @@
             <form>
             <legend><span class="glyphicon glyphicon-globe"></span> <?= __('Ofisimiz') ?></legend>
             <address>
-                <strong><?= __('Abdullah Gül Üniversitesi') ?></strong><br>
-                <?= __('Sümer Kampüsü') ?><br>
-                <?= __('Kayseri, Türkiye') ?><br>
+                <strong><?= __('Abdullah Gul University') ?></strong><br>
+                <?= __('Sümer Campus') ?><br>
+                <?= __('Kayseri, Turkey') ?><br>
                 <abbr title="Phone">
                     P:</abbr>
                 (352) 224 88 00 - 02 - 03

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-05-31 07:13+0000\n"
+"POT-Creation-Date: 2017-08-07 15:00+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,20 +14,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: Controller/EventApplicationsController.php:99
+#: Controller/EventApplicationsController.php:106
 msgid "The event application has been saved."
 msgstr ""
 
-#: Controller/EventApplicationsController.php:103
+#: Controller/EventApplicationsController.php:110
 msgid "The event application could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/EventApplicationsController.php:123
+#: Controller/EventApplicationsController.php:130
 msgid "The event application has been deleted."
 msgstr ""
 
-#: Controller/EventApplicationsController.php:125
+#: Controller/EventApplicationsController.php:132
 msgid "The event application could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/EventApplicationsController.php:144
+msgid "You have successfully approved the application"
+msgstr ""
+
+#: Controller/EventApplicationsController.php:147
+msgid "The application could not be approved. Please, try again."
 msgstr ""
 
 #: Controller/EventsController.php:98;124
@@ -44,6 +52,47 @@ msgstr ""
 
 #: Controller/EventsController.php:149
 msgid "The event could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/PostContentsController.php:60;86
+msgid "The post content has been saved."
+msgstr ""
+
+#: Controller/PostContentsController.php:64;90
+#: Controller/PostsController.php:93;144
+msgid "The post content could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PostContentsController.php:109
+msgid "The post content has been deleted."
+msgstr ""
+
+#: Controller/PostContentsController.php:111
+msgid "The post content could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/PostsController.php:98;149
+msgid "The post has been saved."
+msgstr ""
+
+#: Controller/PostsController.php:102;153
+msgid "The post could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PostsController.php:172
+msgid "The post has been deleted."
+msgstr ""
+
+#: Controller/PostsController.php:174
+msgid "The post could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/ProfilesController.php:64
+msgid "Your profile has been updated"
+msgstr ""
+
+#: Controller/ProfilesController.php:67
+msgid "Your error could not be updated"
 msgstr ""
 
 #: Controller/UsersController.php:115;142
@@ -67,9 +116,10 @@ msgid "Edit Event Application"
 msgstr ""
 
 #: Template/EventApplications/edit.ctp:18
-#: Template/Users/add.ctp:19
-#: Template/Users/edit.ctp:40
-#: View/Helper/FormHelper.php:1889
+#: Template/Posts/add.ctp:29
+#: Template/Posts/edit.ctp:29
+#: Template/Users/add.ctp:22
+#: Template/Users/edit.ctp:48
 msgid "Submit"
 msgstr ""
 
@@ -81,49 +131,79 @@ msgstr ""
 msgid "No applications submitted yet"
 msgstr ""
 
-#: Template/EventApplications/index.ctp:24
-#: Template/Users/view.ctp:27
+#: Template/EventApplications/index.ctp:21
+#: Template/Users/view.ctp:25
 msgid "Username"
 msgstr ""
 
-#: Template/EventApplications/index.ctp:28
-#: Template/EventApplications/view.ctp:22
-#: Template/Events/add.ctp:18
-#: Template/Events/view.ctp:18;82
-msgid "Description"
-msgstr ""
-
-#: Template/EventApplications/index.ctp:29
+#: Template/EventApplications/index.ctp:25
 msgid "Application Date"
 msgstr ""
 
+#: Template/EventApplications/index.ctp:29
+#: Template/EventApplications/view.ctp:21
+#: Template/Events/add.ctp:18
+#: Template/Events/view.ctp:18;82
+#: Template/Posts/add.ctp:19;23
+#: Template/Posts/edit.ctp:19;23
+#: Template/Users/view.ctp:101;132;170
+msgid "Description"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:33
+#: Template/EventApplications/view.ctp:25
+#: Template/Users/view.ctp:103
+msgid "Status"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:34
+#: Template/EventApplications/view.ctp:26
+#: Template/Events/view.ctp:28
+msgid "Approved"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:34
+#: Template/EventApplications/view.ctp:26
+msgid "Not Approved"
+msgstr ""
+
 #: Template/EventApplications/index.ctp:37
+#: Template/Profiles/Show.ctp:37
+msgid "See"
+msgstr ""
+
+#: Template/EventApplications/index.ctp:47
 #: Template/Events/index.ctp:63
-#: Template/Users/index.ctp:62
+#: Template/Posts/index.ctp:36
+#: Template/Users/index.ctp:74
 msgid "first"
 msgstr ""
 
-#: Template/EventApplications/index.ctp:38
+#: Template/EventApplications/index.ctp:48
 #: Template/Events/index.ctp:64
-#: Template/Users/index.ctp:63
+#: Template/Posts/index.ctp:37
+#: Template/Users/index.ctp:75
 msgid "previous"
 msgstr ""
 
-#: Template/EventApplications/index.ctp:40
+#: Template/EventApplications/index.ctp:50
 #: Template/Events/index.ctp:66
-#: Template/Users/index.ctp:65
+#: Template/Posts/index.ctp:39
+#: Template/Users/index.ctp:77
 msgid "next"
 msgstr ""
 
-#: Template/EventApplications/index.ctp:41
+#: Template/EventApplications/index.ctp:51
 #: Template/Events/index.ctp:67
-#: Template/Users/index.ctp:66
+#: Template/Posts/index.ctp:40
+#: Template/Users/index.ctp:78
 msgid "last"
 msgstr ""
 
-#: Template/EventApplications/index.ctp:44
+#: Template/EventApplications/index.ctp:54
 #: Template/Events/index.ctp:70
-#: Template/Users/index.ctp:68
+#: Template/Posts/index.ctp:42
+#: Template/Users/index.ctp:80
 msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
 msgstr ""
 
@@ -139,25 +219,36 @@ msgstr ""
 msgid "Application Time"
 msgstr ""
 
+#: Template/EventApplications/view.ctp:30
+msgid "Approve it"
+msgstr ""
+
 #: Template/Events/add.ctp:7
 msgid "Create an event"
 msgstr ""
 
 #: Template/Events/add.ctp:17
+#: Template/Posts/add.ctp:18;22
+#: Template/Posts/edit.ctp:18;22
+#: Template/Users/view.ctp:131
 msgid "Title"
 msgstr ""
 
 #: Template/Events/add.ctp:19
+#: Template/Users/view.ctp:73;133
 msgid "Image"
 msgstr ""
 
 #: Template/Events/add.ctp:20
 #: Template/Events/index.ctp:48
 #: Template/Events/view.ctp:21
+#: Template/Users/view.ctp:134
 msgid "Address"
 msgstr ""
 
 #: Template/Events/add.ctp:25
+#: Template/Pages/sample.ctp:29
+#: Template/Profiles/Show.ctp:29
 msgid "Event date"
 msgstr ""
 
@@ -174,11 +265,36 @@ msgid "Call for Volunteers"
 msgstr ""
 
 #: Template/Events/index.ctp:51
+#: Template/Users/view.ctp:135
 msgid "Deadline"
 msgstr ""
 
 #: Template/Events/index.ctp:56
 msgid "Details"
+msgstr ""
+
+#: Template/Events/index.ctp:85
+msgid "Be a part of the change!"
+msgstr ""
+
+#: Template/Events/index.ctp:86
+msgid "Apply to the projects that need volunteers and become a part of their dream."
+msgstr ""
+
+#: Template/Events/index.ctp:103
+msgid "Be the change itself"
+msgstr ""
+
+#: Template/Events/index.ctp:104
+msgid "Share your project and find your dream mates!"
+msgstr ""
+
+#: Template/Events/index.ctp:119
+msgid "Explore"
+msgstr ""
+
+#: Template/Events/index.ctp:120
+msgid "Explore yourself and decide your role for the future!"
 msgstr ""
 
 #: Template/Events/view.ctp:26
@@ -187,10 +303,6 @@ msgstr ""
 
 #: Template/Events/view.ctp:27;45
 msgid "Applied"
-msgstr ""
-
-#: Template/Events/view.ctp:28
-msgid "Approved"
 msgstr ""
 
 #: Template/Events/view.ctp:29
@@ -241,53 +353,80 @@ msgstr ""
 msgid "An error occured"
 msgstr ""
 
-#: Template/Layout/default.ctp:53
+#: Template/Layout/default.ctp:49
+#: Template/Posts/add.ctp:9
+#: Template/Posts/edit.ctp:9
+msgid "Add Post"
+msgstr ""
+
+#: Template/Layout/default.ctp:50
+msgid "Profile"
+msgstr ""
+
+#: Template/Layout/default.ctp:55
 msgid "Log out"
 msgstr ""
 
-#: Template/Layout/default.ctp:59
+#: Template/Layout/default.ctp:61
 msgid "Sign Up"
 msgstr ""
 
-#: Template/Layout/default.ctp:63
+#: Template/Layout/default.ctp:65
 msgid "Sign In"
 msgstr ""
 
-#: Template/Layout/default.ctp:126
+#: Template/Layout/default.ctp:128
 msgid "Homepage"
 msgstr ""
 
-#: Template/Layout/default.ctp:133
+#: Template/Layout/default.ctp:135
 msgid "Volunteams"
 msgstr ""
 
-#: Template/Layout/default.ctp:157
+#: Template/Layout/default.ctp:147
+#: Template/Pages/volunteams.ctp:19
+msgid "İhtiyaç Haritası"
+msgstr ""
+
+#: Template/Layout/default.ctp:154
 msgid "Add Event"
 msgstr ""
 
-#: Template/Layout/default.ctp:159
+#: Template/Layout/default.ctp:156
 msgid "Join Us"
 msgstr ""
 
-#: Template/Layout/default.ctp:164
+#: Template/Layout/default.ctp:161
 #: Template/Pages/faq.ctp:2
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: Template/Layout/default.ctp:164
+#: Template/Layout/default.ctp:161
 msgid "FAQ"
 msgstr ""
 
-#: Template/Layout/default.ctp:169
+#: Template/Layout/default.ctp:166
 msgid "Contact"
 msgstr ""
 
-#: Template/Layout/default.ctp:179
+#: Template/Layout/default.ctp:176
 msgid "Be a part of the change! "
 msgstr ""
 
-#: Template/Layout/default.ctp:180
+#: Template/Layout/default.ctp:177
 msgid "You are welcome to join Gonullu Bank to make a difference in the society"
+msgstr ""
+
+#: Template/Layout/default.ctp:204
+msgid "© 2017, AGU Developers, All rights reserved"
+msgstr ""
+
+#: Template/Layout/default.ctp:214
+msgid "Gönüllü Bankası"
+msgstr ""
+
+#: Template/Layout/default.ctp:214
+msgid "Abdullah Gül Üniversitesi"
 msgstr ""
 
 #: Template/Layout/error.ctp:35
@@ -304,98 +443,468 @@ msgstr ""
 msgid "Contact Us"
 msgstr ""
 
+#: Template/Pages/contact.ctp:11
+msgid "Contact us <small>You can send us message anytime you want</small>"
+msgstr ""
+
+#: Template/Pages/contact.ctp:25
+#: Template/Users/view.ctp:169
+msgid "Name"
+msgstr ""
+
+#: Template/Pages/contact.ctp:30
+msgid "Email Adress"
+msgstr ""
+
+#: Template/Pages/contact.ctp:38
+msgid "Subject"
+msgstr ""
+
+#: Template/Pages/contact.ctp:40
+msgid "Select one:"
+msgstr ""
+
+#: Template/Pages/contact.ctp:41
+msgid "Adding events"
+msgstr ""
+
+#: Template/Pages/contact.ctp:42
+msgid "Suggestions"
+msgstr ""
+
+#: Template/Pages/contact.ctp:43
+msgid "Product support"
+msgstr ""
+
+#: Template/Pages/contact.ctp:50
+msgid "Message"
+msgstr ""
+
+#: Template/Pages/contact.ctp:57
+msgid "Send Message"
+msgstr ""
+
+#: Template/Pages/contact.ctp:65
+msgid "Ofisimiz"
+msgstr ""
+
+#: Template/Pages/contact.ctp:67
+msgid "Abdullah Gul University"
+msgstr ""
+
+#: Template/Pages/contact.ctp:68
+msgid "Sümer Campus"
+msgstr ""
+
+#: Template/Pages/contact.ctp:69
+msgid "Kayseri, Turkey"
+msgstr ""
+
+#: Template/Pages/contact.ctp:75
+msgid "Mail adresimiz"
+msgstr ""
+
 #: Template/Pages/how_it_works.ctp:2
 msgid "How it works?"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:5
+msgid "Misyonumuz"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:8
+msgid "Yerelde ve ulusal da gönüllülük faaliyetlerini her türlü maddi ve manevi ihtiyaçlarını karşılayabilecek ve onların başarıya ulaşabilmesi için gerekli deneyimlerim paylaşılabilceği tarafsız çalışmalarıyla alanında öncü ve çatı bir kuruluş oluşturmak."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:11
+msgid "Vizyonumuz"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:14
+msgid "Gönüllülük  faaliyetlerine marka değeri katarak uluslararası alanda öncü bir topluluk haline gelmek."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:17
+msgid "Amaçlarımız"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:22
+msgid "Üniversitemizde yürütülen gönüllülük faaliyetleri arasında koordinasyonu sağlamak."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:23
+msgid "Gönüllülük faaliyetlerine gerekli fon desteğini sağlamak."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:24
+msgid "Gönüllülük faaliyetlerinde rol almak isteyen öğrenciler ile gönüllü proje çalışmalarında bulunan ekipler arasında köprü görevi görmek."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:25
+msgid "Ulusal ve uluslarası platform da gönüllük faaliyetlerinin yaygınlaştırılmasını sağlamak."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:26
+msgid "Gönüllü Bankasının marka değerinin oluşturması konusunda çalışmalar yapmak."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:27
+msgid "STK’lar ve gönüllülük faaliyetleri yürüten kurum ve kuruluşlar ile ortak çalışmalar yürütmek."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:32
+msgid "Gönüllülük Faaliyetlerimiz"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:35
+msgid "SET (Sevgi, Emek, Tebessüm)"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:36
+#: Template/Pages/volunteams.ctp:5
+msgid "SivilLab"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:37
+msgid "İH (İhtiyaç Haritası)"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:38
+msgid "Genç Bank"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:39
+msgid "AGÜ Öğrenci Kulüpleri"
 msgstr ""
 
 #: Template/Pages/ogrenci_kulupleri.ctp:12;16;20;24
 msgid "Student Clubs"
 msgstr ""
 
+#: Template/Pages/ogrenci_kulupleri.ctp:41
+msgid "Öğrenci Kulüpleri"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:42
+msgid "Üniversite içerisindeki öğrenci kulüpleri yaptıkları çalışmalar konusunda Abdullah Gül Üniversitesi yönetimi tarafından desteklenmektedirler. Her kulüp aktivitesini misyonlarına uygun sırasıyla belli bir perspektif ve amaç içerisinde yürütür. Bunun akabinde üniversite içerisinde yıl boyunca belli kulüplerin çatısı altında renkli etkinlikler ve gönüllülük faaliyetleri sürdürülür. Abdullah Gül Üniversitesi öğrenci mevcudu az ve öğrencileri genel kapsamda yoğun bir eğitim içerisinde olduklarından etkinliklerin gerek hazırlanışına yardımcı olacak gerek sadece katılımcı olacak gönüllülere ihtiyaç oluşmuştur.\nYıl içerisinde Kulüpler Birliği Konseyinde aktif yer alan ve gönüllülük çalışmaları yürüten bazı kulüpler Gönüllü Bankasında yer almak üzere seçilmiştir. Linklere tıklayarak bu kulüpler ve yaptıkları çalışmalar hakkında daha fazla bilgi edinebilirsiniz.\n"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:50
+#: Template/Pages/volunteams.ctp:36
+msgid "AGÜ Bilim ve Teknoloji Kulübü"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:51
+#: Template/Pages/volunteams.ctp:37
+msgid "AGÜ Fikir Kulübü"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:52
+#: Template/Pages/volunteams.ctp:38
+msgid "AGU Yapı Kulübü"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:53
+#: Template/Pages/volunteams.ctp:39
+msgid "AGU İşletme Kulübü"
+msgstr ""
+
+#: Template/Pages/sample.ctp:28
+#: Template/Profiles/Show.ctp:28
+msgid "Event name"
+msgstr ""
+
+#: Template/Pages/sample.ctp:44
+#: Template/Profiles/Show.ctp:46
+msgid "{1}{2}{3} events"
+msgstr ""
+
+#: Template/Pages/sample.ctp:45
+#: Template/Profiles/Show.ctp:47
+msgid "{0}{1}{2} votes"
+msgstr ""
+
 #: Template/Pages/sivillab.ctp:12;16;20;24;28;46
 msgid "Sivil Lab"
 msgstr ""
 
-#: Template/Users/add.ctp:7
-msgid "Sign up"
+#: Template/Pages/sivillab.ctp:48
+msgid "SivilLAB"
 msgstr ""
 
+#: Template/Pages/sivillab.ctp:49
+msgid "SivilLAB, Robert Bosch Stiftung ve Goethe-Institut Ankara’nın ortak olarak düzenlediği programdır. Programın yürütüldüğü şehirlerdeki yerel aktörlerle birlikte projeler geliştirmeyi ve Türkiye’deki sosyal aktiviteleri desteklemeyi amaçlıyor.\n\n\tMayıs 2016’da başlayan SivilLAB programı; Eskişehir, İstanbul ve Kayseri’deki yerel proje geliştirme koordinatörleri tarafından yürütülüyor. Koordinatörler, kendilerine ev sahipliği yapan kurumlarla birlikte, gençlerin katılımını güçlendirmek ve sınırlar ötesi aktörleri bir araya getirmek üzere yenilikçi yaklaşımlar geliştiriyorlar.\n"
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:59
+msgid "Bu dönem SivilLab, temel olarak Kayseride ki yerel halk ile mülteciler arasında iletişim köprüsü kurma amaçlı projeler kapsamında çalıştı. Bu hedefe ulaşmak için OAK adı verilen Suriyeli çocuklara Türkçe eğitim fırsatları tanıyan ve kadınlara uğraşlar bulan hayır kurumu ile iş birliği yaptı. OAK ile işbirliğinde yürütülen çalışmalar aşağıda belirtilmiş bulunmakta:\n"
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:68
+msgid "Takım için Atölye Çalışmaları."
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:69
+msgid "Komşu Mutfağım."
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:70
+msgid "Suriyeli Gençlerin AGÜ Ziyareti."
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:71
+msgid "Komşu Mutfağım 2"
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:72
+msgid "Renkli Bahçe."
+msgstr ""
+
+#: Template/Pages/volunteams.ctp:6
+msgid "SivilLAB, Robert Bosch Stiftung ve Goethe-Institut Ankara’nın ortak olarak düzenlediği programdır. Programın yürütüldüğü şehirlerdeki yerel aktörlerle birlikte projeler geliştirmeyi ve Türkiye’deki sosyal aktiviteleri desteklemeyi amaçlıyor.\n\nMayıs 2016’da başlayan SivilLAB programı; Eskişehir, İstanbul ve Kayseri’deki yerel proje geliştirme koordinatörleri tarafından yürütülüyor. Koordinatörler, kendilerine ev sahipliği yapan kurumlarla birlikte, gençlerin katılımını güçlendirmek ve sınırlar ötesi aktörleri bir araya getirmek üzere yenilikçi yaklaşımlar geliştiriyorlar.\n"
+msgstr ""
+
+#: Template/Pages/volunteams.ctp:20
+msgid "Nerede yaşarsak yaşayalım, yaşadığımızın yerin ihtiyaçlarını en iyi biz yaşayanlar biliriz. Bu ihtiyaçların karşılanması ise toplumsal sorumluluk bilinci ile hem yurttaşlar olarak bizlerin hem de ilgili kurumların görevidir.\n    <a href = \"ihtiyacharitasi.org\">İhtiyacharitasi.org</a> farklı konulardaki ihtiyaçların ihtiyaç sahipleri ile ihtiyacı karşılamak isteyen kişiler ve kurumların buluştuğu online bir platformdur. İhtiyaçların karşılanmasının yanı sıra farklı konularda destek sahibi kurumların ve kişilerin de kullanabildiği bu platform Türkiye’nin her yerinden kullanılabilmektedir. "
+msgstr ""
+
+#: Template/Pages/volunteams.ctp:31
+msgid "AGU Student Clubs"
+msgstr ""
+
+#: Template/Pages/volunteams.ctp:32
+msgid "Üniversite içerisindeki öğrenci kulüpleri yaptıkları çalışmalar konusunda Abdullah Gül Üniversitesi yönetimi tarafından desteklenmektedirler. Her kulüp aktivitesini misyonlarına uygun sırasıyla belli bir perspektif ve amaç içerisinde yürütür. Bunun akabinde üniversite içerisinde yıl boyunca belli kulüplerin çatısı altında renkli etkinlikler ve gönüllülük faaliyetleri sürdürülür. Abdullah Gül Üniversitesi öğrenci mevcudu az ve öğrencileri genel kapsamda yoğun bir eğitim içerisinde olduklarından etkinliklerin gerek hazırlanışına yardımcı olacak gerek sadece katılımcı olacak gönüllülere ihtiyaç oluşmuştur. <br><br>\nYıl içerisinde Kulüpler Birliği Konseyinde aktif yer alan ve gönüllülük çalışmaları yürüten bazı kulüpler Gönüllü Bankasında yer almak üzere seçilmiştir. Linklere tıklayarak bu kulüpler ve yaptıkları çalışmalar hakkında daha fazla bilgi edinebilirsiniz."
+msgstr ""
+
+#: Template/Pages/volunteams.ctp:49;52
+msgid "AGU Computer Society"
+msgstr ""
+
+#: Template/Pages/volunteams.ctp:50
+msgid "AGÜ Bilgisayar Topluluğu, programlama ve diğer bilgisayar bilimi alanları ile ilgili konferanslar, workshoplar ve eğitimler düzenleyen bir topluluktur."
+msgstr ""
+
+#: Template/Posts/add.ctp:12
+#: Template/Posts/edit.ctp:12
+msgid "English"
+msgstr ""
+
+#: Template/Posts/add.ctp:13
+#: Template/Posts/edit.ctp:13
+msgid "Turkish"
+msgstr ""
+
+#: Template/Posts/index.ctp:7
+msgid "Posts"
+msgstr ""
+
+#: Template/Posts/index.ctp:15
 #: Template/Users/edit.ctp:8
-#: Template/Users/index.ctp:8;32
+#: Template/Users/index.ctp:8;40
+#: Template/Users/view.ctp:8;104;139;171
 msgid "Actions"
 msgstr ""
 
+#: Template/Posts/index.ctp:26
+#: Template/Users/index.ctp:64
+#: Template/Users/view.ctp:115;154;179
+msgid "View"
+msgstr ""
+
+#: Template/Posts/index.ctp:27
+#: Template/Posts/view.ctp:22
+#: Template/Users/index.ctp:65
+#: Template/Users/view.ctp:116;155;180
+msgid "Edit"
+msgstr ""
+
+#: Template/Posts/index.ctp:28
 #: Template/Users/edit.ctp:10
-#: Template/Users/index.ctp:54
+#: Template/Users/index.ctp:66
+#: Template/Users/view.ctp:117;156;181
 msgid "Delete"
 msgstr ""
 
+#: Template/Posts/index.ctp:28
 #: Template/Users/edit.ctp:12
-#: Template/Users/index.ctp:54
+#: Template/Users/index.ctp:66
+#: Template/Users/view.ctp:10;117;156;181
 msgid "Are you sure you want to delete # {0}?"
 msgstr ""
 
+#: Template/Posts/view.ctp:28
+msgid "Author:"
+msgstr ""
+
+#: Template/Profiles/Edit.ctp:4
+msgid "Preview"
+msgstr ""
+
+#: Template/Profiles/Show.ctp:45
+msgid "Volunteer Power"
+msgstr ""
+
 #: Template/Users/edit.ctp:15
+#: Template/Users/view.ctp:11
 msgid "List Users"
 msgstr ""
 
 #: Template/Users/edit.ctp:16
 #: Template/Users/index.ctp:10
-msgid "List Groups"
+#: Template/Users/view.ctp:13
+msgid "List Event Applications"
 msgstr ""
 
 #: Template/Users/edit.ctp:17
 #: Template/Users/index.ctp:11
+#: Template/Users/view.ctp:14
+msgid "New Event Application"
+msgstr ""
+
+#: Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:12
+#: Template/Users/view.ctp:15
+msgid "List Events"
+msgstr ""
+
+#: Template/Users/edit.ctp:19
+#: Template/Users/index.ctp:13
+#: Template/Users/view.ctp:16
+msgid "New Event"
+msgstr ""
+
+#: Template/Users/edit.ctp:20
+#: Template/Users/index.ctp:14
+#: Template/Users/view.ctp:17
+msgid "List Groups"
+msgstr ""
+
+#: Template/Users/edit.ctp:21
+#: Template/Users/index.ctp:15
+#: Template/Users/view.ctp:18
 msgid "New Group"
 msgstr ""
 
-#: Template/Users/edit.ctp:23
+#: Template/Users/edit.ctp:27
+#: Template/Users/view.ctp:9
 msgid "Edit User"
 msgstr ""
 
 #: Template/Users/index.ctp:9
+#: Template/Users/view.ctp:12
 msgid "New User"
 msgstr ""
 
-#: Template/Users/index.ctp:15
+#: Template/Users/index.ctp:19
 msgid "Users"
-msgstr ""
-
-#: Template/Users/index.ctp:52
-#: Template/Users/view.ctp:7
-msgid "View"
-msgstr ""
-
-#: Template/Users/index.ctp:53
-msgid "Edit"
 msgstr ""
 
 #: Template/Users/login.ctp:2
 msgid "Login"
 msgstr ""
 
-#: Template/Users/view.ctp:15
-msgid "Not provided"
+#: Template/Users/view.ctp:10
+msgid "Delete User"
 msgstr ""
 
-#: Template/Users/view.ctp:31
+#: Template/Users/view.ctp:29
+msgid "Password"
+msgstr ""
+
+#: Template/Users/view.ctp:33
 msgid "Email"
 msgstr ""
 
-#: Template/Users/view.ctp:35
+#: Template/Users/view.ctp:37
+msgid "Activation Code"
+msgstr ""
+
+#: Template/Users/view.ctp:41
+msgid "Forgotten Password Code"
+msgstr ""
+
+#: Template/Users/view.ctp:45
+msgid "Remember Code"
+msgstr ""
+
+#: Template/Users/view.ctp:49
 msgid "First Name"
 msgstr ""
 
-#: Template/Users/view.ctp:39
+#: Template/Users/view.ctp:53
 msgid "Last Name"
 msgstr ""
 
-#: Template/Users/view.ctp:43
+#: Template/Users/view.ctp:57
 msgid "Phone"
 msgstr ""
 
-#: Template/Users/view.ctp:47
-msgid "A member since"
+#: Template/Users/view.ctp:61
+msgid "University"
+msgstr ""
+
+#: Template/Users/view.ctp:65
+msgid "Department"
+msgstr ""
+
+#: Template/Users/view.ctp:69
+msgid "About"
+msgstr ""
+
+#: Template/Users/view.ctp:77;98;129;168
+msgid "Id"
+msgstr ""
+
+#: Template/Users/view.ctp:81
+msgid "Forgotten Password Time"
+msgstr ""
+
+#: Template/Users/view.ctp:85
+msgid "Created On"
+msgstr ""
+
+#: Template/Users/view.ctp:89
+msgid "Active"
+msgstr ""
+
+#: Template/Users/view.ctp:90
+msgid "Yes"
+msgstr ""
+
+#: Template/Users/view.ctp:90
+msgid "No"
+msgstr ""
+
+#: Template/Users/view.ctp:94
+msgid "Related Event Applications"
+msgstr ""
+
+#: Template/Users/view.ctp:99;130
+msgid "User Id"
+msgstr ""
+
+#: Template/Users/view.ctp:100
+msgid "Event Id"
+msgstr ""
+
+#: Template/Users/view.ctp:102;136
+msgid "Created Time"
+msgstr ""
+
+#: Template/Users/view.ctp:125
+msgid "Related Events"
+msgstr ""
+
+#: Template/Users/view.ctp:137
+msgid "Updated Time"
+msgstr ""
+
+#: Template/Users/view.ctp:138
+msgid "Volunteer Number"
+msgstr ""
+
+#: Template/Users/view.ctp:164
+msgid "Related Groups"
 msgstr ""
 
 #: Template/Error/error400.ctp:37
@@ -404,273 +913,5 @@ msgstr ""
 
 #: Template/Error/error500.ctp:39
 msgid "An Internal Error Has Occurred"
-msgstr ""
-
-#: Controller/Component/AuthComponent.php:496
-msgid "You are not authorized to access that location."
-msgstr ""
-
-#: Controller/Component/CsrfComponent.php:155
-msgid "Missing CSRF token cookie"
-msgstr ""
-
-#: Controller/Component/CsrfComponent.php:159
-msgid "CSRF token mismatch."
-msgstr ""
-
-#: Error/ExceptionRenderer.php:258
-msgid "Not Found"
-msgstr ""
-
-#: Error/ExceptionRenderer.php:260
-msgid "An Internal Error Has Occurred."
-msgstr ""
-
-#: Http/Response.php:2258
-msgid "The requested file contains `..` and will not be read."
-msgstr ""
-
-#: Http/Response.php:2269
-msgid "The requested file was not found"
-msgstr ""
-
-#: I18n/Number.php:90
-msgid "{0,number,#,###.##} KB"
-msgstr ""
-
-#: I18n/Number.php:92
-msgid "{0,number,#,###.##} MB"
-msgstr ""
-
-#: I18n/Number.php:94
-msgid "{0,number,#,###.##} GB"
-msgstr ""
-
-#: I18n/Number.php:96
-msgid "{0,number,#,###.##} TB"
-msgstr ""
-
-#: I18n/Number.php:88
-msgid "{0,number,integer} Byte"
-msgid_plural "{0,number,integer} Bytes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: I18n/RelativeTimeFormatter.php:80
-msgid "{0} from now"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:80
-msgid "{0} ago"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:83
-msgid "{0} after"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:83
-msgid "{0} before"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:114
-msgid "just now"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:151
-msgid "about a second ago"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:152
-msgid "about a minute ago"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:153
-msgid "about an hour ago"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:154;332
-msgid "about a day ago"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:155;333
-msgid "about a week ago"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:156;334
-msgid "about a month ago"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:157;335
-msgid "about a year ago"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:168
-msgid "in about a second"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:169
-msgid "in about a minute"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:170
-msgid "in about an hour"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:171;346
-msgid "in about a day"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:172;347
-msgid "in about a week"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:173;348
-msgid "in about a month"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:174;349
-msgid "in about a year"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:304
-msgid "today"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:370
-msgid "%s ago"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:371
-msgid "on %s"
-msgstr ""
-
-#: I18n/RelativeTimeFormatter.php:47;126;316
-msgid "{0} year"
-msgid_plural "{0} years"
-msgstr[0] ""
-msgstr[1] ""
-
-#: I18n/RelativeTimeFormatter.php:51;129;319
-msgid "{0} month"
-msgid_plural "{0} months"
-msgstr[0] ""
-msgstr[1] ""
-
-#: I18n/RelativeTimeFormatter.php:57;132;322
-msgid "{0} week"
-msgid_plural "{0} weeks"
-msgstr[0] ""
-msgstr[1] ""
-
-#: I18n/RelativeTimeFormatter.php:59;135;325
-msgid "{0} day"
-msgid_plural "{0} days"
-msgstr[0] ""
-msgstr[1] ""
-
-#: I18n/RelativeTimeFormatter.php:64;138
-msgid "{0} hour"
-msgid_plural "{0} hours"
-msgstr[0] ""
-msgstr[1] ""
-
-#: I18n/RelativeTimeFormatter.php:68;141
-msgid "{0} minute"
-msgid_plural "{0} minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: I18n/RelativeTimeFormatter.php:72;144
-msgid "{0} second"
-msgid_plural "{0} seconds"
-msgstr[0] ""
-msgstr[1] ""
-
-#: ORM/RulesChecker.php:57
-msgid "This value is already in use"
-msgstr ""
-
-#: ORM/RulesChecker.php:104
-msgid "This value does not exist"
-msgstr ""
-
-#: ORM/RulesChecker.php:128
-msgid "The count does not match {0}{1}"
-msgstr ""
-
-#: Utility/Text.php:899
-msgid "and"
-msgstr ""
-
-#: Validation/Validator.php:103
-msgid "This field is required"
-msgstr ""
-
-#: Validation/Validator.php:104
-msgid "This field cannot be left empty"
-msgstr ""
-
-#: Validation/Validator.php:1782
-msgid "The provided value is invalid"
-msgstr ""
-
-#: View/Helper/FormHelper.php:1010
-msgid "New %s"
-msgstr ""
-
-#: View/Helper/FormHelper.php:1013
-msgid "Edit %s"
-msgstr ""
-
-#: View/Helper/HtmlHelper.php:793
-msgid "Home"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:540
-msgid "January"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:541
-msgid "February"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:542
-msgid "March"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:543
-msgid "April"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:544
-msgid "May"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:545
-msgid "June"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:546
-msgid "July"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:547
-msgid "August"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:548
-msgid "September"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:549
-msgid "October"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:550
-msgid "November"
-msgstr ""
-
-#: View/Widget/DateTimeWidget.php:551
-msgid "December"
 msgstr ""
 

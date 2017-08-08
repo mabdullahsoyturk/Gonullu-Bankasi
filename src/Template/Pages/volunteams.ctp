@@ -28,7 +28,7 @@ Mayıs 2016’da başlayan SivilLAB programı; Eskişehir, İstanbul ve Kayseri�
 <div class="row">
   <div class="col-md-3"><img src="ogrenci-kulupleri.png"></div>
   <div class="col-md-6">
-    <h2><?= __('AGU Öğrenci Kulüpleri') ?></h2>
+    <h2><?= __('AGU Student Clubs') ?></h2>
     <p><?= __('Üniversite içerisindeki öğrenci kulüpleri yaptıkları çalışmalar konusunda Abdullah Gül Üniversitesi yönetimi tarafından desteklenmektedirler. Her kulüp aktivitesini misyonlarına uygun sırasıyla belli bir perspektif ve amaç içerisinde yürütür. Bunun akabinde üniversite içerisinde yıl boyunca belli kulüplerin çatısı altında renkli etkinlikler ve gönüllülük faaliyetleri sürdürülür. Abdullah Gül Üniversitesi öğrenci mevcudu az ve öğrencileri genel kapsamda yoğun bir eğitim içerisinde olduklarından etkinliklerin gerek hazırlanışına yardımcı olacak gerek sadece katılımcı olacak gönüllülere ihtiyaç oluşmuştur. <br><br>
 Yıl içerisinde Kulüpler Birliği Konseyinde aktif yer alan ve gönüllülük çalışmaları yürüten bazı kulüpler Gönüllü Bankasında yer almak üzere seçilmiştir. Linklere tıklayarak bu kulüpler ve yaptıkları çalışmalar hakkında daha fazla bilgi edinebilirsiniz.') ?></p>
 
@@ -46,9 +46,9 @@ Yıl içerisinde Kulüpler Birliği Konseyinde aktif yer alan ve gönüllülük 
 <div class="row">
   <div class="col-md-3"><img src="computer-society.png"></div>
   <div class="col-md-6">
-    <h2><?= __('AGÜ Bilgisayar Topluluğu') ?></h2>
+    <h2><?= __('AGU Computer Society') ?></h2>
     <p><?= __('AGÜ Bilgisayar Topluluğu, programlama ve diğer bilgisayar bilimi alanları ile ilgili konferanslar, workshoplar ve eğitimler düzenleyen bir topluluktur.')?></p>
     <br>
-    <a href="https://www.facebook.com/agucompsociety/"><?= __('AGÜ Bilgisayar Topluluğu') ?></a>
+    <a href="https://www.facebook.com/agucompsociety/"><?= __('AGU Computer Society') ?></a>
   </div>
 </div>
