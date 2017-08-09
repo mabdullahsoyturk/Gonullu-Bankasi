@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-08-07 15:00+0000\n"
+"POT-Creation-Date: 2017-08-09 11:42+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -143,7 +143,7 @@ msgstr ""
 #: Template/EventApplications/index.ctp:29
 #: Template/EventApplications/view.ctp:21
 #: Template/Events/add.ctp:18
-#: Template/Events/view.ctp:18;82
+#: Template/Events/view.ctp:18;85
 #: Template/Posts/add.ctp:19;23
 #: Template/Posts/edit.ctp:19;23
 #: Template/Users/view.ctp:101;132;170
@@ -158,7 +158,7 @@ msgstr ""
 
 #: Template/EventApplications/index.ctp:34
 #: Template/EventApplications/view.ctp:26
-#: Template/Events/view.ctp:28
+#: Template/Events/view.ctp:31
 msgid "Approved"
 msgstr ""
 
@@ -173,35 +173,35 @@ msgid "See"
 msgstr ""
 
 #: Template/EventApplications/index.ctp:47
-#: Template/Events/index.ctp:63
+#: Template/Events/index.ctp:67
 #: Template/Posts/index.ctp:36
 #: Template/Users/index.ctp:74
 msgid "first"
 msgstr ""
 
 #: Template/EventApplications/index.ctp:48
-#: Template/Events/index.ctp:64
+#: Template/Events/index.ctp:68
 #: Template/Posts/index.ctp:37
 #: Template/Users/index.ctp:75
 msgid "previous"
 msgstr ""
 
 #: Template/EventApplications/index.ctp:50
-#: Template/Events/index.ctp:66
+#: Template/Events/index.ctp:70
 #: Template/Posts/index.ctp:39
 #: Template/Users/index.ctp:77
 msgid "next"
 msgstr ""
 
 #: Template/EventApplications/index.ctp:51
-#: Template/Events/index.ctp:67
+#: Template/Events/index.ctp:71
 #: Template/Posts/index.ctp:40
 #: Template/Users/index.ctp:78
 msgid "last"
 msgstr ""
 
 #: Template/EventApplications/index.ctp:54
-#: Template/Events/index.ctp:70
+#: Template/Events/index.ctp:74
 #: Template/Posts/index.ctp:42
 #: Template/Users/index.ctp:80
 msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
@@ -240,7 +240,7 @@ msgid "Image"
 msgstr ""
 
 #: Template/Events/add.ctp:20
-#: Template/Events/index.ctp:48
+#: Template/Events/index.ctp:52
 #: Template/Events/view.ctp:21
 #: Template/Users/view.ctp:134
 msgid "Address"
@@ -264,92 +264,97 @@ msgstr ""
 msgid "Call for Volunteers"
 msgstr ""
 
-#: Template/Events/index.ctp:51
+#: Template/Events/index.ctp:48
+msgid "Event Owner"
+msgstr ""
+
+#: Template/Events/index.ctp:55
+#: Template/Events/view.ctp:24
 #: Template/Users/view.ctp:135
 msgid "Deadline"
 msgstr ""
 
-#: Template/Events/index.ctp:56
+#: Template/Events/index.ctp:60
 msgid "Details"
 msgstr ""
 
-#: Template/Events/index.ctp:85
+#: Template/Events/index.ctp:89
 msgid "Be a part of the change!"
 msgstr ""
 
-#: Template/Events/index.ctp:86
+#: Template/Events/index.ctp:90
 msgid "Apply to the projects that need volunteers and become a part of their dream."
 msgstr ""
 
-#: Template/Events/index.ctp:103
+#: Template/Events/index.ctp:107
 msgid "Be the change itself"
 msgstr ""
 
-#: Template/Events/index.ctp:104
+#: Template/Events/index.ctp:108
 msgid "Share your project and find your dream mates!"
 msgstr ""
 
-#: Template/Events/index.ctp:119
+#: Template/Events/index.ctp:123
 msgid "Explore"
 msgstr ""
 
-#: Template/Events/index.ctp:120
+#: Template/Events/index.ctp:124
 msgid "Explore yourself and decide your role for the future!"
 msgstr ""
 
-#: Template/Events/view.ctp:26
+#: Template/Events/view.ctp:29
 msgid "Call for"
 msgstr ""
 
-#: Template/Events/view.ctp:27;45
+#: Template/Events/view.ctp:30;48
 msgid "Applied"
 msgstr ""
 
-#: Template/Events/view.ctp:29
+#: Template/Events/view.ctp:32
 msgid "Left"
 msgstr ""
 
-#: Template/Events/view.ctp:41;42
+#: Template/Events/view.ctp:44;45
 msgid "I want to apply"
 msgstr ""
 
-#: Template/Events/view.ctp:47
+#: Template/Events/view.ctp:50
 msgid "Login to apply"
 msgstr ""
 
-#: Template/Events/view.ctp:50
+#: Template/Events/view.ctp:53
 msgid "See current applications"
 msgstr ""
 
-#: Template/Events/view.ctp:70
+#: Template/Events/view.ctp:73
 msgid "Application"
 msgstr ""
 
-#: Template/Events/view.ctp:78
+#: Template/Events/view.ctp:81
 msgid "Please fill the form now"
 msgstr ""
 
-#: Template/Events/view.ctp:83
+#: Template/Events/view.ctp:86
 msgid "Explain yourself briefly"
 msgstr ""
 
-#: Template/Events/view.ctp:86
+#: Template/Events/view.ctp:89
 msgid "Explain who you are. Why do you want to apply to this? What makes you different bla bla."
 msgstr ""
 
-#: Template/Events/view.ctp:93
+#: Template/Events/view.ctp:96
 msgid "Thanks for application."
 msgstr ""
 
-#: Template/Events/view.ctp:110
+#: Template/Events/view.ctp:113
 msgid "Description should be filled."
 msgstr ""
 
-#: Template/Events/view.ctp:119
+#: Template/Events/view.ctp:122
 msgid "Application successfully submitted"
 msgstr ""
 
-#: Template/Events/view.ctp:124
+#: Template/Events/view.ctp:127
 msgid "An error occured"
 msgstr ""
 
@@ -502,6 +507,74 @@ msgstr ""
 
 #: Template/Pages/contact.ctp:75
 msgid "Mail adresimiz"
+msgstr ""
+
+#: Template/Pages/faq.ctp:6
+msgid "This page includes information about how Gönüllü Bankası works and frequently asked questions. If you cannot find the answer of your question, please contact us."
+msgstr ""
+
+#: Template/Pages/faq.ctp:7
+msgid "İletişim Bilgileri"
+msgstr ""
+
+#: Template/Pages/faq.ctp:11
+msgid "Project Owners"
+msgstr ""
+
+#: Template/Pages/faq.ctp:16
+msgid "Do I need to have a title to add a project in order to find volunteers?"
+msgstr ""
+
+#: Template/Pages/faq.ctp:21
+msgid "Anyone who is a member of Gonullu Bankasi can add projects to find volunteers, if the target of project is found valid by the Gonullu Bankasi committe.  "
+msgstr ""
+
+#: Template/Pages/faq.ctp:30
+msgid "How much time does it take Gonullu Bankasi committe to consider my application?"
+msgstr ""
+
+#: Template/Pages/faq.ctp:45
+msgid "I would like to add a project. What is the process for it?"
+msgstr ""
+
+#: Template/Pages/faq.ctp:51
+msgid "The application process is very simple."
+msgstr ""
+
+#: Template/Pages/faq.ctp:53
+msgid "Sign up"
+msgstr ""
+
+#: Template/Pages/faq.ctp:54
+msgid "Verify your account"
+msgstr ""
+
+#: Template/Pages/faq.ctp:55
+msgid "<strong>Go to Add Event</strong>"
+msgstr ""
+
+#: Template/Pages/faq.ctp:56
+msgid "The next step is approval process. It usually takes a few hours"
+msgstr ""
+
+#: Template/Pages/faq.ctp:66
+msgid "Can I pick certain volunteers between volunteer candidates?"
+msgstr ""
+
+#: Template/Pages/faq.ctp:72
+msgid "Yes. You can also see the volunteering history of volunteer candidates"
+msgstr ""
+
+#: Template/Pages/faq.ctp:77
+msgid "Volunteers"
+msgstr ""
+
+#: Template/Pages/faq.ctp:82
+msgid "I want to be a volunteer. What is the process for it?"
+msgstr ""
+
+#: Template/Pages/faq.ctp:88
+msgid "Being a volunteer via <strong>Gonullu Bankasi</strong> is very easy. You can find the projects that are looking for volunteers via Homepage and apply one of those project that you want to contribute"
 msgstr ""
 
 #: Template/Pages/how_it_works.ctp:2

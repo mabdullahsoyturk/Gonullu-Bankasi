@@ -20,7 +20,10 @@
                 <p>
                   <b><?= __('Address'); ?>:</b>
                   <?= $event->address; ?>
-                </p>
+                 </p>
+                 <p><?= __('Deadline'); ?>:
+                 <?= $event->deadline ?>
+                 </p>
                 <table class="table">
                   <tr>
                     <th><?= __('Call for') ?></th>

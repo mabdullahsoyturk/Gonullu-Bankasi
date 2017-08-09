@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-08-07 15:00+0000\n"
-"PO-Revision-Date: 2017-08-07 18:21+0300\n"
+"POT-Creation-Date: 2017-08-09 11:42+0000\n"
+"PO-Revision-Date: 2017-08-09 15:20+0300\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,15 +29,15 @@ msgstr "Etkinlik başvurusu silindi."
 
 #: Controller/EventApplicationsController.php:132
 msgid "The event application could not be deleted. Please, try again."
-msgstr "Etkinlik başvurusu silinemedi. Lütfen tekrar deneyiniz. "
+msgstr "Etkinlik başvurusu silinemedi. Lütfen tekrar deneyiniz."
 
 #: Controller/EventApplicationsController.php:144
 msgid "You have successfully approved the application"
-msgstr "Başvuru onaylandı."
+msgstr "Başvuru onaylandı"
 
 #: Controller/EventApplicationsController.php:147
 msgid "The application could not be approved. Please, try again."
-msgstr "Başvuru doğrulanamadı. Lütfen tekrar deneyiniz. "
+msgstr "Başvuru doğrulanamadı. Lütfen tekrar deneyiniz."
 
 #: Controller/EventsController.php:98;124
 msgid "The event has been saved."
@@ -45,7 +45,7 @@ msgstr "Etkinlik kaydedildi."
 
 #: Controller/EventsController.php:102;128
 msgid "The event could not be saved. Please, try again."
-msgstr "Etkinlik kaydedilemedi. Lütfen tekrar deneyiniz. "
+msgstr "Etkinlik kaydedilemedi. Lütfen tekrar deneyiniz."
 
 #: Controller/EventsController.php:147
 msgid "The event has been deleted."
@@ -53,7 +53,7 @@ msgstr "Etkinlik silindi."
 
 #: Controller/EventsController.php:149
 msgid "The event could not be deleted. Please, try again."
-msgstr "Etkinlik silinemedi. Lütfen tekrar deneyiniz. "
+msgstr "Etkinlik silinemedi. Lütfen tekrar deneyiniz."
 
 #: Controller/PostContentsController.php:60;86
 msgid "The post content has been saved."
@@ -62,7 +62,7 @@ msgstr "Girdi içeriği kaydedildi."
 #: Controller/PostContentsController.php:64;90
 #: Controller/PostsController.php:93;144
 msgid "The post content could not be saved. Please, try again."
-msgstr "Girdi içeriği kaydedilemedi. Lütfen tekrar deneyiniz. "
+msgstr "Girdi içeriği kaydedilemedi. Lütfen tekrar deneyiniz."
 
 #: Controller/PostContentsController.php:109
 msgid "The post content has been deleted."
@@ -70,7 +70,7 @@ msgstr "Girdi içeriği silindi."
 
 #: Controller/PostContentsController.php:111
 msgid "The post content could not be deleted. Please, try again."
-msgstr "Girdi içeriği silinemedi. Lütfen tekrar deneyiniz. "
+msgstr "Girdi içeriği silinemedi. Lütfen tekrar deneyiniz."
 
 #: Controller/PostsController.php:98;149
 msgid "The post has been saved."
@@ -90,11 +90,11 @@ msgstr "Girdi silinemedi. Lütfen tekrar deneyiniz."
 
 #: Controller/ProfilesController.php:64
 msgid "Your profile has been updated"
-msgstr "Profil güncellendi."
+msgstr "Profil güncellendi"
 
 #: Controller/ProfilesController.php:67
 msgid "Your error could not be updated"
-msgstr "Profile güncellenemedi. Lütfen tekrar deneyiniz."
+msgstr "Profile güncellenemedi. Lütfen tekrar deneyiniz"
 
 #: Controller/UsersController.php:115;142
 msgid "The user has been saved."
@@ -128,7 +128,7 @@ msgstr "Başvurular"
 
 #: Template/EventApplications/index.ctp:14
 msgid "No applications submitted yet"
-msgstr "Henüz hiçbir başvuru yapılmadı."
+msgstr "Henüz hiçbir başvuru yapılmadı"
 
 #: Template/EventApplications/index.ctp:21 Template/Users/view.ctp:25
 msgid "Username"
@@ -140,7 +140,7 @@ msgstr "Başvuru Tarihi"
 
 #: Template/EventApplications/index.ctp:29
 #: Template/EventApplications/view.ctp:21 Template/Events/add.ctp:18
-#: Template/Events/view.ctp:18;82 Template/Posts/add.ctp:19;23
+#: Template/Events/view.ctp:18;85 Template/Posts/add.ctp:19;23
 #: Template/Posts/edit.ctp:19;23 Template/Users/view.ctp:101;132;170
 msgid "Description"
 msgstr "Detay"
@@ -151,47 +151,47 @@ msgid "Status"
 msgstr "Durum"
 
 #: Template/EventApplications/index.ctp:34
-#: Template/EventApplications/view.ctp:26 Template/Events/view.ctp:28
+#: Template/EventApplications/view.ctp:26 Template/Events/view.ctp:31
 msgid "Approved"
-msgstr "Onaylandı."
+msgstr "Onaylandı"
 
 #: Template/EventApplications/index.ctp:34
 #: Template/EventApplications/view.ctp:26
 msgid "Not Approved"
-msgstr "Onaylanmadı."
+msgstr "Onaylanmadı"
 
 #: Template/EventApplications/index.ctp:37 Template/Profiles/Show.ctp:37
 msgid "See"
 msgstr "Tamamını gör"
 
-#: Template/EventApplications/index.ctp:47 Template/Events/index.ctp:63
+#: Template/EventApplications/index.ctp:47 Template/Events/index.ctp:67
 #: Template/Posts/index.ctp:36 Template/Users/index.ctp:74
 msgid "first"
 msgstr "ilk"
 
-#: Template/EventApplications/index.ctp:48 Template/Events/index.ctp:64
+#: Template/EventApplications/index.ctp:48 Template/Events/index.ctp:68
 #: Template/Posts/index.ctp:37 Template/Users/index.ctp:75
 msgid "previous"
 msgstr "önceki"
 
-#: Template/EventApplications/index.ctp:50 Template/Events/index.ctp:66
+#: Template/EventApplications/index.ctp:50 Template/Events/index.ctp:70
 #: Template/Posts/index.ctp:39 Template/Users/index.ctp:77
 msgid "next"
 msgstr "sonraki"
 
-#: Template/EventApplications/index.ctp:51 Template/Events/index.ctp:67
+#: Template/EventApplications/index.ctp:51 Template/Events/index.ctp:71
 #: Template/Posts/index.ctp:40 Template/Users/index.ctp:78
 msgid "last"
 msgstr "son"
 
-#: Template/EventApplications/index.ctp:54 Template/Events/index.ctp:70
+#: Template/EventApplications/index.ctp:54 Template/Events/index.ctp:74
 #: Template/Posts/index.ctp:42 Template/Users/index.ctp:80
 msgid ""
 "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
 "total"
 msgstr ""
-"{{pages}} sayfa arasından {{page}}.sayfa; {{count}} kayıt  arasından "
-"{{current}} kayıt gösteriliyor."
+"{{pages}} sayfa arasından {{page}}.sayfa; {{count}} kayıt arasından "
+"{{current}} kayıt gösteriliyor"
 
 #: Template/EventApplications/view.ctp:9
 msgid "User"
@@ -222,7 +222,7 @@ msgstr "Başlık"
 msgid "Image"
 msgstr "Resim"
 
-#: Template/Events/add.ctp:20 Template/Events/index.ctp:48
+#: Template/Events/add.ctp:20 Template/Events/index.ctp:52
 #: Template/Events/view.ctp:21 Template/Users/view.ctp:134
 msgid "Address"
 msgstr "Adres"
@@ -244,100 +244,105 @@ msgstr "Etkinliği Düzenle"
 msgid "Call for Volunteers"
 msgstr "Gönüllü Çağrıları"
 
-#: Template/Events/index.ctp:51 Template/Users/view.ctp:135
+#: Template/Events/index.ctp:48
+msgid "Event Owner"
+msgstr "Etkinlik Sahibi"
+
+#: Template/Events/index.ctp:55 Template/Events/view.ctp:24
+#: Template/Users/view.ctp:135
 msgid "Deadline"
 msgstr "Bitiş Zamanı"
 
-#: Template/Events/index.ctp:56
+#: Template/Events/index.ctp:60
 msgid "Details"
 msgstr "Detaylar"
 
-#: Template/Events/index.ctp:85
+#: Template/Events/index.ctp:89
 msgid "Be a part of the change!"
-msgstr "Değişimin Parçası Ol"
+msgstr "Değişimin Parçası Ol!"
 
-#: Template/Events/index.ctp:86
+#: Template/Events/index.ctp:90
 msgid ""
 "Apply to the projects that need volunteers and become a part of their dream."
 msgstr ""
 "Gönüllüye ihtiyaç duyan projelere başvur ve onların hayallerinin bir parçası "
-"ol!"
+"ol."
 
-#: Template/Events/index.ctp:103
+#: Template/Events/index.ctp:107
 msgid "Be the change itself"
 msgstr "Değişimin Kendisi Ol"
 
-#: Template/Events/index.ctp:104
+#: Template/Events/index.ctp:108
 msgid "Share your project and find your dream mates!"
 msgstr "Projeni paylaş ve beraber yürüyeceğin insanları bul!"
 
-#: Template/Events/index.ctp:119
+#: Template/Events/index.ctp:123
 msgid "Explore"
 msgstr "Keşfet"
 
-#: Template/Events/index.ctp:120
+#: Template/Events/index.ctp:124
 msgid "Explore yourself and decide your role for the future!"
 msgstr "Kendini keşfederek geleceğin nasıl bir parçası olacağına karar ver!"
 
-#: Template/Events/view.ctp:26
+#: Template/Events/view.ctp:29
 msgid "Call for"
 msgstr "Çağrı Sayısı"
 
-#: Template/Events/view.ctp:27;45
+#: Template/Events/view.ctp:30;48
 msgid "Applied"
 msgstr "Başvuruldu"
 
-#: Template/Events/view.ctp:29
+#: Template/Events/view.ctp:32
 msgid "Left"
 msgstr "Kalan"
 
-#: Template/Events/view.ctp:41;42
+#: Template/Events/view.ctp:44;45
 msgid "I want to apply"
 msgstr "Başvurmak Istiyorum"
 
-#: Template/Events/view.ctp:47
+#: Template/Events/view.ctp:50
 msgid "Login to apply"
 msgstr "Başvurabilmek için giriş yap"
 
-#: Template/Events/view.ctp:50
+#: Template/Events/view.ctp:53
 msgid "See current applications"
 msgstr "Başvuruları Gör"
 
-#: Template/Events/view.ctp:70
+#: Template/Events/view.ctp:73
 msgid "Application"
 msgstr "Başvuru"
 
-#: Template/Events/view.ctp:78
+#: Template/Events/view.ctp:81
 msgid "Please fill the form now"
-msgstr "Lütfen şimdi formu doldurun."
-
-#: Template/Events/view.ctp:83
-msgid "Explain yourself briefly"
-msgstr "Kendinizi kısaca anlatın."
+msgstr "Lütfen şimdi formu doldurun"
 
 #: Template/Events/view.ctp:86
+msgid "Explain yourself briefly"
+msgstr "Kendinizi kısaca anlatın"
+
+#: Template/Events/view.ctp:89
 msgid ""
 "Explain who you are. Why do you want to apply to this? What makes you "
 "different bla bla."
 msgstr ""
 "Kim olduğunuzu açıklayın. Neden bu projeye başvurmak istiyorsunuz? Sizi "
-"farklı kılan şey ne?"
+"farklı kılan şey ne."
 
-#: Template/Events/view.ctp:93
+#: Template/Events/view.ctp:96
 msgid "Thanks for application."
 msgstr "Başvuru için teşekkürler."
 
-#: Template/Events/view.ctp:110
+#: Template/Events/view.ctp:113
 msgid "Description should be filled."
 msgstr "Detaylar doldurulmalı."
 
-#: Template/Events/view.ctp:119
+#: Template/Events/view.ctp:122
 msgid "Application successfully submitted"
-msgstr "Başvuru başarılı bir şekilde gönderildi."
+msgstr "Başvuru başarılı bir şekilde gönderildi"
 
-#: Template/Events/view.ctp:124
+#: Template/Events/view.ctp:127
 msgid "An error occured"
-msgstr "Bir hata oluştu."
+msgstr "Bir hata oluştu"
 
 #: Template/Layout/default.ctp:49 Template/Posts/add.ctp:9
 #: Template/Posts/edit.ctp:9
@@ -394,16 +399,16 @@ msgstr "İletişim"
 
 #: Template/Layout/default.ctp:176
 msgid "Be a part of the change! "
-msgstr "Değişimin bir parçası olun!"
+msgstr "Değişimin bir parçası olun "
 
 #: Template/Layout/default.ctp:177
 msgid ""
 "You are welcome to join Gonullu Bank to make a difference in the society"
-msgstr "Toplumda bir fark yaratmak için Gönüllü Bankası'na hoş geldiniz."
+msgstr "Toplumda bir fark yaratmak için Gönüllü Bankası'na hoş geldiniz"
 
 #: Template/Layout/default.ctp:204
 msgid "© 2017, AGU Developers, All rights reserved"
-msgstr "© 2017, AGU Geliştiricileri, Bütün hakları saklıdır."
+msgstr "© 2017, AGU Geliştiricileri, Bütün hakları saklıdır"
 
 #: Template/Layout/default.ctp:214
 msgid "Gönüllü Bankası"
@@ -444,7 +449,7 @@ msgstr "Konu"
 
 #: Template/Pages/contact.ctp:40
 msgid "Select one:"
-msgstr "Birini Seç"
+msgstr "Birini Seç:"
 
 #: Template/Pages/contact.ctp:41
 msgid "Adding events"
@@ -485,6 +490,101 @@ msgstr "Kayseri,Türkiye"
 #: Template/Pages/contact.ctp:75
 msgid "Mail adresimiz"
 msgstr ""
+
+#: Template/Pages/faq.ctp:6
+msgid ""
+"This page includes information about how Gönüllü Bankası works and "
+"frequently asked questions. If you cannot find the answer of your question, "
+"please contact us."
+msgstr ""
+"Bu sayfa <strong>Gönüllü Bankası</strong>'nın işlevleriyle ilgili bilgiler "
+"ve sıkça sorulan soruları içerir. Eğer sorunuzun cevabını burada "
+"bulamazsanız bize mutlaka ulaşın. <br/><strong>."
+
+#: Template/Pages/faq.ctp:7
+msgid "Contact Details"
+msgstr "İletişim Bilgileri"
+
+#: Template/Pages/faq.ctp:11
+msgid "Project Owners"
+msgstr "Proje Yöneticileri"
+
+#: Template/Pages/faq.ctp:16
+msgid "Do I need to have a title to add a project in order to find volunteers?"
+msgstr "Kimler projesini ekleyip, gönüllü arayabilir?"
+
+#: Template/Pages/faq.ctp:21
+msgid ""
+"Anyone who is a member of Gonullu Bankasi can add projects to find "
+"volunteers, if the target of project is found valid by the Gonullu Bankasi "
+"committe.  "
+msgstr ""
+"Üye olan herhangi bir kişi <strong>Gönüllü Bankası</strong>'na proje "
+"ekleyebilir. Proje yönetim kurulundan kabul aldığında <strong>Gönüllü "
+"Bankası</strong>'nda görünür hale gelir "
+
+#: Template/Pages/faq.ctp:30
+msgid ""
+"How much time does it take Gonullu Bankasi committe to consider my "
+"application?"
+msgstr "Projenin onay alıp almadığı kaç gün içinde belli olur?"
+
+#: Template/Pages/faq.ctp:45
+msgid "I would like to add a project. What is the process for it?"
+msgstr "Proje eklemek istiyorum. Bunun için aşamalar nelerdir?"
+
+#: Template/Pages/faq.ctp:51
+msgid "The application process is very simple."
+msgstr "Proje ekleme süreci gayet basit."
+
+#: Template/Pages/faq.ctp:53
+msgid "Sign up"
+msgstr "Üye ol"
+
+#: Template/Pages/faq.ctp:54
+msgid "Verify your account"
+msgstr "Hesabınızı aktif edin"
+
+#: Template/Pages/faq.ctp:55
+msgid "<strong>Go to Add Event</strong>"
+msgstr "<strong>Etkinlik ekle</strong> kısmına gidip projenizi ekleyin"
+
+#: Template/Pages/faq.ctp:56
+msgid "The next step is approval process. It usually takes a few hours"
+msgstr ""
+"Bir sonraki aşama onay aşamasıdır. Genellikle birkaç saat içinde geri dönüş "
+"yapılır"
+
+#: Template/Pages/faq.ctp:66
+msgid "Can I pick certain volunteers between volunteer candidates?"
+msgstr "Başvuru yapacak gönüllüleri kendim seçebilir miyim?"
+
+#: Template/Pages/faq.ctp:72
+msgid "Yes. You can also see the volunteering history of volunteer candidates"
+msgstr ""
+"Evet. Projenize başvuru yapan gönüllülerin geçmiş deneyimlerine ve diğer "
+"bilgilerine gönüllü adayının profiline girerek ulaşabilirsiniz"
+
+#: Template/Pages/faq.ctp:77
+msgid "Volunteers"
+msgstr "Gönüllüler"
+
+#: Template/Pages/faq.ctp:82
+msgid "I want to be a volunteer. What is the process for it?"
+msgstr ""
+"Gönüllülük yapmak istiyorum. Bunu yapabilmem için gereken aşamalar nelerdir?"
+
+#: Template/Pages/faq.ctp:88
+msgid ""
+"Being a volunteer via <strong>Gonullu Bankasi</strong> is very easy. You can "
+"find the projects that are looking for volunteers via Homepage and apply one "
+"of those project that you want to contribute"
+msgstr ""
+"<strong>Gönüllü Bankası</strong>'nda gönüllülük yapmak gayet basittir. "
+"<strong>Başvur</strong> kısmında aktif ve gönüllüye ihtiyaç duyan projelere "
+"ulaşıp istediğiniz herhangi birine başvurabilirsiniz. <br/>Geri dönüş alma "
+"süreniz proje sahibinin kendi değerlendirme sürecine göre değişkenlik "
+"gösterebilir"
 
 #: Template/Pages/how_it_works.ctp:2
 msgid "How it works?"
@@ -762,7 +862,7 @@ msgstr "Görüntü"
 #: Template/Posts/index.ctp:27 Template/Posts/view.ctp:22
 #: Template/Users/index.ctp:65 Template/Users/view.ctp:116;155;180
 msgid "Edit"
-msgstr "Düzelt"
+msgstr "Düzenle"
 
 #: Template/Posts/index.ctp:28 Template/Users/edit.ctp:10
 #: Template/Users/index.ctp:66 Template/Users/view.ctp:117;156;181
@@ -793,7 +893,7 @@ msgstr "Üyeleri Listele"
 #: Template/Users/edit.ctp:16 Template/Users/index.ctp:10
 #: Template/Users/view.ctp:13
 msgid "List Event Applications"
-msgstr "Etkinlik Başvurularını Listele"
+msgstr "Etkinlik Başvurularını Düzenle"
 
 #: Template/Users/edit.ctp:17 Template/Users/index.ctp:11
 #: Template/Users/view.ctp:14
@@ -874,7 +974,7 @@ msgstr "Telefon Numarası"
 
 #: Template/Users/view.ctp:61
 msgid "University"
-msgstr "Üniversite"
+msgstr "Universite"
 
 #: Template/Users/view.ctp:65
 msgid "Department"

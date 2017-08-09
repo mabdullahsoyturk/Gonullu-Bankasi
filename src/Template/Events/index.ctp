@@ -36,13 +36,17 @@
         <div class="single-product">
             <figure>
 
-                <?= $this->Html->image('/files/Events/image/'.$event->image, array('border' => '0', 'style'=> 'width:100%;height:100%')); ?>
+                <?= $this->Html->image('/files/Events/image/'.$event->image, array('border' => '0', 'style'=> 'width:100%;height:100%', 'class' => 'thumbnail')); ?>
 
             </figure>
 
             <h4>
                 <?= $this->Html->link($event->title, ['action' => 'view', $event->id]) ?>
             </h4>
+
+            <h5>  
+                <?= __('Event Owner'); ?>: <?= $event->user->username ?>
+            </h5>
 
             <h5>
                 <?= __('Address'); ?>: <?= $this->Html->link($event->address, ['action' => 'view', $event->id]) ?>
