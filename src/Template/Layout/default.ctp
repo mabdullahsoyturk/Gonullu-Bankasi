@@ -37,7 +37,7 @@ $cakeDescription = 'Gönüllü Bankası';
 <body>
   <div class="row">
     <div class="col-md-3"><?php echo $this->Html->image('agu.jpeg', array('id'=>'header-logo', 'border' => '0', 'data-src' => 'img')); ?></div>
-    <div class="col-md-6"><a href="index.php" class="header_name"><h2>  Gönüllü Bankası</h2></a></div>
+    <div class="col-md-6"><?= $this->Html->link('<h2>'.__('Gönüllü Bankası').'</h2>', ['controller'=>'events','action'=>'index'],['class'=>'header_name','escape'=>false]) ?></div>
     <div class="col-md-3 buttonss">
       <?php if($lang == 'en'): ?>
         <?=$this->Html->link('TR',['controller'=>'language','action'=>'switchTo','tr'], ['class' => 'btn btn-link buttonn']) ?>
