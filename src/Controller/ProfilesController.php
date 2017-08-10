@@ -5,6 +5,13 @@ use App\Controller\AppController;
 
 class ProfilesController extends AppController
 {
+    public function initialize()
+    {
+      parent::initialize();
+      // Add logout to the allowed actions list.
+      $this->Auth->allow(['show']);
+    }
+    
     public function isAuthorized($user)
     {
       $action = $this->request->action;
