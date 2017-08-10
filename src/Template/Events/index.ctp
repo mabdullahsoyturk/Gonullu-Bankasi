@@ -45,7 +45,7 @@
             </h4>
 
             <h5>
-                <?= __('Event Owner'); ?>: <?= $this->Html->link(h($event->user->username), ['controller'=>'profiles', 'action'=>'view', $event->user->id]) ?>
+                <?= __('Event Owner'); ?>: <?= $this->Html->link(h($event->user->username), ['controller'=>'profiles', 'action'=>'show', $event->user->id]) ?>
             </h5>
 
             <h5>
