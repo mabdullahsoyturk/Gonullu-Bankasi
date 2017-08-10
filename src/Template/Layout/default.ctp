@@ -36,35 +36,35 @@ $cakeDescription = 'Gönüllü Bankası';
 </head>
 <body>
   <div class="row">
-    <div class="col-md-3"><?php echo $this->Html->image('agu.jpeg', array('id'=>'header-logo', 'border' => '0', 'data-src' => 'img')); ?></div>
-    <div class="col-md-6"><a href="index.php" class="header_name"><h2>  Gönüllü Bankası</h2></a></div>
-    <div class="col-md-3 buttonss">
+    <div class="col-md-3 hidden-sm hidden-xs"><?php echo $this->Html->image('agu.jpeg', array('id'=>'header-logo', 'border' => '0', 'data-src' => 'img')); ?></div>
+    <div class="col-md-6 col-sm-7 col-xs-10"><?= $this->Html->link('<h2>'.__('Gönüllü Bankası').'</h2>', ['controller'=>'events','action'=>'index'],['class'=>'header_name','escape'=>false]) ?></div>
+    <div class="col-md-3 col-sm-5 col-xs-2 buttonss">
       <?php if($lang == 'en'): ?>
         <?=$this->Html->link('TR',['controller'=>'language','action'=>'switchTo','tr'], ['class' => 'btn btn-link buttonn']) ?>
       <?php else: ?>
         <?=$this->Html->link('EN',['controller'=>'language','action'=>'switchTo','en'], ['class' => 'btn btn-link buttonn',]) ?>
       <?php endif;?>
-      <?php if($this->request->Session()->read('Auth.User')): ?>
-
-        <?= $this->Html->link(__('Add Post'),['controller'=>'Posts','action'=>'add']) ?>
-        <?= $this->Html->link(__('Profile'),['controller'=>'Profiles','action'=>'edit']) ?>
-        <a href="<?= $this->Url->build([
-              "controller" => "Users",
-              "action" => "logout"
-          ]); ?>"
-              type="button" class="btn btn-link buttonn"><?= __('Log out') ?></a>
-      <?php else: ?>
-        <a href="<?= $this->Url->build([
-              "controller" => "Users",
-              "action" => "add"
-          ]); ?>"
-              type="button" class="btn btn-link buttonn"><?= __('Sign Up') ?></a>
-        <a href="<?= $this->Url->build([
-              "controller" => "Users",
-              "action" => "login"
-          ]); ?>" class="btn btn-link buttonn"><?= __('Sign In') ?></a>
-      <?php endif; ?>
-
+      <span class="hidden-xs">
+        <?php if($this->request->Session()->read('Auth.User')): ?>
+          <?= $this->Html->link(__('Add Post'),['controller'=>'Posts','action'=>'add']) ?>
+          <?= $this->Html->link(__('Profile'),['controller'=>'Profiles','action'=>'edit']) ?>
+          <a href="<?= $this->Url->build([
+                "controller" => "Users",
+                "action" => "logout"
+            ]); ?>"
+                type="button" class="btn btn-link buttonn"><?= __('Log out') ?></a>
+        <?php else: ?>
+          <a href="<?= $this->Url->build([
+                "controller" => "Users",
+                "action" => "add"
+            ]); ?>"
+                type="button" class="btn btn-link buttonn"><?= __('Sign Up') ?></a>
+          <a href="<?= $this->Url->build([
+                "controller" => "Users",
+                "action" => "login"
+            ]); ?>" class="btn btn-link buttonn"><?= __('Sign In') ?></a>
+        <?php endif; ?>
+      </span>
     </div>
 </div>
 
@@ -89,7 +89,6 @@ $cakeDescription = 'Gönüllü Bankası';
         </div>
     </div>
 </div>
-
 <div class="modal fade" id="signUpPopUpWindow">
     <div class="modal-dialog">
         <div class="model-content">
@@ -121,49 +120,77 @@ $cakeDescription = 'Gönüllü Bankası';
 
 <nav>
     <div class="navbarplace">
-        <a href="<?= $this->Url->build([
-              "controller" => "Events",
-              "action" => "index"
-          ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('homepage.png',
-      array('alt' => __('Homepage'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Homepage'); ?></h4></a>
-      <div class='icon-with-dropdown'>
-        <a href="#<?php $this->Url->build([
-              "controller" => "Pages",
-              "action" => "volunteams"
-          ]); ?>" class="nav_icons navbarspace dropdown-toggle" align = 'middle' type="button"
-          data-toggle="dropdown" ><?php echo $this->Html->image('members.png',
-      array('alt' => __('Volunteams'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Volunteams'); ?><span class="caret"></span></h4>
+      <span class="visible-xs-inline">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= __('Menu') ?> <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+                <?php if($this->request->Session()->read('Auth.User')): ?>
+                  <li><?= $this->Html->link(__('Profile'),['controller'=>'Profiles','action'=>'edit']) ?></li>
+                  <li><?= $this->Html->link(__('Log out'),['controller'=>'Users','action'=>'logout']) ?></li>
+                  <li role="separator" class="divider"></li>
+                  <li><?= $this->Html->link(__('Add Post'),['controller'=>'Posts','action'=>'add']) ?></li>
+                <?php else :?>
+                  <li><?= $this->Html->link(__('Sign Up'),['controller'=>'Users','action'=>'add']) ?></li>
+                  <li><?= $this->Html->link(__('Sign In'),['controller'=>'Users','action'=>'login']) ?></li>
+                <?php endif; ?>
+                  <li role="separator" class="divider"></li>
+                  <li><?= $this->Html->link(__('Homepage'), ['controller'=>'Events','action'=>'index']) ?></li>
+                  <li><?= $this->Html->link(__('Volunteams'),['controller'=>'pages','action'=>'volunteams']) ?></li>
+                  <li><?= $this->Html->link(__('Add Event'),['controller'=>'events','action'=>'add'])?></li>
+                  <li><?= $this->Html->link(__('Join Us'),['controller'=>'events','action'=>'index']) ?></li>
+                  <li><?= $this->Html->link(__('FAQ'),['controller'=>'pages','action'=>'faq']) ?></li>
+                  <li><?= $this->Html->link(__('Contact'),['controller'=>'pages','action'=>'contact']) ?></li>
+             </ul>
+           </li>
+        </ul>
+      </span>
+      <span class="hidden-xs">
+      <a href="<?= $this->Url->build([
+            "controller" => "Events",
+            "action" => "index"
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('homepage.png',
+    array('alt' => __('Homepage'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Homepage'); ?></h4></a>
+    <div class='icon-with-dropdown'>
+      <a href="#<?php $this->Url->build([
+            "controller" => "Pages",
+            "action" => "volunteams"
+        ]); ?>" class="nav_icons navbarspace dropdown-toggle" align = 'middle' type="button"
+        data-toggle="dropdown" ><?php echo $this->Html->image('members.png',
+    array('alt' => __('Volunteams'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Volunteams'); ?><span class="caret"></span></h4>
 
-      </a>
-      <ul class="dropdown-menu">
-        <?php foreach($posts as $post): ?>
-          <li><a href="<?= $this->Url->build([
-              "controller" => "Posts",
-              "action" => "View",
-              $post['post_id']
-          ]); ?>"><?= $post['title']; ?></a></li>
+    </a>
+    <ul class="dropdown-menu">
+      <?php foreach($posts as $post): ?>
+        <li><a href="<?= $this->Url->build([
+            "controller" => "Posts",
+            "action" => "View",
+            $post['post_id']
+        ]); ?>"><?= $post['title']; ?></a></li>
 
-        <?php endforeach; ?>
-        <li><a href="http://www.ihtiyacharitasi.org/"><?= __('İhtiyaç Haritası') ?></a></li>
-      </ul>
-      </div>
-        <a href="<?= $this->Url->build([
-              "controller" => "Events",
-              "action" => "add"
-          ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('reusable-shopping-bag.png',
-      array('alt' => __('Add Event'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Add Event')?></h4></a>
-        <a href="#" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('https://cdn4.iconfinder.com/data/icons/files-8/24/Share-File_1-512.png',
-      array('alt' => __('Join Us'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Join Us'); ?></h4></a>
-        <a href="<?= $this->Url->build([
-              "controller" => "Pages",
-              "action" => "faq"
-          ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('notebook.png',
-      array('alt' =>  __('Frequently Asked Questions'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('FAQ'); ?></h4></a>
-        <a href="<?= $this->Url->build([
-              "controller" => "Pages",
-              "action" => "Contact"
-          ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('telephone-handle.png',
-      array('alt' => __('Contact'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Contact'); ?></h4></a>
+      <?php endforeach; ?>
+      <li><a href="http://www.ihtiyacharitasi.org/"><?= __('İhtiyaç Haritası') ?></a></li>
+    </ul>
+    </div>
+      <a href="<?= $this->Url->build([
+            "controller" => "Events",
+            "action" => "add"
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('reusable-shopping-bag.png',
+    array('alt' => __('Add Event'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Add Event')?></h4></a>
+
+      <a href="#" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('share-file.png',
+    array('alt' => __('Join Us'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Join Us'); ?></h4></a>
+      <a href="<?= $this->Url->build([
+            "controller" => "Pages",
+            "action" => "faq"
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('notebook.png',
+    array('alt' =>  __('Frequently Asked Questions'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('FAQ'); ?></h4></a>
+      <a href="<?= $this->Url->build([
+            "controller" => "Pages",
+            "action" => "Contact"
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('telephone-handle.png',
+    array('alt' => __('Contact'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Contact'); ?></h4></a>
+      </span>
     </div>
     <hr>
 </nav>

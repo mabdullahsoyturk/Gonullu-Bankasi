@@ -3,34 +3,37 @@
 		<?php $this->end(); ?>
 
 		<div class="alert alert-warning alert-dismissible" role="alert">
-    	Bu sayfa <strong>Gönüllü Bankası</strong>'nın işlevleriyle ilgili bilgiler ve sıkça sorulan soruları içerir. Eğer sorunuzun cevabını burada bulamazsanız bize mutlaka ulaşın. <br/>
-    	<strong><a href="gonullubankasi.org/contact">İletişim Bilgileri</a></strong>
+        <?= __('This page includes information about how Gönüllü Bankası works and frequently asked questions. If you cannot find the answer of your question, please contact us.') ?>     
+    	<strong><a href="gonullubankasi.org/contact"><?= __('Contact Details') ?></a></strong>
     </div>
 
     <hr>
-        <div class="faqHeader">Proje Yöneticileri</div>
+        <div class="faqHeader"><?= __('Project Owners') ?></div>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Kimler projesini ekleyip, gönüllü arayabilir?</a>
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    <?= __('Do I need to have a title to add a project in order to find volunteers?')?></a>
                 </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse">
                 <div class="panel-body">
-                    Üye olan herhangi bir kişi <strong>Gönüllü Bankası</strong>'na proje ekleyebilir. Proje yönetim kurulundan kabul aldığında <strong>Gönüllü Bankası</strong>'nda görünür hale gelir.
+                    <?= __('Anyone who is a member of Gonullu Bankasi can add projects to find volunteers, if the target of project is found valid by the Gonullu Bankasi committe.  ') ?>
                 </div>
             </div>
-        </div>
+        </div>	
 
 		<div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Projenin onay alıp almadığı kaç gün içinde belli olur?</a>
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    <?= __('How much time does it take Gonullu Bankasi committe to consider my application?') ?>         
+                    </a>
                 </h4>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse">
                 <div class="panel-body">
-                    Ortalama olarak başvuru yapıldıktan birkaç saat sonra gerekli bilgilendirme mail yolu ile yapılır.
+                    <?= __('It usually takes a few hours. The informing process is made via email.') ?>
                 </div>
             </div>
         </div>
@@ -38,17 +41,19 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Proje eklemek istiyorum. Bunun için aşamalar nelerdir?</a>
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    <?= __('I would like to add a project. What is the process for it?') ?>
+                    </a>
                 </h4>
             </div>
             <div id="collapseThree" class="panel-collapse collapse">
                 <div class="panel-body">
-                    Proje ekleme süreci gayet basit. Yapmanız gereken şeyler:
+                    <?= __('The application process is very simple.') ?>
                     <ul>
-                        <li>Üye olun.</li>
-                        <li>Hesabınızı aktif edin.</li>
-                        <li><strong>Proje ekle</strong> kısmına gidip projenizi ekleyin.</li>
-                        <li>Bir sonraki aşama onay aşamasıdır. Genellikle birkaç saat içinde geri dönüş yapılır.</li>
+                        <li><?= __('Sign up') ?></li>
+                        <li><?= __('Verify your account') ?></li>
+                        <li><?= __('<strong>Go to Add Event</strong>') ?></li>
+                        <li><?= __('The next step is approval process. It usually takes a few hours') ?></li>
                     </ul>
                 </div>
             </div>
@@ -57,27 +62,30 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Başvuru yapacak gönüllüleri kendim seçebilir miyim?</a>
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                    <?= __('Can I pick certain volunteers between volunteer candidates?') ?>         
+                    </a>
                 </h4>
             </div>
             <div id="collapseFour" class="panel-collapse collapse">
                 <div class="panel-body">
-                    Evet. Projenize başvuru yapan gönüllülerin geçmiş deneyimlerine ve diğer bilgilerine gönüllü adayının profiline girerek ulaşabilirsiniz.
+                    <?= __('Yes. You can also see the volunteering history of volunteer candidates') ?>
                 </div>
             </div>
         </div>
         <hr>
-        <div class="faqHeader">Gönüllüler</div>
+        <div class="faqHeader"><?= __('Volunteers') ?></div>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Gönüllülük yapmak istiyorum. Bunu yapabilmem için gereken aşamalar nelerdir?</a>
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                    <?= __('I want to be a volunteer. What is the process for it?') ?>
+                    </a>
                 </h4>
             </div>
             <div id="collapseFive" class="panel-collapse collapse">
                 <div class="panel-body">
-                    <strong>Gönüllü Bankası</strong>'nda gönüllülük yapmak gayet basittir. <strong>Başvur</strong> kısmında aktif ve gönüllüye ihtiyaç duyan projelere ulaşıp istediğiniz herhangi birine başvurabilirsiniz. <br/>
-                    Geri dönüş alma süreniz proje sahibinin kendi değerlendirme sürecine göre değişkenlik gösterebilir.
+                    <?= __('Being a volunteer via <strong>Gonullu Bankasi</strong> is very easy. You can find the projects that are looking for volunteers via Homepage and apply one of those project that you want to contribute') ?>
                 </div>
             </div>
         </div>

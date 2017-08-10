@@ -36,7 +36,7 @@
         <div class="single-product">
             <figure>
 
-                <?= $this->Html->image('/files/Events/image/'.$event->image, array('border' => '0', 'style'=> 'width:100%;height:100%')); ?>
+                <?= $this->Html->image('/files/Events/image/'.$event->image, array('border' => '0', 'style'=> 'width:100%;height:100%', 'class' => 'thumbnail')); ?>
 
             </figure>
 
@@ -45,13 +45,24 @@
             </h4>
 
             <h5>
+                <?= __('Event Owner'); ?>: <?= $this->Html->link(h($event->user->username), ['controller'=>'profiles', 'action'=>'view', $event->user->id]) ?>
+            </h5>
+
+            <h5>
                 <?= __('Address'); ?>: <?= $this->Html->link($event->address, ['action' => 'view', $event->id]) ?>
             </h5>
             <h5>
                 <?= __('Deadline'); ?>: <?= $event->deadline->nice(); ?>
             </h5>
-
-            <?= $this->Text->autoParagraph(h($event->description)); ?>
+            <?php
+              $description = explode("::", wordwrap(h(str_replace("\n", "", $event->description)), 200, "::"));
+              if(! empty($description[1])) {
+                  $description = $description[0]."...";
+              } else {
+                  $description = $description[0];
+              }
+            ?>
+            <?= $this->Text->autoParagraph($description); ?>
 
           <?= $this->Html->link(__('Details'), ['action' => 'view', $event->id]); ?>
         </div>
