@@ -97,10 +97,10 @@ class UsersTable extends Table
             ->allowEmpty('active');
 
         $validator
-            ->allowEmpty('first_name');
+            ->notEmpty('first_name');
 
         $validator
-            ->allowEmpty('last_name');
+            ->notEmpty('last_name');
 
         $validator
             ->allowEmpty('phone');
