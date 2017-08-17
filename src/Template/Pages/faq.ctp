@@ -4,7 +4,7 @@
 
 		<div class="alert alert-warning alert-dismissible" role="alert">
         <?= __('This page includes information about how Gönüllü Bankası works and frequently asked questions. If you cannot find the answer of your question, please contact us.') ?>     
-    	<strong><a href="gonullubankasi.org/contact"><?= __('Contact Details') ?></a></strong>
+    	<strong><a href="http://gonullubankasi.org/gonullu/pages/contact"><?= __('Contact Details') ?></a></strong>
     </div>
 
     <hr>
