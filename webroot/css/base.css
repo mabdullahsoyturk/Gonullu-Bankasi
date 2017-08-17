@@ -12,6 +12,12 @@
        .buttonss {
            text-align: right;
            margin-top: 35px;
+           font-family: 'Humbug', sans-serif;
+           font-weight: 300;
+           font-size: 1em;
+           list-style-type: none;
+           padding: 4px;
+           color: #888;
        }
 
        .header_name {
@@ -94,6 +100,25 @@
 
        }
 
+       .thumbnail img {
+            width: 100%;
+        }
+
+        .thumbnail {
+            padding:0;
+            position: relative;
+             width: 250px;
+            height: 200px;
+            overflow: hidden;
+        } 
+
+        .thumbnail .caption-full{
+            padding:9px;
+        }
+
+        .details{
+          margin-bottom: 15px;
+        }
 
 
        /*footer bottom*/

@@ -26,23 +26,27 @@
   }
 </style>
 
-    <div class="events index large-8 medium-8 columns content">
+  <div class="container">
+
+    <div class="row text-center" style="display:flex; flex-wrap:wrap;">
       <?php $this->start('page_title'); ?>
       <h1><?= __('Call for Volunteers') ?></h1>
       <?php $this->end(); ?>
 
 
         <?php foreach ($events as $event): ?>
-        <div class="single-product">
-            <figure>
+        <div class="col-md-3 col-sm-6">
+           
+        <div class="thumbnail">
 
-                <?= $this->Html->image('/files/Events/image/'.$event->image, array('border' => '0', 'style'=> 'width:100%;height:100%', 'class' => 'thumbnail')); ?>
+                <?= $this->Html->image('/files/Events/image/'.$event->image, array('border' => '0', 'style'=> 'width:100%;height:100%', 'class' => 'responsive')); ?>
 
-            </figure>
+          </div>
 
-            <h4>
-                <?= $this->Html->link($event->title, ['action' => 'view', $event->id]) ?>
-            </h4>
+            <div class="caption">
+
+                <h4><?= $this->Html->link($event->title, ['action' => 'view', $event->id]) ?></h4>
+            </div>
 
             <h5>
                 <?= __('Event Owner'); ?>: <?= $this->Html->link(h($event->user->username), ['controller'=>'profiles', 'action'=>'show', $event->user->id]) ?>
@@ -64,11 +68,12 @@
             ?>
             <?= $this->Text->autoParagraph($description); ?>
 
-          <?= $this->Html->link(__('Details'), ['action' => 'view', $event->id]); ?>
+          <div class="details"><?= $this->Html->link(__('Details'), ['action' => 'view', $event->id]); ?></div>
         </div>
 
         <?php endforeach; ?>
     </div>
+  </div>
         <div class="paginator">
             <ul class="pagination">
                 <?= $this->Paginator->first('<< ' . __('first')) ?>
@@ -90,9 +95,9 @@
   <div class="pane-content">
     <div class="fieldable-panels-pane">
     <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">
-      <p>
-      <?= $this->Html->image('start.jpg', array('border' => '0', 'style'=> 'width:360px;height:220px;')); ?>
-</p>
+      
+      <?= $this->Html->image('start.jpg', array('class' => 'rounded', 'border' => '0', 'style'=> 'width:360px;height:220px;')); ?>
+
 <h4><a href="javascript:void(0)"><?= __('Be a part of the change!') ?></a></h4>
 <p><?= __('Apply to the projects that need volunteers and become a part of their dream.') ?></p>
 <p> <br></p>
@@ -109,9 +114,9 @@
 
   <div class="pane-content">
     <div class="fieldable-panels-pane">
-    <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>
-<?= $this->Html->image('serve.jpg', array('border' => '0', 'style'=> 'width:360px;height:220px;')); ?>
-    </p><h4><a href="javascript:void(0)"><?= __('Be the change itself') ?></a></h4>
+    <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">
+<?= $this->Html->image('serve.jpg', array('class' => 'rounded','border' => '0', 'style'=> 'width:360px;height:220px;')); ?>
+    <h4><a href="javascript:void(0)"><?= __('Be the change itself') ?></a></h4>
     <p><?= __('Share your project and find your dream mates!') ?></p>
     </div></div></div></div>
   </div>
@@ -124,10 +129,10 @@
 
   <div class="pane-content">
     <div class="fieldable-panels-pane">
-    <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p>
-      <?= $this->Html->image('explore.jpg', array('border' => '0', 'style'=> 'width:360px;height:220px;')); ?>
+    <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">
+      <?= $this->Html->image('explore.jpg', array('class' => 'rounded','border' => '0', 'style'=> 'width:360px;height:220px;')); ?>
 
-      </p><h4><a href="javascript:void(0)"><?= __('Explore') ?></a></h4>
+      <h4><a href="javascript:void(0)"><?= __('Explore') ?></a></h4>
     <p><?= __('Explore yourself and decide your role for the future!') ?></p>
     </div></div></div></div>
   </div>
