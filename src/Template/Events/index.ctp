@@ -58,15 +58,8 @@
             <h5>
                 <?= __('Deadline'); ?>: <?= $event->deadline->nice(); ?>
             </h5>
-            <?php
-              $description = explode("::", wordwrap(h(str_replace("\n", "", $event->description)), 200, "::"));
-              if(! empty($description[1])) {
-                  $description = $description[0]."...";
-              } else {
-                  $description = $description[0];
-              }
-            ?>
-            <?= $this->Text->autoParagraph($description); ?>
+
+            <?= $this->Text->autoParagraph($this->Text->truncate($event->description, 200, ['exact'=>false, 'html'=>true])); ?>
 
           <div class="details"><?= $this->Html->link(__('Details'), ['action' => 'view', $event->id]); ?></div>
         </div>

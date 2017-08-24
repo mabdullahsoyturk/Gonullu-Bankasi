@@ -25,7 +25,7 @@
                         <span class="direct-chat-name" ng-class="{'pull-left':message.me, 'pull-right':!message.me}">{{ message.username }}</span>
                         <span class="direct-chat-timestamp " ng-class="{'pull-left':!message.me, 'pull-right':message.me}">{{ message.date }}</span>
                     </div>
-                    <img class="direct-chat-img" ng-src="{{message.userImage}}" alt="">
+                    <a href="<?= $this->Url->build(['controller'=>'profiles','action'=>'show'])?>/{{message.user_id}}"> <img class="direct-chat-img" ng-src="{{message.userImage}}" alt=""></a>
                     <div class="direct-chat-text right">
                         <span>{{ message.message }}</span>
                     </div>
