@@ -85,7 +85,7 @@ class MessagesController extends AppController
 
         $msgTable = TableRegistry::get('Messages');
         $messages = $msgTable->find()
-                            ->select(['id'=>'messages.id',
+                            ->select(['id'=>'Messages.id',
                                       'user_id',
                                       'message',
                                       'userImage' => 'image',
