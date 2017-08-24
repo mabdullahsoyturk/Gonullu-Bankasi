@@ -48,6 +48,7 @@ class ProfilesController extends AppController
         $this->set(compact('department'));
         $this->set(compact('about'));
         $this->set(compact('image'));
+        $this->set(compact('id'));
       }
     }
 

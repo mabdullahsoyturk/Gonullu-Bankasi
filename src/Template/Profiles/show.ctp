@@ -1,10 +1,14 @@
 <?php $this->append('page_title'); ?>
-<h1><?= h($first_name . " " . $last_name) ?></h1>
+<h1><?= h($first_name . " " . $last_name) ?>
+    <?php if($id != $this->request->Session()->read('Auth.User')['id']): ?>
+    <small><?= $this->Html->link(_('Send a message'), ['controller'=>'messages','action'=>'with', $id]);?></small></h1>
+    <?php endif; ?>
 <?php $this->end(); ?>
 <div class="row profile-row">
   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 col-lg-offset-0 col-md-offset-0 col-sm-offset-2 col-xs-offset-0" style="border-right: 1px solid #eee; text-align:center">
     <?php if($image != null) echo $this->Html->image('/files/Users/image/'.$image, array('border' => '0', 'style'=> 'width:100%')); else echo $this->Html->image("blank-profile-picture.png");  ?>
   </div>
+
   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
     <div style="padding-top:10px">
       <h4 class="front"><?= h($first_name . " " . $last_name) ?></h4>

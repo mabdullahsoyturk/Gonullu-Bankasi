@@ -234,3 +234,14 @@
          background-position: center -200px;
          background-attachment: scroll;
        }
+       .media-body a {
+           color: #747474;
+       }
+
+       .media-body a h4 {
+           color: #1a1a1a
+       }
+
+       .media-body a:hover {
+           text-decoration: none!important;
+       }

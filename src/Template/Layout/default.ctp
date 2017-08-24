@@ -47,7 +47,9 @@ $cakeDescription = 'Gönüllü Bankası';
       <span class="hidden-xs">
         <?php if($this->request->Session()->read('Auth.User')): ?>
           <?= $this->Html->link(__('Add Post'),['controller'=>'Posts','action'=>'add'], ['class' => 'btn btn-link buttonn']) ?>
-          <?= $this->Html->link(__('Profile'),['controller'=>'Profiles','action'=>'edit'], ['class' => 'btn btn-link buttonn']) ?>
+          <?= $this->Html->link(__('Messages'),['controller'=>'Messages','action'=>'index'], ['class' => 'btn btn-link buttonn']) ?>
+
+            <?= $this->Html->link(__('Profile'),['controller'=>'Profiles','action'=>'edit'], ['class' => 'btn btn-link buttonn']) ?>
           <a href="<?= $this->Url->build([
                 "controller" => "Users",
                 "action" => "logout"
