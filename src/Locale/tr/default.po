@@ -1,0 +1,1049 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-08-09 11:42+0000\n"
+"PO-Revision-Date: 2017-08-17 16:14+0300\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.3\n"
+"Last-Translator: \n"
+"Language: tr\n"
+
+#: Controller/EventApplicationsController.php:106
+msgid "The event application has been saved."
+msgstr "Etkinlik başvurusu kaydedildi."
+
+#: Controller/EventApplicationsController.php:110
+msgid "The event application could not be saved. Please, try again."
+msgstr "Etkinlik başvurusu kaydedilemedi. Lütfen tekrar deneyiniz."
+
+#: Controller/EventApplicationsController.php:130
+msgid "The event application has been deleted."
+msgstr "Etkinlik başvurusu silindi."
+
+#: Controller/EventApplicationsController.php:132
+msgid "The event application could not be deleted. Please, try again."
+msgstr "Etkinlik başvurusu silinemedi. Lütfen tekrar deneyiniz."
+
+#: Controller/EventApplicationsController.php:144
+msgid "You have successfully approved the application"
+msgstr "Başvuru onaylandı"
+
+#: Controller/EventApplicationsController.php:147
+msgid "The application could not be approved. Please, try again."
+msgstr "Başvuru doğrulanamadı. Lütfen tekrar deneyiniz."
+
+#: Controller/EventsController.php:98;124
+msgid "The event has been saved."
+msgstr "Etkinlik kaydedildi."
+
+#: Controller/EventsController.php:102;128
+msgid "The event could not be saved. Please, try again."
+msgstr "Etkinlik kaydedilemedi. Lütfen tekrar deneyiniz."
+
+#: Controller/EventsController.php:147
+msgid "The event has been deleted."
+msgstr "Etkinlik silindi."
+
+#: Controller/EventsController.php:149
+msgid "The event could not be deleted. Please, try again."
+msgstr "Etkinlik silinemedi. Lütfen tekrar deneyiniz."
+
+#: Controller/PostContentsController.php:60;86
+msgid "The post content has been saved."
+msgstr "Girdi içeriği kaydedildi."
+
+#: Controller/PostContentsController.php:64;90
+#: Controller/PostsController.php:93;144
+msgid "The post content could not be saved. Please, try again."
+msgstr "Girdi içeriği kaydedilemedi. Lütfen tekrar deneyiniz."
+
+#: Controller/PostContentsController.php:109
+msgid "The post content has been deleted."
+msgstr "Girdi içeriği silindi."
+
+#: Controller/PostContentsController.php:111
+msgid "The post content could not be deleted. Please, try again."
+msgstr "Girdi içeriği silinemedi. Lütfen tekrar deneyiniz."
+
+#: Controller/PostsController.php:98;149
+msgid "The post has been saved."
+msgstr "Girdi kaydedildi."
+
+#: Controller/PostsController.php:102;153
+msgid "The post could not be saved. Please, try again."
+msgstr "Girdi kaydedilemedi. Lütfen tekrar deneyiniz."
+
+#: Controller/PostsController.php:172
+msgid "The post has been deleted."
+msgstr "Girdi silindi."
+
+#: Controller/PostsController.php:174
+msgid "The post could not be deleted. Please, try again."
+msgstr "Girdi silinemedi. Lütfen tekrar deneyiniz."
+
+#: Controller/ProfilesController.php:64
+msgid "Your profile has been updated"
+msgstr "Profil güncellendi"
+
+#: Controller/ProfilesController.php:67
+msgid "Your error could not be updated"
+msgstr "Profile güncellenemedi. Lütfen tekrar deneyiniz"
+
+#: Controller/UsersController.php:115;142
+msgid "The user has been saved."
+msgstr "Kullanıcı kaydedildi."
+
+#: Controller/UsersController.php:120;146
+msgid "The user could not be saved. Please, try again."
+msgstr "Kullanıcı kaydedilemedi. Lütfen tekrar deneyiniz."
+
+#: Controller/UsersController.php:165
+msgid "The user has been deleted."
+msgstr "Kullanıcı silindi."
+
+#: Controller/UsersController.php:167
+msgid "The user could not be deleted. Please, try again."
+msgstr "Kullanıcı silinemedi. Lütfen tekrar deneyiniz."
+
+#: Template/EventApplications/edit.ctp:10
+msgid "Edit Event Application"
+msgstr "Etkinlik Başvurusunu Düzenle"
+
+#: Template/EventApplications/edit.ctp:18 Template/Posts/add.ctp:29
+#: Template/Posts/edit.ctp:29 Template/Users/add.ctp:22
+#: Template/Users/edit.ctp:48
+msgid "Submit"
+msgstr "Gönder"
+
+#: Template/EventApplications/index.ctp:7
+msgid "Applications to"
+msgstr "Başvurular"
+
+#: Template/EventApplications/index.ctp:14
+msgid "No applications submitted yet"
+msgstr "Henüz hiçbir başvuru yapılmadı"
+
+#: Template/EventApplications/index.ctp:21 Template/Users/view.ctp:25
+msgid "Username"
+msgstr "Kullanıcı Adı"
+
+#: Template/EventApplications/index.ctp:25
+msgid "Application Date"
+msgstr "Başvuru Tarihi"
+
+#: Template/EventApplications/index.ctp:29
+#: Template/EventApplications/view.ctp:21 Template/Events/add.ctp:18
+#: Template/Events/view.ctp:18;85 Template/Posts/add.ctp:19;23
+#: Template/Posts/edit.ctp:19;23 Template/Users/view.ctp:101;132;170
+msgid "Description"
+msgstr "Detay"
+
+#: Template/EventApplications/index.ctp:33
+#: Template/EventApplications/view.ctp:25 Template/Users/view.ctp:103
+msgid "Status"
+msgstr "Durum"
+
+#: Template/EventApplications/index.ctp:34
+#: Template/EventApplications/view.ctp:26 Template/Events/view.ctp:31
+msgid "Approved"
+msgstr "Onaylandı"
+
+#: Template/EventApplications/index.ctp:34
+#: Template/EventApplications/view.ctp:26
+msgid "Not Approved"
+msgstr "Onaylanmadı"
+
+#: Template/EventApplications/index.ctp:37 Template/Profiles/Show.ctp:37
+msgid "See"
+msgstr "Tamamını gör"
+
+#: Template/EventApplications/index.ctp:47 Template/Events/index.ctp:67
+#: Template/Posts/index.ctp:36 Template/Users/index.ctp:74
+msgid "first"
+msgstr "ilk"
+
+#: Template/EventApplications/index.ctp:48 Template/Events/index.ctp:68
+#: Template/Posts/index.ctp:37 Template/Users/index.ctp:75
+msgid "previous"
+msgstr "önceki"
+
+#: Template/EventApplications/index.ctp:50 Template/Events/index.ctp:70
+#: Template/Posts/index.ctp:39 Template/Users/index.ctp:77
+msgid "next"
+msgstr "sonraki"
+
+#: Template/EventApplications/index.ctp:51 Template/Events/index.ctp:71
+#: Template/Posts/index.ctp:40 Template/Users/index.ctp:78
+msgid "last"
+msgstr "son"
+
+#: Template/EventApplications/index.ctp:54 Template/Events/index.ctp:74
+#: Template/Posts/index.ctp:42 Template/Users/index.ctp:80
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+"{{pages}} sayfa arasından {{page}}.sayfa; {{count}} kayıt arasından "
+"{{current}} kayıt gösteriliyor"
+
+#: Template/EventApplications/view.ctp:9
+msgid "User"
+msgstr "Kullanıcı"
+
+#: Template/EventApplications/view.ctp:13
+msgid "Event"
+msgstr "Etkinlik"
+
+#: Template/EventApplications/view.ctp:17
+msgid "Application Time"
+msgstr "Başvuru Tarihi"
+
+#: Template/EventApplications/view.ctp:30
+msgid "Approve it"
+msgstr "Onayla"
+
+#: Template/Events/add.ctp:7
+msgid "Create an event"
+msgstr "Etkinlik Oluştur"
+
+#: Template/Events/add.ctp:17 Template/Posts/add.ctp:18;22
+#: Template/Posts/edit.ctp:18;22 Template/Users/view.ctp:131
+msgid "Title"
+msgstr "Başlık"
+
+#: Template/Events/add.ctp:19 Template/Users/view.ctp:73;133
+msgid "Image"
+msgstr "Resim"
+
+#: Template/Events/add.ctp:20 Template/Events/index.ctp:52
+#: Template/Events/view.ctp:21 Template/Users/view.ctp:134
+msgid "Address"
+msgstr "Adres"
+
+#: Template/Events/add.ctp:25 Template/Pages/sample.ctp:29
+#: Template/Profiles/Show.ctp:29
+msgid "Event date"
+msgstr "Etkinlik Tarihi"
+
+#: Template/Events/add.ctp:63
+msgid "Save"
+msgstr "Kaydet"
+
+#: Template/Events/edit.ctp:10
+msgid "Edit the event"
+msgstr "Etkinliği Düzenle"
+
+#: Template/Events/index.ctp:31
+msgid "Call for Volunteers"
+msgstr "Gönüllü Çağrıları"
+
+#: Template/Events/index.ctp:48
+msgid "Event Owner"
+msgstr "Etkinlik Sahibi"
+
+#: Template/Events/index.ctp:55 Template/Events/view.ctp:24
+#: Template/Users/view.ctp:135
+msgid "Deadline"
+msgstr "Bitiş Zamanı"
+
+#: Template/Events/index.ctp:60
+msgid "Details"
+msgstr "Detaylar"
+
+#: Template/Events/index.ctp:89
+msgid "Be a part of the change!"
+msgstr "Değişimin Parçası Ol!"
+
+#: Template/Events/index.ctp:90
+msgid ""
+"Apply to the projects that need volunteers and become a part of their dream."
+msgstr ""
+"Gönüllüye ihtiyaç duyan projelere başvur ve onların hayallerinin bir parçası "
+"ol."
+
+#: Template/Events/index.ctp:107
+msgid "Be the change itself"
+msgstr "Değişimin Kendisi Ol"
+
+#: Template/Events/index.ctp:108
+msgid "Share your project and find your dream mates!"
+msgstr "Projeni paylaş ve beraber yürüyeceğin insanları bul!"
+
+#: Template/Events/index.ctp:123
+msgid "Explore"
+msgstr "Keşfet"
+
+#: Template/Events/index.ctp:124
+msgid "Explore yourself and decide your role for the future!"
+msgstr "Kendini keşfederek geleceğin nasıl bir parçası olacağına karar ver!"
+
+#: Template/Events/view.ctp:29
+msgid "Call for"
+msgstr "Çağrı Sayısı"
+
+#: Template/Events/view.ctp:30;48
+msgid "Applied"
+msgstr "Başvuruldu"
+
+#: Template/Events/view.ctp:32
+msgid "Left"
+msgstr "Kalan"
+
+#: Template/Events/view.ctp:44;45
+msgid "I want to apply"
+msgstr "Başvurmak Istiyorum"
+
+#: Template/Events/view.ctp:50
+msgid "Login to apply"
+msgstr "Başvurabilmek için giriş yap"
+
+#: Template/Events/view.ctp:53
+msgid "See current applications"
+msgstr "Başvuruları Gör"
+
+#: Template/Events/view.ctp:73
+msgid "Application"
+msgstr "Başvuru"
+
+#: Template/Events/view.ctp:81
+msgid "Please fill the form now"
+msgstr "Lütfen şimdi formu doldurun"
+
+#: Template/Events/view.ctp:86
+msgid "Explain yourself briefly"
+msgstr "Kendinizi kısaca anlatın"
+
+#: Template/Events/view.ctp:89
+msgid ""
+"Explain who you are. Why do you want to apply to this? What makes you "
+"different bla bla."
+msgstr ""
+"Kim olduğunuzu açıklayın. Neden bu projeye başvurmak istiyorsunuz? Sizi "
+"farklı kılan şey ne."
+
+#: Template/Events/view.ctp:96
+msgid "Thanks for application."
+msgstr "Başvuru için teşekkürler."
+
+#: Template/Events/view.ctp:113
+msgid "Description should be filled."
+msgstr "Detaylar doldurulmalı."
+
+#: Template/Events/view.ctp:122
+msgid "Application successfully submitted"
+msgstr "Başvuru başarılı bir şekilde gönderildi"
+
+#: Template/Events/view.ctp:127
+msgid "An error occured"
+msgstr "Bir hata oluştu"
+
+#: Template/Layout/default.ctp:49 Template/Posts/add.ctp:9
+#: Template/Posts/edit.ctp:9
+msgid "Add Post"
+msgstr "Konu Ekle"
+
+#: Template/Layout/default.ctp:50
+msgid "Profile"
+msgstr "Profil"
+
+#: Template/Layout/default.ctp:55
+msgid "Log out"
+msgstr "Çıkış Yap"
+
+#: Template/Layout/default.ctp:61
+msgid "Sign Up"
+msgstr "Kayıt Ol"
+
+#: Template/Layout/default.ctp:65
+msgid "Sign In"
+msgstr "Giriş Yap"
+
+#: Template/Layout/default.ctp:128
+msgid "Homepage"
+msgstr "Anasayfa"
+
+#: Template/Layout/default.ctp:135
+msgid "Volunteams"
+msgstr "Ekibimiz"
+
+#: Template/Layout/default.ctp:147 Template/Pages/volunteams.ctp:19
+msgid "İhtiyaç Haritası"
+msgstr "Ihtiyac Haritasi"
+
+#: Template/Layout/default.ctp:154
+msgid "Add Event"
+msgstr "Etkinlik Ekle"
+
+#: Template/Layout/default.ctp:156
+msgid "Join Us"
+msgstr "Bize Katılın"
+
+#: Template/Layout/default.ctp:161 Template/Pages/faq.ctp:2
+msgid "Frequently Asked Questions"
+msgstr "Sık Sorulan Sorular"
+
+#: Template/Layout/default.ctp:161
+msgid "FAQ"
+msgstr "SSS"
+
+#: Template/Layout/default.ctp:166
+msgid "Contact"
+msgstr "İletişim"
+
+#: Template/Layout/default.ctp:176
+msgid "Be a part of the change! "
+msgstr "Değişimin bir parçası olun "
+
+#: Template/Layout/default.ctp:177
+msgid ""
+"You are welcome to join Gonullu Bank to make a difference in the society"
+msgstr "Toplumda bir fark yaratmak için Gönüllü Bankası'na hoş geldiniz"
+
+#: Template/Layout/default.ctp:204
+msgid "© 2017, AGU Developers, All rights reserved"
+msgstr "© 2017, AGU Geliştiricileri, Bütün hakları saklıdır"
+
+#: Template/Layout/default.ctp:214
+msgid "Gönüllü Bankası"
+msgstr ""
+
+#: Template/Layout/default.ctp:214
+msgid "Abdullah Gül Üniversitesi"
+msgstr ""
+
+#: Template/Layout/error.ctp:35 Template/Error/error400.ctp:36
+#: Template/Error/error500.ctp:41
+msgid "Error"
+msgstr "Hata"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Geri"
+
+#: Template/Pages/contact.ctp:2
+msgid "Contact Us"
+msgstr "Bize Ulaşın"
+
+#: Template/Pages/contact.ctp:11
+msgid "Contact us <small>You can send us message anytime you want</small>"
+msgstr "Bize ulaşın <small>Her zaman iletişime geçebilirsiniz</small>"
+
+#: Template/Pages/contact.ctp:25 Template/Users/view.ctp:169
+msgid "Name"
+msgstr "İsminiz"
+
+#: Template/Pages/contact.ctp:30
+msgid "Email Adress"
+msgstr "Email Adresi"
+
+#: Template/Pages/contact.ctp:38
+msgid "Subject"
+msgstr "Konu"
+
+#: Template/Pages/contact.ctp:40
+msgid "Select one:"
+msgstr "Birini Seç:"
+
+#: Template/Pages/contact.ctp:41
+msgid "Adding events"
+msgstr "Etkinlik Ekleme"
+
+#: Template/Pages/contact.ctp:42
+msgid "Suggestions"
+msgstr "Tavsiyeler"
+
+#: Template/Pages/contact.ctp:43
+msgid "Product support"
+msgstr "Ürün Desteği"
+
+#: Template/Pages/contact.ctp:50
+msgid "Message"
+msgstr "Mesaj"
+
+#: Template/Pages/contact.ctp:57
+msgid "Send Message"
+msgstr "Mesaj Gönder"
+
+#: Template/Pages/contact.ctp:65
+msgid "Ofisimiz"
+msgstr ""
+
+#: Template/Pages/contact.ctp:67
+msgid "Abdullah Gul University"
+msgstr "Abdullah Gül Üniversitesi"
+
+#: Template/Pages/contact.ctp:68
+msgid "Sümer Campus"
+msgstr "Sümer Kampüsü"
+
+#: Template/Pages/contact.ctp:69
+msgid "Kayseri, Turkey"
+msgstr "Kayseri,Türkiye"
+
+#: Template/Pages/contact.ctp:75
+msgid "Mail adresimiz"
+msgstr ""
+
+#: Template/Pages/faq.ctp:6
+msgid ""
+"This page includes information about how Gönüllü Bankası works and "
+"frequently asked questions. If you cannot find the answer of your question, "
+"please contact us."
+msgstr ""
+"Bu sayfa <strong>Gönüllü Bankası</strong>'nın işlevleriyle ilgili bilgiler "
+"ve sıkça sorulan soruları içerir. Eğer sorunuzun cevabını burada "
+"bulamazsanız bize mutlaka ulaşın. <br/><strong>."
+
+#: Template/Pages/faq.ctp:7
+msgid "Contact Details"
+msgstr "İletişim Bilgileri"
+
+#: Template/Pages/faq.ctp:11
+msgid "Project Owners"
+msgstr "Proje Yöneticileri"
+
+#: Template/Pages/faq.ctp:16
+msgid "Do I need to have a title to add a project in order to find volunteers?"
+msgstr "Kimler projesini ekleyip, gönüllü arayabilir?"
+
+#: Template/Pages/faq.ctp:21
+msgid ""
+"Anyone who is a member of Gonullu Bankasi can add projects to find "
+"volunteers, if the target of project is found valid by the Gonullu Bankasi "
+"committe.  "
+msgstr ""
+"Üye olan herhangi bir kişi <strong>Gönüllü Bankası</strong>'na proje "
+"ekleyebilir. Proje yönetim kurulundan kabul aldığında <strong>Gönüllü "
+"Bankası</strong>'nda görünür hale gelir "
+
+#: Template/Pages/faq.ctp:30
+msgid ""
+"How much time does it take Gonullu Bankasi committe to consider my "
+"application?"
+msgstr "Projenin onay alıp almadığı kaç gün içinde belli olur?"
+
+#: Template/Pages/faq.ctp:45
+msgid "I would like to add a project. What is the process for it?"
+msgstr "Proje eklemek istiyorum. Bunun için aşamalar nelerdir?"
+
+#: Template/Pages/faq.ctp:51
+msgid "The application process is very simple."
+msgstr "Proje ekleme süreci gayet basit."
+
+#: Template/Pages/faq.ctp:53
+msgid "Sign up"
+msgstr "Üye ol"
+
+#: Template/Pages/faq.ctp:54
+msgid "Verify your account"
+msgstr "Hesabınızı aktif edin"
+
+#: Template/Pages/faq.ctp:55
+msgid "<strong>Go to Add Event</strong>"
+msgstr "<strong>Etkinlik ekle</strong> kısmına gidip projenizi ekleyin"
+
+#: Template/Pages/faq.ctp:56
+msgid "The next step is approval process. It usually takes a few hours"
+msgstr ""
+"Bir sonraki aşama onay aşamasıdır. Genellikle birkaç saat içinde geri dönüş "
+"yapılır"
+
+#: Template/Pages/faq.ctp:66
+msgid "Can I pick certain volunteers between volunteer candidates?"
+msgstr "Başvuru yapacak gönüllüleri kendim seçebilir miyim?"
+
+#: Template/Pages/faq.ctp:72
+msgid "Yes. You can also see the volunteering history of volunteer candidates"
+msgstr ""
+"Evet. Projenize başvuru yapan gönüllülerin geçmiş deneyimlerine ve diğer "
+"bilgilerine gönüllü adayının profiline girerek ulaşabilirsiniz"
+
+#: Template/Pages/faq.ctp:77
+msgid "Volunteers"
+msgstr "Gönüllüler"
+
+#: Template/Pages/faq.ctp:82
+msgid "I want to be a volunteer. What is the process for it?"
+msgstr ""
+"Gönüllülük yapmak istiyorum. Bunu yapabilmem için gereken aşamalar nelerdir?"
+
+#: Template/Pages/faq.ctp:88
+msgid ""
+"Being a volunteer via <strong>Gonullu Bankasi</strong> is very easy. You can "
+"find the projects that are looking for volunteers via Homepage and apply one "
+"of those project that you want to contribute"
+msgstr ""
+"<strong>Gönüllü Bankası</strong>'nda gönüllülük yapmak gayet basittir. "
+"<strong>Başvur</strong> kısmında aktif ve gönüllüye ihtiyaç duyan projelere "
+"ulaşıp istediğiniz herhangi birine başvurabilirsiniz. <br/>Geri dönüş alma "
+"süreniz proje sahibinin kendi değerlendirme sürecine göre değişkenlik "
+"gösterebilir"
+
+#: Template/Pages/how_it_works.ctp:2
+msgid "How it works?"
+msgstr "Nasıl Çalışır?"
+
+#: Template/Pages/how_it_works.ctp:5
+msgid "Misyonumuz"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:8
+msgid ""
+"Yerelde ve ulusal da gönüllülük faaliyetlerini her türlü maddi ve manevi "
+"ihtiyaçlarını karşılayabilecek ve onların başarıya ulaşabilmesi için gerekli "
+"deneyimlerim paylaşılabilceği tarafsız çalışmalarıyla alanında öncü ve çatı "
+"bir kuruluş oluşturmak."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:11
+msgid "Vizyonumuz"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:14
+msgid ""
+"Gönüllülük  faaliyetlerine marka değeri katarak uluslararası alanda öncü bir "
+"topluluk haline gelmek."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:17
+msgid "Amaçlarımız"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:22
+msgid ""
+"Üniversitemizde yürütülen gönüllülük faaliyetleri arasında koordinasyonu "
+"sağlamak."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:23
+msgid "Gönüllülük faaliyetlerine gerekli fon desteğini sağlamak."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:24
+msgid ""
+"Gönüllülük faaliyetlerinde rol almak isteyen öğrenciler ile gönüllü proje "
+"çalışmalarında bulunan ekipler arasında köprü görevi görmek."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:25
+msgid ""
+"Ulusal ve uluslarası platform da gönüllük faaliyetlerinin "
+"yaygınlaştırılmasını sağlamak."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:26
+msgid ""
+"Gönüllü Bankasının marka değerinin oluşturması konusunda çalışmalar yapmak."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:27
+msgid ""
+"STK’lar ve gönüllülük faaliyetleri yürüten kurum ve kuruluşlar ile ortak "
+"çalışmalar yürütmek."
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:32
+msgid "Gönüllülük Faaliyetlerimiz"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:35
+msgid "SET (Sevgi, Emek, Tebessüm)"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:36 Template/Pages/volunteams.ctp:5
+msgid "SivilLab"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:37
+msgid "İH (İhtiyaç Haritası)"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:38
+msgid "Genç Bank"
+msgstr ""
+
+#: Template/Pages/how_it_works.ctp:39
+msgid "AGÜ Öğrenci Kulüpleri"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:12;16;20;24
+msgid "Student Clubs"
+msgstr "Öğrenci Kulüpleri"
+
+#: Template/Pages/ogrenci_kulupleri.ctp:41
+msgid "Öğrenci Kulüpleri"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:42
+msgid ""
+"Üniversite içerisindeki öğrenci kulüpleri yaptıkları çalışmalar konusunda "
+"Abdullah Gül Üniversitesi yönetimi tarafından desteklenmektedirler. Her "
+"kulüp aktivitesini misyonlarına uygun sırasıyla belli bir perspektif ve amaç "
+"içerisinde yürütür. Bunun akabinde üniversite içerisinde yıl boyunca belli "
+"kulüplerin çatısı altında renkli etkinlikler ve gönüllülük faaliyetleri "
+"sürdürülür. Abdullah Gül Üniversitesi öğrenci mevcudu az ve öğrencileri "
+"genel kapsamda yoğun bir eğitim içerisinde olduklarından etkinliklerin gerek "
+"hazırlanışına yardımcı olacak gerek sadece katılımcı olacak gönüllülere "
+"ihtiyaç oluşmuştur.\n"
+"Yıl içerisinde Kulüpler Birliği Konseyinde aktif yer alan ve gönüllülük "
+"çalışmaları yürüten bazı kulüpler Gönüllü Bankasında yer almak üzere "
+"seçilmiştir. Linklere tıklayarak bu kulüpler ve yaptıkları çalışmalar "
+"hakkında daha fazla bilgi edinebilirsiniz.\n"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:50 Template/Pages/volunteams.ctp:36
+msgid "AGÜ Bilim ve Teknoloji Kulübü"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:51 Template/Pages/volunteams.ctp:37
+msgid "AGÜ Fikir Kulübü"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:52 Template/Pages/volunteams.ctp:38
+msgid "AGU Yapı Kulübü"
+msgstr ""
+
+#: Template/Pages/ogrenci_kulupleri.ctp:53 Template/Pages/volunteams.ctp:39
+msgid "AGU İşletme Kulübü"
+msgstr ""
+
+#: Template/Pages/sample.ctp:28 Template/Profiles/Show.ctp:28
+msgid "Event name"
+msgstr "Etkinlik İsmi"
+
+#: Template/Pages/sample.ctp:44 Template/Profiles/Show.ctp:46
+msgid "{1}{2}{3} events"
+msgstr "Etkinlikler"
+
+#: Template/Pages/sample.ctp:45 Template/Profiles/Show.ctp:47
+msgid "{0}{1}{2} votes"
+msgstr "Oylar"
+
+#: Template/Pages/sivillab.ctp:12;16;20;24;28;46
+msgid "Sivil Lab"
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:48
+msgid "SivilLAB"
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:49
+msgid ""
+"SivilLAB, Robert Bosch Stiftung ve Goethe-Institut Ankara’nın ortak olarak "
+"düzenlediği programdır. Programın yürütüldüğü şehirlerdeki yerel aktörlerle "
+"birlikte projeler geliştirmeyi ve Türkiye’deki sosyal aktiviteleri "
+"desteklemeyi amaçlıyor.\n"
+"\n"
+"\tMayıs 2016’da başlayan SivilLAB programı; Eskişehir, İstanbul ve "
+"Kayseri’deki yerel proje geliştirme koordinatörleri tarafından yürütülüyor. "
+"Koordinatörler, kendilerine ev sahipliği yapan kurumlarla birlikte, "
+"gençlerin katılımını güçlendirmek ve sınırlar ötesi aktörleri bir araya "
+"getirmek üzere yenilikçi yaklaşımlar geliştiriyorlar.\n"
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:59
+msgid ""
+"Bu dönem SivilLab, temel olarak Kayseride ki yerel halk ile mülteciler "
+"arasında iletişim köprüsü kurma amaçlı projeler kapsamında çalıştı. Bu "
+"hedefe ulaşmak için OAK adı verilen Suriyeli çocuklara Türkçe eğitim "
+"fırsatları tanıyan ve kadınlara uğraşlar bulan hayır kurumu ile iş birliği "
+"yaptı. OAK ile işbirliğinde yürütülen çalışmalar aşağıda belirtilmiş "
+"bulunmakta:\n"
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:68
+msgid "Takım için Atölye Çalışmaları."
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:69
+msgid "Komşu Mutfağım."
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:70
+msgid "Suriyeli Gençlerin AGÜ Ziyareti."
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:71
+msgid "Komşu Mutfağım 2"
+msgstr ""
+
+#: Template/Pages/sivillab.ctp:72
+msgid "Renkli Bahçe."
+msgstr ""
+
+#: Template/Pages/volunteams.ctp:6
+msgid ""
+"SivilLAB, Robert Bosch Stiftung ve Goethe-Institut Ankara’nın ortak olarak "
+"düzenlediği programdır. Programın yürütüldüğü şehirlerdeki yerel aktörlerle "
+"birlikte projeler geliştirmeyi ve Türkiye’deki sosyal aktiviteleri "
+"desteklemeyi amaçlıyor.\n"
+"\n"
+"Mayıs 2016’da başlayan SivilLAB programı; Eskişehir, İstanbul ve "
+"Kayseri’deki yerel proje geliştirme koordinatörleri tarafından yürütülüyor. "
+"Koordinatörler, kendilerine ev sahipliği yapan kurumlarla birlikte, "
+"gençlerin katılımını güçlendirmek ve sınırlar ötesi aktörleri bir araya "
+"getirmek üzere yenilikçi yaklaşımlar geliştiriyorlar.\n"
+msgstr ""
+
+#: Template/Pages/volunteams.ctp:20
+msgid ""
+"Nerede yaşarsak yaşayalım, yaşadığımızın yerin ihtiyaçlarını en iyi biz "
+"yaşayanlar biliriz. Bu ihtiyaçların karşılanması ise toplumsal sorumluluk "
+"bilinci ile hem yurttaşlar olarak bizlerin hem de ilgili kurumların "
+"görevidir.\n"
+"    <a href = \"ihtiyacharitasi.org\">İhtiyacharitasi.org</a> farklı "
+"konulardaki ihtiyaçların ihtiyaç sahipleri ile ihtiyacı karşılamak isteyen "
+"kişiler ve kurumların buluştuğu online bir platformdur. İhtiyaçların "
+"karşılanmasının yanı sıra farklı konularda destek sahibi kurumların ve "
+"kişilerin de kullanabildiği bu platform Türkiye’nin her yerinden "
+"kullanılabilmektedir. "
+msgstr ""
+
+#: Template/Pages/volunteams.ctp:31
+msgid "AGU Student Clubs"
+msgstr "AGÜ Öğrenci Kulüpleri"
+
+#: Template/Pages/volunteams.ctp:32
+msgid ""
+"Üniversite içerisindeki öğrenci kulüpleri yaptıkları çalışmalar konusunda "
+"Abdullah Gül Üniversitesi yönetimi tarafından desteklenmektedirler. Her "
+"kulüp aktivitesini misyonlarına uygun sırasıyla belli bir perspektif ve amaç "
+"içerisinde yürütür. Bunun akabinde üniversite içerisinde yıl boyunca belli "
+"kulüplerin çatısı altında renkli etkinlikler ve gönüllülük faaliyetleri "
+"sürdürülür. Abdullah Gül Üniversitesi öğrenci mevcudu az ve öğrencileri "
+"genel kapsamda yoğun bir eğitim içerisinde olduklarından etkinliklerin gerek "
+"hazırlanışına yardımcı olacak gerek sadece katılımcı olacak gönüllülere "
+"ihtiyaç oluşmuştur. <br><br>\n"
+"Yıl içerisinde Kulüpler Birliği Konseyinde aktif yer alan ve gönüllülük "
+"çalışmaları yürüten bazı kulüpler Gönüllü Bankasında yer almak üzere "
+"seçilmiştir. Linklere tıklayarak bu kulüpler ve yaptıkları çalışmalar "
+"hakkında daha fazla bilgi edinebilirsiniz."
+msgstr ""
+
+#: Template/Pages/volunteams.ctp:49;52
+msgid "AGU Computer Society"
+msgstr "AGÜ Bilgisayar Topluluğu"
+
+#: Template/Pages/volunteams.ctp:50
+msgid ""
+"AGÜ Bilgisayar Topluluğu, programlama ve diğer bilgisayar bilimi alanları "
+"ile ilgili konferanslar, workshoplar ve eğitimler düzenleyen bir topluluktur."
+msgstr ""
+
+#: Template/Posts/add.ctp:12 Template/Posts/edit.ctp:12
+msgid "English"
+msgstr "İngilizce"
+
+#: Template/Posts/add.ctp:13 Template/Posts/edit.ctp:13
+msgid "Turkish"
+msgstr "Türkçe"
+
+#: Template/Posts/index.ctp:7
+msgid "Posts"
+msgstr "Girdiler"
+
+#: Template/Posts/index.ctp:15 Template/Users/edit.ctp:8
+#: Template/Users/index.ctp:8;40 Template/Users/view.ctp:8;104;139;171
+msgid "Actions"
+msgstr "Hareketler"
+
+#: Template/Posts/index.ctp:26 Template/Users/index.ctp:64
+#: Template/Users/view.ctp:115;154;179
+msgid "View"
+msgstr "Görüntü"
+
+#: Template/Posts/index.ctp:27 Template/Posts/view.ctp:22
+#: Template/Users/index.ctp:65 Template/Users/view.ctp:116;155;180
+msgid "Edit"
+msgstr "Düzenle"
+
+#: Template/Posts/index.ctp:28 Template/Users/edit.ctp:10
+#: Template/Users/index.ctp:66 Template/Users/view.ctp:117;156;181
+msgid "Delete"
+msgstr "Sil"
+
+#: Template/Posts/index.ctp:28 Template/Users/edit.ctp:12
+#: Template/Users/index.ctp:66 Template/Users/view.ctp:10;117;156;181
+msgid "Are you sure you want to delete # {0}?"
+msgstr "# {0} ' ı silmek istediğinden emin misin?"
+
+#: Template/Posts/view.ctp:28
+msgid "Author:"
+msgstr "Yazar:"
+
+#: Template/Profiles/Edit.ctp:4
+msgid "Preview"
+msgstr "Önizleme"
+
+#: Template/Profiles/Show.ctp:45
+msgid "Volunteer Power"
+msgstr "Gönüllü Gücü"
+
+#: Template/Users/edit.ctp:15 Template/Users/view.ctp:11
+msgid "List Users"
+msgstr "Üyeleri Listele"
+
+#: Template/Users/edit.ctp:16 Template/Users/index.ctp:10
+#: Template/Users/view.ctp:13
+msgid "List Event Applications"
+msgstr "Etkinlik Başvurularını Düzenle"
+
+#: Template/Users/edit.ctp:17 Template/Users/index.ctp:11
+#: Template/Users/view.ctp:14
+msgid "New Event Application"
+msgstr "Yeni Etkinlik Başvurusu"
+
+#: Template/Users/edit.ctp:18 Template/Users/index.ctp:12
+#: Template/Users/view.ctp:15
+msgid "List Events"
+msgstr "Etkinlikleri Listele"
+
+#: Template/Users/edit.ctp:19 Template/Users/index.ctp:13
+#: Template/Users/view.ctp:16
+msgid "New Event"
+msgstr "Yeni Etkinlik"
+
+#: Template/Users/edit.ctp:20 Template/Users/index.ctp:14
+#: Template/Users/view.ctp:17
+msgid "List Groups"
+msgstr "Grupları Listele"
+
+#: Template/Users/edit.ctp:21 Template/Users/index.ctp:15
+#: Template/Users/view.ctp:18
+msgid "New Group"
+msgstr "Yeni Grup"
+
+#: Template/Users/edit.ctp:27 Template/Users/view.ctp:9
+msgid "Edit User"
+msgstr "Üyeyi Düzenle"
+
+#: Template/Users/index.ctp:9 Template/Users/view.ctp:12
+msgid "New User"
+msgstr "Yeni Üye"
+
+#: Template/Users/index.ctp:19
+msgid "Users"
+msgstr "Üyeler"
+
+#: Template/Users/login.ctp:2
+msgid "Login"
+msgstr "Giriş Yap"
+
+#: Template/Users/view.ctp:10
+msgid "Delete User"
+msgstr "Üyeyi Sil"
+
+#: Template/Users/view.ctp:29
+msgid "Password"
+msgstr "Şifre"
+
+#: Template/Users/view.ctp:33
+msgid "Email"
+msgstr "Email"
+
+#: Template/Users/view.ctp:37
+msgid "Activation Code"
+msgstr "Aktivasyon Kodu"
+
+#: Template/Users/view.ctp:41
+msgid "Forgotten Password Code"
+msgstr "Şifremi Unuttum Kodu"
+
+#: Template/Users/view.ctp:45
+msgid "Remember Code"
+msgstr "Hatırlama Kodu"
+
+#: Template/Users/view.ctp:49
+msgid "First Name"
+msgstr "Adı"
+
+#: Template/Users/view.ctp:53
+msgid "Last Name"
+msgstr "Soyadı"
+
+#: Template/Users/view.ctp:57
+msgid "Phone"
+msgstr "Telefon Numarası"
+
+#: Template/Users/view.ctp:61
+msgid "University"
+msgstr "Universite"
+
+#: Template/Users/view.ctp:65
+msgid "Department"
+msgstr "Departman"
+
+#: Template/Users/view.ctp:69
+msgid "About"
+msgstr "Hakkında"
+
+#: Template/Users/view.ctp:77;98;129;168
+msgid "Id"
+msgstr "Id"
+
+#: Template/Users/view.ctp:81
+msgid "Forgotten Password Time"
+msgstr "Şifremi Unuttum Zamanı"
+
+#: Template/Users/view.ctp:85
+msgid "Created On"
+msgstr "Oluşturulma Zamanı"
+
+#: Template/Users/view.ctp:89
+msgid "Active"
+msgstr "Aktif"
+
+#: Template/Users/view.ctp:90
+msgid "Yes"
+msgstr "Evet"
+
+#: Template/Users/view.ctp:90
+msgid "No"
+msgstr "Hayır"
+
+#: Template/Users/view.ctp:94
+msgid "Related Event Applications"
+msgstr "İlişkili Etkinlik Başvuruları"
+
+#: Template/Users/view.ctp:99;130
+msgid "User Id"
+msgstr "Üye Numarası"
+
+#: Template/Users/view.ctp:100
+msgid "Event Id"
+msgstr "Etkinlik Numarası"
+
+#: Template/Users/view.ctp:102;136
+msgid "Created Time"
+msgstr "Oluşturulma Tarihi"
+
+#: Template/Users/view.ctp:125
+msgid "Related Events"
+msgstr "İlişkili Etkinlikler"
+
+#: Template/Users/view.ctp:137
+msgid "Updated Time"
+msgstr "Güncelleme Zamanı"
+
+#: Template/Users/view.ctp:138
+msgid "Volunteer Number"
+msgstr "Gönüllü Sayısı"
+
+#: Template/Users/view.ctp:164
+msgid "Related Groups"
+msgstr "İlişkili Gruplar"
+
+#: Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr "İstenen adres {0} bulunamadı."
+
+#: Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
