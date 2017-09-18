@@ -17,6 +17,7 @@ namespace App\Controller;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\I18n\I18n;
+use Cake\ORM\TableRegistry;
 
 /**
  * Application Controller
@@ -107,8 +108,8 @@ class AppController extends Controller
       $this->set('lang',$lang);
 
       $this->loadModel('VolunteamsPosts');
-      $this->loadModel('PostContents');
-      $posts = $this->PostContents->find('all')->select(['title', 'post_id'])->join([
+
+      $posts = TableRegistry::get('PostContents')->find('all')->select(['c.featured_title', 'post_id'])->join([
         'table' => 'volunteams_posts',
         'alias' => 'c',
         'type' => 'INNER',

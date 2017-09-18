@@ -24,6 +24,10 @@
     clear:both;
     width:100%;
   }
+  .thumbnail {
+    width:100%!important;
+    height: 250px;
+  }
 </style>
 
   <div class="container">
@@ -35,7 +39,7 @@
 
 
         <?php foreach ($events as $event): ?>
-        <div class="col-md-3 col-sm-6">
+        <div class="col-md-4 col-sm-6">
            
         <div class="thumbnail">
 

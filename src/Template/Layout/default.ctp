@@ -26,7 +26,7 @@ $cakeDescription = 'Gönüllü Bankası';
     <?= $this->Html->meta('icon') ?>
 
     <?= $this->Html->css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'); ?>
-    <?= $this->Html->css('https://fonts.googleapis.com/css?family=Rambla&amp;subset=latin-ext'); ?>
+    <?= $this->Html->css('https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext'); ?>
     <?= $this->Html->css('base.css') ?>
 
     <?= $this->fetch('meta') ?>
@@ -35,43 +35,14 @@ $cakeDescription = 'Gönüllü Bankası';
     <?= $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'); ?>
 </head>
 <body>
-  <div class="row">
-    <div class="col-md-3 hidden-sm hidden-xs"><?php echo $this->Html->image('agu.jpeg', array('id'=>'header-logo', 'border' => '0', 'data-src' => 'img')); ?></div>
-    <div class="col-md-4 col-sm-7 col-xs-10"><?= $this->Html->link('<h2>'.__('Gönüllü Bankası').'</h2>', ['controller'=>'events','action'=>'index'],['class'=>'header_name','escape'=>false]) ?></div>
-    <div class="col-md-5 col-sm-5 col-xs-2 buttonss">
-      <?php if($lang == 'en'): ?>
-        <?=$this->Html->link('TR',['controller'=>'language','action'=>'switchTo','tr'], ['class' => 'btn btn-link buttonn']) ?>
-      <?php else: ?>
-        <?=$this->Html->link('EN',['controller'=>'language','action'=>'switchTo','en'], ['class' => 'btn btn-link buttonn',]) ?>
-      <?php endif;?>
-      <span class="hidden-xs">
-        <?php if($this->request->Session()->read('Auth.User')): ?>
-          <?= $this->Html->link(__('Add Post'),['controller'=>'Posts','action'=>'add'], ['class' => 'btn btn-link buttonn']) ?>
-          <?= $this->Html->link(__('Messages'),['controller'=>'Messages','action'=>'index'], ['class' => 'btn btn-link buttonn']) ?>
-
-            <?= $this->Html->link(__('Profile'),['controller'=>'Profiles','action'=>'edit'], ['class' => 'btn btn-link buttonn']) ?>
-          <a href="<?= $this->Url->build([
-                "controller" => "Users",
-                "action" => "logout"
-            ]); ?>"
-                type="button" class="btn btn-link buttonn"><?= __('Log out') ?></a>
-        <?php else: ?>
-          <a href="<?= $this->Url->build([
-                "controller" => "Users",
-                "action" => "add"
-            ]); ?>"
-                type="button" class="btn btn-link buttonn"><?= __('Sign Up') ?></a>
-          <a href="<?= $this->Url->build([
-                "controller" => "Users",
-                "action" => "login"
-            ]); ?>" class="btn btn-link buttonn"><?= __('Sign In') ?></a>
-        <?php endif; ?>
-      </span>
+  <div class="header">
+    <a href="/"><?php echo $this->Html->image('agu.png', array('id'=>'header-logo', 'border' => '0', 'data-src' => 'img')); ?></a>
+    <?= $this->Html->link('<h2>'.__('Gönüllü Bankası').'</h2>', ['controller'=>'events','action'=>'index'],['class'=>'header-name','escape'=>false]) ?>
+    
     </div>
 </div>
 
 
-<hr style='margin-top:5px'>
 <div class="modal fade" id="loginPopUpWindow">
     <div class="modal-dialog">
         <div class="model-content">
@@ -140,14 +111,15 @@ $cakeDescription = 'Gönüllü Bankası';
                   <li><?= $this->Html->link(__('Homepage'), ['controller'=>'Events','action'=>'index']) ?></li>
                   <li><?= $this->Html->link(__('Volunteams'),['controller'=>'pages','action'=>'volunteams']) ?></li>
                   <li><?= $this->Html->link(__('Add Event'),['controller'=>'events','action'=>'add'])?></li>
-                  <li><?= $this->Html->link(__('Join Us'),['controller'=>'events','action'=>'index']) ?></li>
                   <li><?= $this->Html->link(__('FAQ'),['controller'=>'pages','action'=>'faq']) ?></li>
                   <li><?= $this->Html->link(__('Contact'),['controller'=>'pages','action'=>'contact']) ?></li>
              </ul>
            </li>
         </ul>
+        
       </span>
       <span class="hidden-xs">
+        
       <a href="<?= $this->Url->build([
             "controller" => "Events",
             "action" => "index"
@@ -160,28 +132,27 @@ $cakeDescription = 'Gönüllü Bankası';
         ]); ?>" class="nav_icons navbarspace dropdown-toggle" align = 'middle' type="button"
         data-toggle="dropdown" ><?php echo $this->Html->image('members.png',
     array('alt' => __('Volunteams'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Volunteams'); ?><span class="caret"></span></h4>
-
     </a>
     <ul class="dropdown-menu">
       <?php foreach($posts as $post): ?>
+      
         <li><a href="<?= $this->Url->build([
             "controller" => "Posts",
             "action" => "View",
             $post['post_id']
-        ]); ?>"><?= $post['title']; ?></a></li>
+        ]); ?>"><?= $post['c']['featured_title']; ?></a></li>
 
       <?php endforeach; ?>
-      <li><a href="http://www.ihtiyacharitasi.org/"><?= __('İhtiyaç Haritası') ?></a></li>
+      <li><a href="http://www.ihtiyacharitasi.org/" target="_blank"><?= __('İhtiyaç Haritası') ?></a></li>
     </ul>
     </div>
+     <?php if($this->request->Session()->read('Auth.User')): ?>
       <a href="<?= $this->Url->build([
             "controller" => "Events",
             "action" => "add"
         ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('reusable-shopping-bag.png',
     array('alt' => __('Add Event'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Add Event')?></h4></a>
-
-      <a href="#" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('share-file.png',
-    array('alt' => __('Join Us'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Join Us'); ?></h4></a>
+    <?php endif;?>
       <a href="<?= $this->Url->build([
             "controller" => "Pages",
             "action" => "faq"
@@ -193,8 +164,48 @@ $cakeDescription = 'Gönüllü Bankası';
         ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('telephone-handle.png',
     array('alt' => __('Contact'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= __('Contact'); ?></h4></a>
       </span>
-    </div>
-    <hr>
+      <?php $reverseLang = $lang == 'tr' ? 'en' : 'tr';?>
+       <div class='navbar-right' style='margin-right:10px'>
+            <a href="<?= $this->Url->build([
+            "controller" => "language",
+            "action" => "switchTo",
+            $reverseLang
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><?php echo $this->Html->image('telephone-handle.png',
+    array('alt' => __('Contact'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= strtoupper($reverseLang);?></h4></a>
+
+      <span class="hidden-xs">
+        <?php if($this->request->Session()->read('Auth.User')): ?> 
+     <a href="<?= $this->Url->build([
+            "controller" => "Posts",
+            "action" => "add"
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><h4><?= __('Add Post'); ?></h4></a>
+       <a href="<?= $this->Url->build([
+            "controller" => "Messages",
+            "action" => "index"
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><h4><?= __('Messages'); ?></h4></a>
+       <a href="<?= $this->Url->build([
+            "controller" => "Profiles",
+            "action" => "edit"
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><h4><?= __('Profile'); ?></h4></a>
+        <a href="<?= $this->Url->build([
+            "controller" => "Users",
+            "action" => "logout"
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><h4><?= __('Log out'); ?></h4></a>
+        
+        <?php else: ?>
+         <a href="<?= $this->Url->build([
+            "controller" => "Users",
+            "action" => "add"
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><h4><?= __('Sign Up'); ?></h4></a>
+        <a href="<?= $this->Url->build([
+            "controller" => "Users",
+            "action" => "login"
+        ]); ?>" class="nav_icons navbarspace" align = 'middle'><h4><?= __('Sign In'); ?></h4></a>
+        <?php endif; ?>
+      </span>
+          </div>
+
+    
 </nav>
 
 <section>
@@ -204,6 +215,7 @@ $cakeDescription = 'Gönüllü Bankası';
     <div class="jumbotron">
       <h1><?= __('Be a part of the change! ');?></h1>
       <p><?= __('You are welcome to join Gonullu Bank to make a difference in the society'); ?></p>
+      <p><a href="" class="btn btn-lg"><?= _('Start now!'); ?></a></p>
     </div>
   <?php elseif(! empty($this->fetch('jumbotron_content'))): ?>
   <?php echo $this->fetch('jumbotron_content'); ?>
