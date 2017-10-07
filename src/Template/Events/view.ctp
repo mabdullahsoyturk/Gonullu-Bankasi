@@ -27,14 +27,17 @@
                 <?php endif;?>
                 <?= $this->Text->autoParagraph(h($event->specification)); ?>                
                 <h4><?= __('How many volunteers do we need?') ?></h4>
+                <?php if(empty($event->volunteer_number)):?>
+                <?= __('No volunteer number is specified.'); ?>
+                <?php endif;?>
                 <?= $this->Text->autoParagraph(h($event->volunteer_number)); ?>
-                <p>
-                  <b><?= __('Address'); ?>:</b>
-                  <?= $event->address; ?>
-                 </p>
+                <h4><?= __('Address') ?></h4>
+                  <p>
+                    <?= $event->address; ?>
+                  </p>
                 <h4><?= __('When is deadline?'); ?></h4>
                  <p>
-                 <?= $event->deadline ?>
+                  <?= $event->deadline ?>
                  </p>
                 
                 <hr>

@@ -13,15 +13,11 @@
     <?= $this->Form->create($user) ?>
     <fieldset>
         <?php
-            echo $this->Form->control('username');
-            echo $this->Form->control('password');
-            echo $this->Form->control('email');
             echo $this->Form->control('first_name');
             echo $this->Form->control('last_name');
-            echo $this->Form->control('phone');
-            echo $this->Form->control('university');
-            echo $this->Form->control('department');
-            echo $this->Form->control('about');
+            echo $this->Form->control('username');
+            echo $this->Form->control('email');
+            echo $this->Form->control('password');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
@@ -30,4 +26,3 @@
     </div>
 </div>
 </div>
->>>>>>> a8314dab44904a4f667a97f7534ade16d128cbba

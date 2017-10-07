@@ -42,55 +42,6 @@ $cakeDescription = 'Gönüllü Bankası';
     </div>
 </div>
 
-
-<div class="modal fade" id="loginPopUpWindow">
-    <div class="modal-dialog">
-        <div class="model-content">
-            <div class="model-header"></div>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="model-body"></div>
-            <form role="form">
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Şifre">
-                </div>
-            </form>
-            <div class="model-footer"></div>
-            <button class="btn btn-primary btn-block"> Giriş Yap</button>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="signUpPopUpWindow">
-    <div class="modal-dialog">
-        <div class="model-content">
-            <div class="model-header"></div>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <div class="model-body"></div>
-            <form role="form">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Adı">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Soyadı">
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Şifre">
-                </div>
-            </form>
-            <div class="model-footer"></div>
-            <button class="btn btn-primary btn-block"> Üye Ol</button>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-
 <nav>
     <div class="navbarplace">
       <span class="visible-xs-inline">
@@ -218,7 +169,10 @@ $cakeDescription = 'Gönüllü Bankası';
     <div class="jumbotron">
       <h1><?= __('Be a part of the change! ');?></h1>
       <p><?= __('You are welcome to join Gonullu Bank to make a difference in the society'); ?></p>
-      <p><a href="" class="btn btn-lg"><?= __('Start now!'); ?></a></p>
+      <p><a href="<?= $this->Url->build([
+            "controller" => "Users",
+            "action" => "add"
+        ]); ?>" class="btn btn-lg"><?= __('Start now!'); ?></a></p>
     </div>
   <?php elseif(! empty($this->fetch('jumbotron_content'))): ?>
   <?php echo $this->fetch('jumbotron_content'); ?>
