@@ -14,12 +14,13 @@
             echo $this->Form->control('user_id', [
                         'value' => $this->request->Session()->read('Auth.User')['id'],
                         'type'=> 'hidden']);
-            echo $this->Form->control('title', ['type'=>'text', 'label'=>__('Title')]);
-            echo $this->Form->control('description', ['label'=>__('Description')]);
-            echo $this->Form->control('image', ['type' => 'file', 'label'=>__('Image')]);
-            echo $this->Form->control('address', ['type'=>'text', 'label'=>__('Address')]);
+            echo $this->Form->control('title', ['type'=>'text', 'label'=>__('Event Title')]);
             echo $this->Form->control('deadline', ['type'=>'hidden']);
-            echo $this->Form->control('volunteer_count');
+            echo $this->Form->control('address', ['type'=>'text', 'label'=>__('Address')]);
+            echo $this->Form->control('volunteer_count', ['label' => __('How many volunteers do you need?')]);
+            echo $this->Form->control('description', ['label'=>__('Why do you need volunteers? Briefly explain.')]);
+            echo $this->Form->control('specifications', ['label'=>__('What are your requirements?')]);
+            echo $this->Form->control('image', ['type' => 'file', 'label'=>__('Image')]);
        ?>
        <div style="overflow:hidden;">
          <label for=""><?= __('Event date') ?></label>

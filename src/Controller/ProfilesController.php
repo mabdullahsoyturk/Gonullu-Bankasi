@@ -33,10 +33,13 @@ class ProfilesController extends AppController
       $this->loadModel('EventApplications');
       if(true)
       {
+    
         $user = $this->Users->get($id);
         $first_name = $user->first_name;
         $last_name = $user->last_name;
         $university = $user->university;
+        $skills_and_hobbies = $user->skills_and_hobbies;
+        $personal_values = $user->personal_values;
         $department = $user->department;
         $about = $user->about;
         $image = $user->image;
@@ -49,6 +52,8 @@ class ProfilesController extends AppController
         $this->set(compact('about'));
         $this->set(compact('image'));
         $this->set(compact('id'));
+        $this->set(compact('personal_values'));
+        $this->set(compact('skills_and_hobbies'));
       }
     }
 
@@ -66,6 +71,8 @@ class ProfilesController extends AppController
         $user->department = $this->request->data['department'];
         $user->about = $this->request->data['about'];
         $user->image = $this->request->data['image'];
+        $user->skills_and_hobbies = $this->request->data['skills_and_hobbies'];
+        $user->personal_values = $this->request->data['personal_values'];
 
         if($this->Users->save($user))
         {
@@ -75,8 +82,9 @@ class ProfilesController extends AppController
           $this->Flash->error(__('Your error could not be updated'));
         }
       }
-
-
+      
+      $skills_and_hobbies = $user->skills_and_hobbies;
+      $personal_values = $user->personal_values;
       $first_name = $user->first_name;
       $last_name = $user->last_name;
       $university = $user->university;
@@ -91,6 +99,8 @@ class ProfilesController extends AppController
       $this->set(compact('university'));
       $this->set(compact('department'));
       $this->set(compact('about'));
+      $this->set(compact('personal_values'));
+      $this->set(compact('skills_and_hobbies'));
       $this->set(compact('image'));
     }
 }

@@ -4,16 +4,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-08-09 11:42+0000\n"
-"PO-Revision-Date: 2017-08-17 16:14+0300\n"
-"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2017-09-19 14:02+0000\n"
+"PO-Revision-Date: 2017-09-19 17:41+0300\n"
+"Last-Translator: Halil Bilgin <bilginhalil@gmail.com>\n"
+"Language-Team:  <EMAIL@ADDRESS>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.3\n"
-"Last-Translator: \n"
-"Language: tr\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.6.11\n"
 
 #: Controller/EventApplicationsController.php:106
 msgid "The event application has been saved."
@@ -21,7 +21,7 @@ msgstr "Etkinlik başvurusu kaydedildi."
 
 #: Controller/EventApplicationsController.php:110
 msgid "The event application could not be saved. Please, try again."
-msgstr "Etkinlik başvurusu kaydedilemedi. Lütfen tekrar deneyiniz."
+msgstr "Etkinlik başvurusu kaydedilemedi. Lütfen tekrar deneyin."
 
 #: Controller/EventApplicationsController.php:130
 msgid "The event application has been deleted."
@@ -29,80 +29,81 @@ msgstr "Etkinlik başvurusu silindi."
 
 #: Controller/EventApplicationsController.php:132
 msgid "The event application could not be deleted. Please, try again."
-msgstr "Etkinlik başvurusu silinemedi. Lütfen tekrar deneyiniz."
+msgstr "Etkinlik başvurusu silinemedi. Lütfen tekrar deneyin."
 
 #: Controller/EventApplicationsController.php:144
 msgid "You have successfully approved the application"
-msgstr "Başvuru onaylandı"
+msgstr "Başvurunuz onaylandı."
 
 #: Controller/EventApplicationsController.php:147
 msgid "The application could not be approved. Please, try again."
-msgstr "Başvuru doğrulanamadı. Lütfen tekrar deneyiniz."
+msgstr "Başvurrunuz onaylanamadı. Lütfen tekrar deneyin."
 
 #: Controller/EventsController.php:98;124
 msgid "The event has been saved."
-msgstr "Etkinlik kaydedildi."
+msgstr "Etkinlik kaydedildi"
 
 #: Controller/EventsController.php:102;128
 msgid "The event could not be saved. Please, try again."
-msgstr "Etkinlik kaydedilemedi. Lütfen tekrar deneyiniz."
+msgstr "Etkinlik kaydedilemedi. Lütfen tekrar deneyin."
 
 #: Controller/EventsController.php:147
 msgid "The event has been deleted."
-msgstr "Etkinlik silindi."
+msgstr "Etkinlik silindi"
 
 #: Controller/EventsController.php:149
 msgid "The event could not be deleted. Please, try again."
-msgstr "Etkinlik silinemedi. Lütfen tekrar deneyiniz."
+msgstr "Etkinlik silinemedi. Lütfen tekrar deneyin."
 
 #: Controller/PostContentsController.php:60;86
 msgid "The post content has been saved."
-msgstr "Girdi içeriği kaydedildi."
+msgstr "Yazı içeriği kaydedildi."
 
 #: Controller/PostContentsController.php:64;90
 #: Controller/PostsController.php:93;144
 msgid "The post content could not be saved. Please, try again."
-msgstr "Girdi içeriği kaydedilemedi. Lütfen tekrar deneyiniz."
+msgstr "Yazı içeriği kaydedilemedi. Lütfen tekrar deneyin."
 
 #: Controller/PostContentsController.php:109
 msgid "The post content has been deleted."
-msgstr "Girdi içeriği silindi."
+msgstr "Yazı içeriği silindi."
 
 #: Controller/PostContentsController.php:111
 msgid "The post content could not be deleted. Please, try again."
-msgstr "Girdi içeriği silinemedi. Lütfen tekrar deneyiniz."
+msgstr "Yazı içeriği silinemedi. Lütfen tekrar deneyin."
 
 #: Controller/PostsController.php:98;149
 msgid "The post has been saved."
-msgstr "Girdi kaydedildi."
+msgstr "Yazı kaydedildi."
 
 #: Controller/PostsController.php:102;153
 msgid "The post could not be saved. Please, try again."
-msgstr "Girdi kaydedilemedi. Lütfen tekrar deneyiniz."
+msgstr "Yazı kaydedilemedi. Lütfen tekrar deneyin"
 
 #: Controller/PostsController.php:172
 msgid "The post has been deleted."
-msgstr "Girdi silindi."
+msgstr "Yazı silindi."
 
 #: Controller/PostsController.php:174
 msgid "The post could not be deleted. Please, try again."
-msgstr "Girdi silinemedi. Lütfen tekrar deneyiniz."
+msgstr "Yazı silinemedi. Lütfen tekrar deneyin."
 
-#: Controller/ProfilesController.php:64
+#: Controller/ProfilesController.php:79
 msgid "Your profile has been updated"
-msgstr "Profil güncellendi"
+msgstr "Profiliniz güncellendi.."
 
-#: Controller/ProfilesController.php:67
+#: Controller/ProfilesController.php:82
+#, fuzzy
 msgid "Your error could not be updated"
-msgstr "Profile güncellenemedi. Lütfen tekrar deneyiniz"
+msgstr "Profiliniz güncellendi.."
 
 #: Controller/UsersController.php:115;142
 msgid "The user has been saved."
-msgstr "Kullanıcı kaydedildi."
+msgstr "Kullanıcı kaydedildi"
 
 #: Controller/UsersController.php:120;146
 msgid "The user could not be saved. Please, try again."
-msgstr "Kullanıcı kaydedilemedi. Lütfen tekrar deneyiniz."
+msgstr "Kullanıcı kaydedilemedi. Lütfen tekrar deneyin."
 
 #: Controller/UsersController.php:165
 msgid "The user has been deleted."
@@ -110,48 +111,49 @@ msgstr "Kullanıcı silindi."
 
 #: Controller/UsersController.php:167
 msgid "The user could not be deleted. Please, try again."
-msgstr "Kullanıcı silinemedi. Lütfen tekrar deneyiniz."
+msgstr "Kullanıcı silinemedi. Lütfen tekrar deneyin."
 
 #: Template/EventApplications/edit.ctp:10
 msgid "Edit Event Application"
-msgstr "Etkinlik Başvurusunu Düzenle"
+msgstr "Etkinlik başvurunu düzenle!"
 
 #: Template/EventApplications/edit.ctp:18 Template/Posts/add.ctp:29
-#: Template/Posts/edit.ctp:29 Template/Users/add.ctp:22
-#: Template/Users/edit.ctp:48
+#: Template/Posts/edit.ctp:29 Template/Users/add.ctp:27
+#: Template/Users/edit.ctp:48 View/Helper/FormHelper.php:1895
 msgid "Submit"
 msgstr "Gönder"
 
 #: Template/EventApplications/index.ctp:7
 msgid "Applications to"
-msgstr "Başvurular"
+msgstr "Şuraya başvuru:"
 
 #: Template/EventApplications/index.ctp:14
 msgid "No applications submitted yet"
-msgstr "Henüz hiçbir başvuru yapılmadı"
+msgstr "Şimdiye kadar başvuru gelmedi."
 
 #: Template/EventApplications/index.ctp:21 Template/Users/view.ctp:25
 msgid "Username"
-msgstr "Kullanıcı Adı"
+msgstr "Kullanıcı adı"
 
 #: Template/EventApplications/index.ctp:25
 msgid "Application Date"
 msgstr "Başvuru Tarihi"
 
 #: Template/EventApplications/index.ctp:29
-#: Template/EventApplications/view.ctp:21 Template/Events/add.ctp:18
-#: Template/Events/view.ctp:18;85 Template/Posts/add.ctp:19;23
-#: Template/Posts/edit.ctp:19;23 Template/Users/view.ctp:101;132;170
+#: Template/EventApplications/view.ctp:21 Template/Events/view.ctp:100
+#: Template/Posts/add.ctp:19;23 Template/Posts/edit.ctp:19;23
+#: Template/Users/view.ctp:101;132;170
 msgid "Description"
-msgstr "Detay"
+msgstr "Açıklama"
 
 #: Template/EventApplications/index.ctp:33
-#: Template/EventApplications/view.ctp:25 Template/Users/view.ctp:103
+#: Template/EventApplications/view.ctp:25 Template/Events/view.ctp:41
+#: Template/Users/view.ctp:103
 msgid "Status"
 msgstr "Durum"
 
 #: Template/EventApplications/index.ctp:34
-#: Template/EventApplications/view.ctp:26 Template/Events/view.ctp:31
+#: Template/EventApplications/view.ctp:26 Template/Events/view.ctp:46
 msgid "Approved"
 msgstr "Onaylandı"
 
@@ -160,38 +162,38 @@ msgstr "Onaylandı"
 msgid "Not Approved"
 msgstr "Onaylanmadı"
 
-#: Template/EventApplications/index.ctp:37 Template/Profiles/Show.ctp:37
+#: Template/EventApplications/index.ctp:37 Template/Profiles/show.ctp:93
 msgid "See"
-msgstr "Tamamını gör"
+msgstr "Bak"
 
-#: Template/EventApplications/index.ctp:47 Template/Events/index.ctp:67
+#: Template/EventApplications/index.ctp:47 Template/Events/index.ctp:76
 #: Template/Posts/index.ctp:36 Template/Users/index.ctp:74
 msgid "first"
-msgstr "ilk"
+msgstr "İlk"
 
-#: Template/EventApplications/index.ctp:48 Template/Events/index.ctp:68
+#: Template/EventApplications/index.ctp:48 Template/Events/index.ctp:77
 #: Template/Posts/index.ctp:37 Template/Users/index.ctp:75
 msgid "previous"
-msgstr "önceki"
+msgstr "Önceki"
 
-#: Template/EventApplications/index.ctp:50 Template/Events/index.ctp:70
+#: Template/EventApplications/index.ctp:50 Template/Events/index.ctp:79
 #: Template/Posts/index.ctp:39 Template/Users/index.ctp:77
 msgid "next"
-msgstr "sonraki"
+msgstr "İleri"
 
-#: Template/EventApplications/index.ctp:51 Template/Events/index.ctp:71
+#: Template/EventApplications/index.ctp:51 Template/Events/index.ctp:80
 #: Template/Posts/index.ctp:40 Template/Users/index.ctp:78
 msgid "last"
-msgstr "son"
+msgstr "Son"
 
-#: Template/EventApplications/index.ctp:54 Template/Events/index.ctp:74
+#: Template/EventApplications/index.ctp:54 Template/Events/index.ctp:83
 #: Template/Posts/index.ctp:42 Template/Users/index.ctp:80
 msgid ""
 "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
 "total"
 msgstr ""
 "{{pages}} sayfa arasından {{page}}.sayfa; {{count}} kayıt arasından "
-"{{current}} kayıt gösteriliyor"
+"\"\"{{current}} kayıt gösteriliyor"
 
 #: Template/EventApplications/view.ctp:9
 msgid "User"
@@ -211,210 +213,256 @@ msgstr "Onayla"
 
 #: Template/Events/add.ctp:7
 msgid "Create an event"
-msgstr "Etkinlik Oluştur"
+msgstr "Yeni bir etkinlik oluştur"
 
-#: Template/Events/add.ctp:17 Template/Posts/add.ctp:18;22
-#: Template/Posts/edit.ctp:18;22 Template/Users/view.ctp:131
-msgid "Title"
-msgstr "Başlık"
+#: Template/Events/add.ctp:17
+msgid "Event Title"
+msgstr "Etkinlik başlığı"
 
-#: Template/Events/add.ctp:19 Template/Users/view.ctp:73;133
-msgid "Image"
-msgstr "Resim"
-
-#: Template/Events/add.ctp:20 Template/Events/index.ctp:52
-#: Template/Events/view.ctp:21 Template/Users/view.ctp:134
+#: Template/Events/add.ctp:19 Template/Events/index.ctp:60
+#: Template/Events/view.ctp:32 Template/Users/view.ctp:134
 msgid "Address"
 msgstr "Adres"
 
-#: Template/Events/add.ctp:25 Template/Pages/sample.ctp:29
-#: Template/Profiles/Show.ctp:29
-msgid "Event date"
-msgstr "Etkinlik Tarihi"
+#: Template/Events/add.ctp:20
+msgid "How many volunteers do you need?"
+msgstr "Ne kadar gönüllüye ihtiyacın var?"
 
-#: Template/Events/add.ctp:63
+#: Template/Events/add.ctp:21
+msgid "Why do you need volunteers? Briefly explain."
+msgstr "Neden gönüllüye ihtiyacı var? Kısaca açıkla."
+
+#: Template/Events/add.ctp:22
+msgid "What are your requirements?"
+msgstr ""
+"Gönüllülerde aradığın özellikler varsa bu bölüm tam bunu belirtmelik  "
+"(örneğin engellilerle çalışmış, grafik tasarım yapabilen vs…)"
+
+#: Template/Events/add.ctp:23 Template/Users/view.ctp:73;133
+msgid "Image"
+msgstr "Resim"
+
+#: Template/Events/add.ctp:26 Template/Pages/sample.ctp:29
+#: Template/Profiles/show.ctp:78
+msgid "Event date"
+msgstr "Etkinlik tarihi"
+
+#: Template/Events/add.ctp:64
 msgid "Save"
 msgstr "Kaydet"
 
 #: Template/Events/edit.ctp:10
 msgid "Edit the event"
-msgstr "Etkinliği Düzenle"
+msgstr "Etkinliği düzenle"
 
-#: Template/Events/index.ctp:31
+#: Template/Events/index.ctp:37
 msgid "Call for Volunteers"
 msgstr "Gönüllü Çağrıları"
 
-#: Template/Events/index.ctp:48
+#: Template/Events/index.ctp:56
 msgid "Event Owner"
-msgstr "Etkinlik Sahibi"
+msgstr "Etkinlik düzenleyicisi"
 
-#: Template/Events/index.ctp:55 Template/Events/view.ctp:24
-#: Template/Users/view.ctp:135
+#: Template/Events/index.ctp:63 Template/Users/view.ctp:135
 msgid "Deadline"
-msgstr "Bitiş Zamanı"
+msgstr "Bitiş zamanı"
 
-#: Template/Events/index.ctp:60
+#: Template/Events/index.ctp:68
 msgid "Details"
 msgstr "Detaylar"
 
-#: Template/Events/index.ctp:89
+#: Template/Events/index.ctp:98
 msgid "Be a part of the change!"
-msgstr "Değişimin Parçası Ol!"
+msgstr "Değişimin parçası ol!"
 
-#: Template/Events/index.ctp:90
+#: Template/Events/index.ctp:99
 msgid ""
 "Apply to the projects that need volunteers and become a part of their dream."
 msgstr ""
 "Gönüllüye ihtiyaç duyan projelere başvur ve onların hayallerinin bir parçası "
-"ol."
+"\"\"ol."
 
-#: Template/Events/index.ctp:107
+#: Template/Events/index.ctp:116
 msgid "Be the change itself"
-msgstr "Değişimin Kendisi Ol"
+msgstr "Değişimin kendisi ol!"
 
-#: Template/Events/index.ctp:108
+#: Template/Events/index.ctp:117
 msgid "Share your project and find your dream mates!"
-msgstr "Projeni paylaş ve beraber yürüyeceğin insanları bul!"
+msgstr "Projeni paylaş ve hayalindeki ekip arkadaşlarını bul!"
 
-#: Template/Events/index.ctp:123
+#: Template/Events/index.ctp:132
 msgid "Explore"
 msgstr "Keşfet"
 
-#: Template/Events/index.ctp:124
+#: Template/Events/index.ctp:133
 msgid "Explore yourself and decide your role for the future!"
 msgstr "Kendini keşfederek geleceğin nasıl bir parçası olacağına karar ver!"
 
-#: Template/Events/view.ctp:29
-msgid "Call for"
-msgstr "Çağrı Sayısı"
+#: Template/Events/view.ctp:19
+msgid "Why do we need volunteers?"
+msgstr "Neden gönüllülere ihtiyaç duyuyoruz?"
 
-#: Template/Events/view.ctp:30;48
+#: Template/Events/view.ctp:21
+msgid "No description is written."
+msgstr "Açıklama girilmedi."
+
+#: Template/Events/view.ctp:24
+msgid "What are our requirements?"
+msgstr "Gönüllülerde aradığımız özellikler neler?"
+
+#: Template/Events/view.ctp:26
+msgid "No requirement is specified."
+msgstr "Ayırıcı bir özellik belirtilmedi."
+
+#: Template/Events/view.ctp:29
+msgid "How many volunteers do we need?"
+msgstr "Kaç gönüllüye ihtiyacımız var?"
+
+#: Template/Events/view.ctp:35
+msgid "When is deadline?"
+msgstr "Etkinlik ne zaman gerçekleşecek?"
+
+#: Template/Events/view.ctp:44
+msgid "Call for"
+msgstr "Çağrı sayısı"
+
+#: Template/Events/view.ctp:45;63
 msgid "Applied"
 msgstr "Başvuruldu"
 
-#: Template/Events/view.ctp:32
+#: Template/Events/view.ctp:47
 msgid "Left"
 msgstr "Kalan"
 
-#: Template/Events/view.ctp:44;45
+#: Template/Events/view.ctp:59;60
 msgid "I want to apply"
-msgstr "Başvurmak Istiyorum"
+msgstr "Başvurmak istiyorum"
 
-#: Template/Events/view.ctp:50
+#: Template/Events/view.ctp:65
 msgid "Login to apply"
-msgstr "Başvurabilmek için giriş yap"
+msgstr "Başvurmak için giriş yap!"
 
-#: Template/Events/view.ctp:53
+#: Template/Events/view.ctp:68
 msgid "See current applications"
-msgstr "Başvuruları Gör"
+msgstr "Mevcut başuruları gör"
 
-#: Template/Events/view.ctp:73
+#: Template/Events/view.ctp:88
 msgid "Application"
 msgstr "Başvuru"
 
-#: Template/Events/view.ctp:81
+#: Template/Events/view.ctp:96
 msgid "Please fill the form now"
-msgstr "Lütfen şimdi formu doldurun"
+msgstr "Lüfen formu doldurun."
 
-#: Template/Events/view.ctp:86
+#: Template/Events/view.ctp:101
 msgid "Explain yourself briefly"
-msgstr "Kendinizi kısaca anlatın"
+msgstr "Kendini kısaca tanıt!"
 
-#: Template/Events/view.ctp:89
+#: Template/Events/view.ctp:104
 msgid ""
 "Explain who you are. Why do you want to apply to this? What makes you "
 "different bla bla."
-msgstr ""
-"Kim olduğunuzu açıklayın. Neden bu projeye başvurmak istiyorsunuz? Sizi "
-"farklı kılan şey ne."
+msgstr "Kim olduğunu açıkla. Neden bu etkinliğe katılmak istiyorsun?"
 
-#: Template/Events/view.ctp:96
+#: Template/Events/view.ctp:111
 msgid "Thanks for application."
-msgstr "Başvuru için teşekkürler."
+msgstr "Başvurunuz için teşekkürler."
 
-#: Template/Events/view.ctp:113
+#: Template/Events/view.ctp:128
 msgid "Description should be filled."
-msgstr "Detaylar doldurulmalı."
+msgstr "Açıklama kısmı dolmalı"
 
-#: Template/Events/view.ctp:122
+#: Template/Events/view.ctp:137
 msgid "Application successfully submitted"
-msgstr "Başvuru başarılı bir şekilde gönderildi"
+msgstr "Başvurunuz başarıyla gönderildi."
 
-#: Template/Events/view.ctp:127
+#: Template/Events/view.ctp:142
 msgid "An error occured"
-msgstr "Bir hata oluştu"
+msgstr "Bir hata oluştu."
 
-#: Template/Layout/default.ctp:49 Template/Posts/add.ctp:9
-#: Template/Posts/edit.ctp:9
-msgid "Add Post"
-msgstr "Konu Ekle"
+#: Template/Layout/default.ctp:40;255
+msgid "Gönüllü Bankası"
+msgstr "Gönüllü Bankası"
 
-#: Template/Layout/default.ctp:50
+#: Template/Layout/default.ctp:99
+msgid "Menu"
+msgstr "Menü"
+
+#: Template/Layout/default.ctp:102;189
 msgid "Profile"
 msgstr "Profil"
 
-#: Template/Layout/default.ctp:55
+#: Template/Layout/default.ctp:103;193
 msgid "Log out"
-msgstr "Çıkış Yap"
+msgstr "Çıkış yap"
 
-#: Template/Layout/default.ctp:61
+#: Template/Layout/default.ctp:105;181 Template/Posts/add.ctp:9
+#: Template/Posts/edit.ctp:9
+msgid "Add Post"
+msgstr "Yazı ekle"
+
+#: Template/Layout/default.ctp:106;154
+msgid "Add Event"
+msgstr "Etkinlik çağrısına çık!"
+
+#: Template/Layout/default.ctp:108;199
 msgid "Sign Up"
 msgstr "Kayıt Ol"
 
-#: Template/Layout/default.ctp:65
+#: Template/Layout/default.ctp:109;203
 msgid "Sign In"
 msgstr "Giriş Yap"
 
-#: Template/Layout/default.ctp:128
+#: Template/Layout/default.ctp:112;127
 msgid "Homepage"
 msgstr "Anasayfa"
 
-#: Template/Layout/default.ctp:135
+#: Template/Layout/default.ctp:113;134
 msgid "Volunteams"
 msgstr "Ekibimiz"
 
-#: Template/Layout/default.ctp:147 Template/Pages/volunteams.ctp:19
-msgid "İhtiyaç Haritası"
-msgstr "Ihtiyac Haritasi"
-
-#: Template/Layout/default.ctp:154
-msgid "Add Event"
-msgstr "Etkinlik Ekle"
-
-#: Template/Layout/default.ctp:156
-msgid "Join Us"
-msgstr "Bize Katılın"
-
-#: Template/Layout/default.ctp:161 Template/Pages/faq.ctp:2
-msgid "Frequently Asked Questions"
-msgstr "Sık Sorulan Sorular"
-
-#: Template/Layout/default.ctp:161
+#: Template/Layout/default.ctp:114;160
 msgid "FAQ"
-msgstr "SSS"
+msgstr "S.S.S"
 
-#: Template/Layout/default.ctp:166
+#: Template/Layout/default.ctp:115;165;174
 msgid "Contact"
 msgstr "İletişim"
 
-#: Template/Layout/default.ctp:176
-msgid "Be a part of the change! "
-msgstr "Değişimin bir parçası olun "
+#: Template/Layout/default.ctp:146 Template/Pages/volunteams.ctp:19
+msgid "İhtiyaç Haritası"
+msgstr ""
 
-#: Template/Layout/default.ctp:177
+#: Template/Layout/default.ctp:160 Template/Pages/faq.ctp:2
+msgid "Frequently Asked Questions"
+msgstr "Sık sorulan sorular"
+
+#: Template/Layout/default.ctp:185
+msgid "Messages"
+msgstr "Mesajlar"
+
+#: Template/Layout/default.ctp:216
+msgid "Be a part of the change! "
+msgstr "Değişimin parçası ol!"
+
+#: Template/Layout/default.ctp:217
 msgid ""
 "You are welcome to join Gonullu Bank to make a difference in the society"
-msgstr "Toplumda bir fark yaratmak için Gönüllü Bankası'na hoş geldiniz"
+msgstr ""
+"Gönüllü Bankası gençlerin gönüllü olarak topluma katkı sağlamaları "
+"içinoluşturulan bir platform. Bu platformda 2 şekilde yer alabilirsin.<p>1. "
+"Gönüllü etkinlikler sunan bir organizasyon</p><p>2. Etkinliklerde gönüllü "
+"olarak tüm enerjisini sunan genç</p"
 
-#: Template/Layout/default.ctp:204
+#: Template/Layout/default.ctp:218
+msgid "Start now!"
+msgstr "Hemen Başla!"
+
+#: Template/Layout/default.ctp:245
 msgid "© 2017, AGU Developers, All rights reserved"
 msgstr "© 2017, AGU Geliştiricileri, Bütün hakları saklıdır"
 
-#: Template/Layout/default.ctp:214
-msgid "Gönüllü Bankası"
-msgstr ""
-
-#: Template/Layout/default.ctp:214
+#: Template/Layout/default.ctp:255
 msgid "Abdullah Gül Üniversitesi"
 msgstr ""
 
@@ -429,7 +477,7 @@ msgstr "Geri"
 
 #: Template/Pages/contact.ctp:2
 msgid "Contact Us"
-msgstr "Bize Ulaşın"
+msgstr "Bize ulaşın"
 
 #: Template/Pages/contact.ctp:11
 msgid "Contact us <small>You can send us message anytime you want</small>"
@@ -437,11 +485,11 @@ msgstr "Bize ulaşın <small>Her zaman iletişime geçebilirsiniz</small>"
 
 #: Template/Pages/contact.ctp:25 Template/Users/view.ctp:169
 msgid "Name"
-msgstr "İsminiz"
+msgstr "İsim"
 
 #: Template/Pages/contact.ctp:30
 msgid "Email Adress"
-msgstr "Email Adresi"
+msgstr "Mail adresi"
 
 #: Template/Pages/contact.ctp:38
 msgid "Subject"
@@ -449,19 +497,19 @@ msgstr "Konu"
 
 #: Template/Pages/contact.ctp:40
 msgid "Select one:"
-msgstr "Birini Seç:"
+msgstr "Birini seç:"
 
 #: Template/Pages/contact.ctp:41
 msgid "Adding events"
-msgstr "Etkinlik Ekleme"
+msgstr "Etkinlik ekleme"
 
 #: Template/Pages/contact.ctp:42
 msgid "Suggestions"
-msgstr "Tavsiyeler"
+msgstr "Öneriler"
 
 #: Template/Pages/contact.ctp:43
 msgid "Product support"
-msgstr "Ürün Desteği"
+msgstr "Ürün destek"
 
 #: Template/Pages/contact.ctp:50
 msgid "Message"
@@ -469,15 +517,16 @@ msgstr "Mesaj"
 
 #: Template/Pages/contact.ctp:57
 msgid "Send Message"
-msgstr "Mesaj Gönder"
+msgstr "Mesaj gönder"
 
 #: Template/Pages/contact.ctp:65
 msgid "Ofisimiz"
 msgstr ""
 
 #: Template/Pages/contact.ctp:67
+#, fuzzy
 msgid "Abdullah Gul University"
-msgstr "Abdullah Gül Üniversitesi"
+msgstr "Üniversite"
 
 #: Template/Pages/contact.ctp:68
 msgid "Sümer Campus"
@@ -485,7 +534,7 @@ msgstr "Sümer Kampüsü"
 
 #: Template/Pages/contact.ctp:69
 msgid "Kayseri, Turkey"
-msgstr "Kayseri,Türkiye"
+msgstr ""
 
 #: Template/Pages/contact.ctp:75
 msgid "Mail adresimiz"
@@ -521,7 +570,7 @@ msgid ""
 msgstr ""
 "Üye olan herhangi bir kişi <strong>Gönüllü Bankası</strong>'na proje "
 "ekleyebilir. Proje yönetim kurulundan kabul aldığında <strong>Gönüllü "
-"Bankası</strong>'nda görünür hale gelir "
+"Bankası</strong>'nda görünür hale gelir"
 
 #: Template/Pages/faq.ctp:30
 msgid ""
@@ -529,9 +578,13 @@ msgid ""
 "application?"
 msgstr "Projenin onay alıp almadığı kaç gün içinde belli olur?"
 
+#: Template/Pages/faq.ctp:36
+msgid "It usually takes a few hours. The informing process is made via email."
+msgstr "Genellikle birkaç saat sürer. Bilgilendirme mail aracılığıyla yapılır."
+
 #: Template/Pages/faq.ctp:45
 msgid "I would like to add a project. What is the process for it?"
-msgstr "Proje eklemek istiyorum. Bunun için aşamalar nelerdir?"
+msgstr "Bir proje eklemek istiyorum. Bunun için aşamalar nelerdir?"
 
 #: Template/Pages/faq.ctp:51
 msgid "The application process is very simple."
@@ -539,7 +592,7 @@ msgstr "Proje ekleme süreci gayet basit."
 
 #: Template/Pages/faq.ctp:53
 msgid "Sign up"
-msgstr "Üye ol"
+msgstr "Üye Ol"
 
 #: Template/Pages/faq.ctp:54
 msgid "Verify your account"
@@ -553,7 +606,7 @@ msgstr "<strong>Etkinlik ekle</strong> kısmına gidip projenizi ekleyin"
 msgid "The next step is approval process. It usually takes a few hours"
 msgstr ""
 "Bir sonraki aşama onay aşamasıdır. Genellikle birkaç saat içinde geri dönüş "
-"yapılır"
+"\"\"yapılır"
 
 #: Template/Pages/faq.ctp:66
 msgid "Can I pick certain volunteers between volunteer candidates?"
@@ -675,7 +728,7 @@ msgstr ""
 
 #: Template/Pages/ogrenci_kulupleri.ctp:12;16;20;24
 msgid "Student Clubs"
-msgstr "Öğrenci Kulüpleri"
+msgstr ""
 
 #: Template/Pages/ogrenci_kulupleri.ctp:41
 msgid "Öğrenci Kulüpleri"
@@ -714,21 +767,22 @@ msgstr ""
 msgid "AGU İşletme Kulübü"
 msgstr ""
 
-#: Template/Pages/sample.ctp:28 Template/Profiles/Show.ctp:28
+#: Template/Pages/sample.ctp:28 Template/Profiles/show.ctp:77
 msgid "Event name"
 msgstr "Etkinlik İsmi"
 
-#: Template/Pages/sample.ctp:44 Template/Profiles/Show.ctp:46
+#: Template/Pages/sample.ctp:44
 msgid "{1}{2}{3} events"
 msgstr "Etkinlikler"
 
-#: Template/Pages/sample.ctp:45 Template/Profiles/Show.ctp:47
+#: Template/Pages/sample.ctp:45
 msgid "{0}{1}{2} votes"
 msgstr "Oylar"
 
 #: Template/Pages/sivillab.ctp:12;16;20;24;28;46
+#, fuzzy
 msgid "Sivil Lab"
-msgstr ""
+msgstr "Sivil Lab"
 
 #: Template/Pages/sivillab.ctp:48
 msgid "SivilLAB"
@@ -771,8 +825,9 @@ msgid "Suriyeli Gençlerin AGÜ Ziyareti."
 msgstr ""
 
 #: Template/Pages/sivillab.ctp:71
+#, fuzzy
 msgid "Komşu Mutfağım 2"
-msgstr ""
+msgstr "Etkinlikler"
 
 #: Template/Pages/sivillab.ctp:72
 msgid "Renkli Bahçe."
@@ -808,7 +863,7 @@ msgstr ""
 
 #: Template/Pages/volunteams.ctp:31
 msgid "AGU Student Clubs"
-msgstr "AGÜ Öğrenci Kulüpleri"
+msgstr ""
 
 #: Template/Pages/volunteams.ctp:32
 msgid ""
@@ -829,7 +884,7 @@ msgstr ""
 
 #: Template/Pages/volunteams.ctp:49;52
 msgid "AGU Computer Society"
-msgstr "AGÜ Bilgisayar Topluluğu"
+msgstr ""
 
 #: Template/Pages/volunteams.ctp:50
 msgid ""
@@ -845,9 +900,14 @@ msgstr "İngilizce"
 msgid "Turkish"
 msgstr "Türkçe"
 
+#: Template/Posts/add.ctp:18;22 Template/Posts/edit.ctp:18;22
+#: Template/Users/view.ctp:131
+msgid "Title"
+msgstr "Başlık"
+
 #: Template/Posts/index.ctp:7
 msgid "Posts"
-msgstr "Girdiler"
+msgstr "Yazılar"
 
 #: Template/Posts/index.ctp:15 Template/Users/edit.ctp:8
 #: Template/Users/index.ctp:8;40 Template/Users/view.ctp:8;104;139;171
@@ -857,7 +917,7 @@ msgstr "Hareketler"
 #: Template/Posts/index.ctp:26 Template/Users/index.ctp:64
 #: Template/Users/view.ctp:115;154;179
 msgid "View"
-msgstr "Görüntü"
+msgstr "Görüntüle"
 
 #: Template/Posts/index.ctp:27 Template/Posts/view.ctp:22
 #: Template/Users/index.ctp:65 Template/Users/view.ctp:116;155;180
@@ -878,42 +938,66 @@ msgstr "# {0} ' ı silmek istediğinden emin misin?"
 msgid "Author:"
 msgstr "Yazar:"
 
-#: Template/Profiles/Edit.ctp:4
+#: Template/Profiles/edit.ctp:4
 msgid "Preview"
 msgstr "Önizleme"
 
-#: Template/Profiles/Show.ctp:45
-msgid "Volunteer Power"
-msgstr "Gönüllü Gücü"
+#: Template/Profiles/show.ctp:40
+msgid "Overview"
+msgstr "Genel bakış"
+
+#: Template/Profiles/show.ctp:45
+msgid "Applications"
+msgstr "Başvurular"
+
+#: Template/Profiles/show.ctp:54
+msgid "About me"
+msgstr "Hakkımda"
+
+#: Template/Profiles/show.ctp:58;64;70
+msgid "No information provided yet."
+msgstr "Henüz bir bilgi girilmedi."
+
+#: Template/Profiles/show.ctp:60
+msgid "My skills and hobbies"
+msgstr "Yeteneklerim ve hobilerim"
+
+#: Template/Profiles/show.ctp:66
+msgid "My personal values"
+msgstr "Değerlerim"
+
+#: Template/Profiles/show.ctp:99
+msgid "This user has not applied to any event so far."
+msgstr "Bu kullanıcı henüz bir etkinlik başvurusunda bulunmadı."
 
 #: Template/Users/edit.ctp:15 Template/Users/view.ctp:11
 msgid "List Users"
-msgstr "Üyeleri Listele"
+msgstr "Kullanıcıları listele"
 
 #: Template/Users/edit.ctp:16 Template/Users/index.ctp:10
 #: Template/Users/view.ctp:13
 msgid "List Event Applications"
-msgstr "Etkinlik Başvurularını Düzenle"
+msgstr "Etkinlik başvurularını listele"
 
 #: Template/Users/edit.ctp:17 Template/Users/index.ctp:11
 #: Template/Users/view.ctp:14
 msgid "New Event Application"
-msgstr "Yeni Etkinlik Başvurusu"
+msgstr "Yeni etkinlik başvurusu"
 
 #: Template/Users/edit.ctp:18 Template/Users/index.ctp:12
 #: Template/Users/view.ctp:15
 msgid "List Events"
-msgstr "Etkinlikleri Listele"
+msgstr "Etkinlikleri listele"
 
 #: Template/Users/edit.ctp:19 Template/Users/index.ctp:13
 #: Template/Users/view.ctp:16
 msgid "New Event"
-msgstr "Yeni Etkinlik"
+msgstr "Yeni etkinlik"
 
 #: Template/Users/edit.ctp:20 Template/Users/index.ctp:14
 #: Template/Users/view.ctp:17
 msgid "List Groups"
-msgstr "Grupları Listele"
+msgstr "Grupları listele"
 
 #: Template/Users/edit.ctp:21 Template/Users/index.ctp:15
 #: Template/Users/view.ctp:18
@@ -922,59 +1006,60 @@ msgstr "Yeni Grup"
 
 #: Template/Users/edit.ctp:27 Template/Users/view.ctp:9
 msgid "Edit User"
-msgstr "Üyeyi Düzenle"
+msgstr "Kullanıcıyı düzenle"
 
 #: Template/Users/index.ctp:9 Template/Users/view.ctp:12
 msgid "New User"
-msgstr "Yeni Üye"
+msgstr "Yeni Kullanıcı"
 
 #: Template/Users/index.ctp:19
 msgid "Users"
-msgstr "Üyeler"
+msgstr "Kullanıcılar"
 
-#: Template/Users/login.ctp:2
+#: Template/Users/login.ctp:5
 msgid "Login"
-msgstr "Giriş Yap"
+msgstr "Giriş yap"
 
 #: Template/Users/view.ctp:10
 msgid "Delete User"
-msgstr "Üyeyi Sil"
+msgstr "Kullanıcıyı sil"
 
 #: Template/Users/view.ctp:29
 msgid "Password"
 msgstr "Şifre"
 
 #: Template/Users/view.ctp:33
+#, fuzzy
 msgid "Email"
-msgstr "Email"
+msgstr "Eposta"
 
 #: Template/Users/view.ctp:37
 msgid "Activation Code"
-msgstr "Aktivasyon Kodu"
+msgstr "Aktivasyon kodu"
 
 #: Template/Users/view.ctp:41
 msgid "Forgotten Password Code"
-msgstr "Şifremi Unuttum Kodu"
+msgstr "Unutulmuş şifre kodu"
 
 #: Template/Users/view.ctp:45
 msgid "Remember Code"
-msgstr "Hatırlama Kodu"
+msgstr "Hatırlama kodu"
 
 #: Template/Users/view.ctp:49
 msgid "First Name"
-msgstr "Adı"
+msgstr "Ad"
 
 #: Template/Users/view.ctp:53
 msgid "Last Name"
-msgstr "Soyadı"
+msgstr "Soyad"
 
 #: Template/Users/view.ctp:57
 msgid "Phone"
-msgstr "Telefon Numarası"
+msgstr "Telefon"
 
 #: Template/Users/view.ctp:61
 msgid "University"
-msgstr "Universite"
+msgstr "Üniversite"
 
 #: Template/Users/view.ctp:65
 msgid "Department"
@@ -986,15 +1071,16 @@ msgstr "Hakkında"
 
 #: Template/Users/view.ctp:77;98;129;168
 msgid "Id"
-msgstr "Id"
+msgstr "ID"
 
 #: Template/Users/view.ctp:81
+#, fuzzy
 msgid "Forgotten Password Time"
-msgstr "Şifremi Unuttum Zamanı"
+msgstr "Unutulmuş şifre kodu"
 
 #: Template/Users/view.ctp:85
 msgid "Created On"
-msgstr "Oluşturulma Zamanı"
+msgstr "Oluşturulma tarihi"
 
 #: Template/Users/view.ctp:89
 msgid "Active"
@@ -1002,7 +1088,7 @@ msgstr "Aktif"
 
 #: Template/Users/view.ctp:90
 msgid "Yes"
-msgstr "Evet"
+msgstr "Evvet"
 
 #: Template/Users/view.ctp:90
 msgid "No"
@@ -1010,40 +1096,336 @@ msgstr "Hayır"
 
 #: Template/Users/view.ctp:94
 msgid "Related Event Applications"
-msgstr "İlişkili Etkinlik Başvuruları"
+msgstr "İlgili etkinlik başvuruları"
 
 #: Template/Users/view.ctp:99;130
 msgid "User Id"
-msgstr "Üye Numarası"
+msgstr "Kullanıcı nosu"
 
 #: Template/Users/view.ctp:100
 msgid "Event Id"
-msgstr "Etkinlik Numarası"
+msgstr "Etkinlik nosu"
 
 #: Template/Users/view.ctp:102;136
 msgid "Created Time"
-msgstr "Oluşturulma Tarihi"
+msgstr "Oluşturulma zamanı"
 
 #: Template/Users/view.ctp:125
 msgid "Related Events"
-msgstr "İlişkili Etkinlikler"
+msgstr "İlgili etkinlikler"
 
 #: Template/Users/view.ctp:137
 msgid "Updated Time"
-msgstr "Güncelleme Zamanı"
+msgstr "Güncelleme zamanı"
 
 #: Template/Users/view.ctp:138
 msgid "Volunteer Number"
-msgstr "Gönüllü Sayısı"
+msgstr "Gönüllü sayısı"
 
 #: Template/Users/view.ctp:164
 msgid "Related Groups"
-msgstr "İlişkili Gruplar"
+msgstr "İlgili gruplar"
 
 #: Template/Error/error400.ctp:37
 msgid "The requested address {0} was not found on this server."
 msgstr "İstenen adres {0} bulunamadı."
 
 #: Template/Error/error500.ctp:39
+#, fuzzy
 msgid "An Internal Error Has Occurred"
+msgstr "Dahili bir hata meydana geldi."
+
+#: Controller/Component/AuthComponent.php:496
+#, fuzzy
+msgid "You are not authorized to access that location."
+msgstr "Bu alanı görmeye yetkiniz yok."
+
+#: Controller/Component/CsrfComponent.php:155
+#, fuzzy
+msgid "Missing CSRF token cookie"
+msgstr "Hatalı CSRF çerez kodu"
+
+#: Controller/Component/CsrfComponent.php:159
+#, fuzzy
+msgid "CSRF token mismatch."
+msgstr "CSRF çerez kodu eşleşmemesi"
+
+#: Error/ExceptionRenderer.php:258
+#, fuzzy
+msgid "Not Found"
+msgstr "Bulunamadı"
+
+#: Error/ExceptionRenderer.php:260
+#, fuzzy
+msgid "An Internal Error Has Occurred."
+msgstr "Dahili bir hata meydana geldi."
+
+#: Http/Response.php:2258
+#, fuzzy
+msgid "The requested file contains `..` and will not be read."
+msgstr "İstenilen dosya bulunamadı"
+
+#: Http/Response.php:2269
+#, fuzzy
+msgid "The requested file was not found"
+msgstr "İstenilen dosya bulunamadı"
+
+#: I18n/Number.php:90
+#, fuzzy
+msgid "{0,number,#,###.##} KB"
+msgstr "{0,number,#,###.##} KB"
+
+#: I18n/Number.php:92
+#, fuzzy
+msgid "{0,number,#,###.##} MB"
+msgstr "{0,number,#,###.##} MB"
+
+#: I18n/Number.php:94
+#, fuzzy
+msgid "{0,number,#,###.##} GB"
+msgstr "{0,number,#,###.##} GB"
+
+#: I18n/Number.php:96
+#, fuzzy
+msgid "{0,number,#,###.##} TB"
+msgstr "{0,number,#,###.##} TB"
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+#, fuzzy
+msgid "{0} from now"
+msgstr "şimdiden {0}"
+
+#: I18n/RelativeTimeFormatter.php:80
+#, fuzzy
+msgid "{0} ago"
+msgstr "{0} önce"
+
+#: I18n/RelativeTimeFormatter.php:83
+#, fuzzy
+msgid "{0} after"
+msgstr "{0} sonra"
+
+#: I18n/RelativeTimeFormatter.php:83
+#, fuzzy
+msgid "{0} before"
+msgstr "{0} önce"
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr "H"
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr "Bir saniye önce"
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr "Bir dakika önce"
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr "Bir saat önce"
+
+#: I18n/RelativeTimeFormatter.php:154;332
+msgid "about a day ago"
+msgstr "Bir gün önce"
+
+#: I18n/RelativeTimeFormatter.php:155;333
+msgid "about a week ago"
+msgstr "Bir hafta önce"
+
+#: I18n/RelativeTimeFormatter.php:156;334
+msgid "about a month ago"
+msgstr "Bir ay önce"
+
+#: I18n/RelativeTimeFormatter.php:157;335
+msgid "about a year ago"
+msgstr "Bir yıl önce"
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr "Şimdi"
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr "Bir dakika içerisinde"
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr "Bir saat içerisinde"
+
+#: I18n/RelativeTimeFormatter.php:171;346
+msgid "in about a day"
+msgstr "Bir gün içerisinde"
+
+#: I18n/RelativeTimeFormatter.php:172;347
+msgid "in about a week"
+msgstr "Bir hafta içerisinde"
+
+#: I18n/RelativeTimeFormatter.php:173;348
+msgid "in about a month"
+msgstr "Bir ay içerisinde"
+
+#: I18n/RelativeTimeFormatter.php:174;349
+msgid "in about a year"
+msgstr "Bir yıl içerisinde"
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr "Bugün"
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr "%s önce"
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr "%s de"
+
+#: I18n/RelativeTimeFormatter.php:47;126;316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] "{0} yıl"
+
+#: I18n/RelativeTimeFormatter.php:51;129;319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] "{0} ay"
+
+#: I18n/RelativeTimeFormatter.php:57;132;322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] "{0} hafta"
+
+#: I18n/RelativeTimeFormatter.php:59;135;325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] "{0} gün"
+
+#: I18n/RelativeTimeFormatter.php:64;138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] "{0} saat"
+
+#: I18n/RelativeTimeFormatter.php:68;141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] "{0} dakika"
+
+#: I18n/RelativeTimeFormatter.php:72;144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] "{0} saniye"
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr "Bu değer zaten kullanılıyor."
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr "Bu değer bulunmuyor."
+
+#: ORM/RulesChecker.php:128
+#, fuzzy
+msgid "The count does not match {0}{1}"
+msgstr "Sayım eşleşmiyor  {0}{1}"
+
+#: Utility/Text.php:899
+msgid "and"
 msgstr ""
+
+#: Validation/Validator.php:103
+#, fuzzy
+msgid "This field is required"
+msgstr "Bu alan gerekli"
+
+#: Validation/Validator.php:104
+#, fuzzy
+msgid "This field cannot be left empty"
+msgstr "Bu alan boş bırakılamaz"
+
+#: Validation/Validator.php:1801
+#, fuzzy
+msgid "The provided value is invalid"
+msgstr "Verilen değer yanlış"
+
+#: View/Helper/FormHelper.php:1016
+#, fuzzy
+msgid "New %s"
+msgstr "Yeni %s"
+
+#: View/Helper/FormHelper.php:1019
+#, fuzzy
+msgid "Edit %s"
+msgstr "Düzenle %s"
+
+#: View/Helper/HtmlHelper.php:793
+#, fuzzy
+msgid "Home"
+msgstr "Anasayfa"
+
+#: View/Widget/DateTimeWidget.php:540
+#, fuzzy
+msgid "January"
+msgstr "Ocak"
+
+#: View/Widget/DateTimeWidget.php:541
+#, fuzzy
+msgid "February"
+msgstr "Şubat"
+
+#: View/Widget/DateTimeWidget.php:542
+#, fuzzy
+msgid "March"
+msgstr "Mart"
+
+#: View/Widget/DateTimeWidget.php:543
+#, fuzzy
+msgid "April"
+msgstr "Nisan"
+
+#: View/Widget/DateTimeWidget.php:544
+#, fuzzy
+msgid "May"
+msgstr "Mayıs"
+
+#: View/Widget/DateTimeWidget.php:545
+#, fuzzy
+msgid "June"
+msgstr "Haziran"
+
+#: View/Widget/DateTimeWidget.php:546
+#, fuzzy
+msgid "July"
+msgstr "Temmuz"
+
+#: View/Widget/DateTimeWidget.php:547
+#, fuzzy
+msgid "August"
+msgstr "Ağustos"
+
+#: View/Widget/DateTimeWidget.php:548
+#, fuzzy
+msgid "September"
+msgstr "Eylül"
+
+#: View/Widget/DateTimeWidget.php:549
+#, fuzzy
+msgid "October"
+msgstr "Ekim"
+
+#: View/Widget/DateTimeWidget.php:550
+#, fuzzy
+msgid "November"
+msgstr "Kasım"
+
+#: View/Widget/DateTimeWidget.php:551
+#, fuzzy
+msgid "December"
+msgstr "Aralık"

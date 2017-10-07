@@ -94,7 +94,7 @@ $cakeDescription = 'Gönüllü Bankası';
 <nav>
     <div class="navbarplace">
       <span class="visible-xs-inline">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav custom-dropdown">
           <li class="dropdown">
              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?= __('Menu') ?> <span class="caret"></span></a>
              <ul class="dropdown-menu">
@@ -103,6 +103,7 @@ $cakeDescription = 'Gönüllü Bankası';
                   <li><?= $this->Html->link(__('Log out'),['controller'=>'Users','action'=>'logout']) ?></li>
                   <li role="separator" class="divider"></li>
                   <li><?= $this->Html->link(__('Add Post'),['controller'=>'Posts','action'=>'add']) ?></li>
+                  <li><?= $this->Html->link(__('Add Event'),['controller'=>'events','action'=>'add'])?></li>
                 <?php else :?>
                   <li><?= $this->Html->link(__('Sign Up'),['controller'=>'Users','action'=>'add']) ?></li>
                   <li><?= $this->Html->link(__('Sign In'),['controller'=>'Users','action'=>'login']) ?></li>
@@ -110,7 +111,6 @@ $cakeDescription = 'Gönüllü Bankası';
                   <li role="separator" class="divider"></li>
                   <li><?= $this->Html->link(__('Homepage'), ['controller'=>'Events','action'=>'index']) ?></li>
                   <li><?= $this->Html->link(__('Volunteams'),['controller'=>'pages','action'=>'volunteams']) ?></li>
-                  <li><?= $this->Html->link(__('Add Event'),['controller'=>'events','action'=>'add'])?></li>
                   <li><?= $this->Html->link(__('FAQ'),['controller'=>'pages','action'=>'faq']) ?></li>
                   <li><?= $this->Html->link(__('Contact'),['controller'=>'pages','action'=>'contact']) ?></li>
              </ul>
@@ -207,15 +207,18 @@ $cakeDescription = 'Gönüllü Bankası';
 
     
 </nav>
-
 <section>
 
   <div class="container" id='big-img' style='width:100%'>
     <?php if(empty($this->fetch('jumbotron_content')) && ! empty($this->fetch('jumbotron_enabled'))): ?>
+    
+      <div id='jumbotron-bg'></div>
+      <div id='jumbotron-bg2'></div>
+    
     <div class="jumbotron">
       <h1><?= __('Be a part of the change! ');?></h1>
       <p><?= __('You are welcome to join Gonullu Bank to make a difference in the society'); ?></p>
-      <p><a href="" class="btn btn-lg"><?= _('Start now!'); ?></a></p>
+      <p><a href="" class="btn btn-lg"><?= __('Start now!'); ?></a></p>
     </div>
   <?php elseif(! empty($this->fetch('jumbotron_content'))): ?>
   <?php echo $this->fetch('jumbotron_content'); ?>

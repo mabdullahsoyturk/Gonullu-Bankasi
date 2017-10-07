@@ -13,9 +13,13 @@
     <?= $this->Form->control('last_name', ['value'=>$last_name, 'maxlength'=>50]) ?>
     <?= $this->Form->control('university', ['value'=>$university, 'maxlength'=>100]) ?>
     <?= $this->Form->control('department', ['value'=>$department, 'maxlength'=>100]) ?>
+    <?= $this->Form->control('personal_values', ['value'=>$personal_values, 'type'=>'textarea', 'maxlength'=>150,
+                                                'label'=>__('My personal values')]) ?>
   </div>
   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-    <?= $this->Form->control('about',['value'=>$about, 'maxlength' => 100, 'type'=>'textarea']) ?>
+    <?= $this->Form->control('skills_and_hobbies', ['value'=>$skills_and_hobbies, 'type'=>'textarea', 'maxlength'=>150,
+                                                   'label'=>__('My skills and hobbies')]) ?>
+    <?= $this->Form->control('about',['value'=>$about, 'maxlength' => 100, 'type'=>'textarea']); ?>
   </div>
 </div>
 <?= $this->Form->submit() ?>

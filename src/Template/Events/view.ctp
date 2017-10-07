@@ -15,15 +15,30 @@
                 <?= $this->Html->image('/files/Events/image/'.$event->image, array('border' => '0', 'style'=> 'width:100%')); ?>
               </div>
               <div class='col-md-8'>
-                <h3 style='margin-top:0'><?= __('Description') ?></h3>
+                
+                <h4 style='margin-top:0'><?= __('Why do we need volunteers?') ?></h4>
+                <?php if(empty($event->description)):?>
+                <?= __('No description is written.'); ?>
+                <?php endif;?>
                 <?= $this->Text->autoParagraph(h($event->description)); ?>
+                <h4><?= __('What are our requirements?') ?></h4>
+                <?php if(empty($event->specification)): ?>
+                <?= __('No requirement is specified.'); ?>
+                <?php endif;?>
+                <?= $this->Text->autoParagraph(h($event->specification)); ?>                
+                <h4><?= __('How many volunteers do we need?') ?></h4>
+                <?= $this->Text->autoParagraph(h($event->volunteer_number)); ?>
                 <p>
                   <b><?= __('Address'); ?>:</b>
                   <?= $event->address; ?>
                  </p>
-                 <p><?= __('Deadline'); ?>:
+                <h4><?= __('When is deadline?'); ?></h4>
+                 <p>
                  <?= $event->deadline ?>
                  </p>
+                
+                <hr>
+                <h4 style='border:none'><?= __('Status');?>:</h4>
                 <table class="table">
                   <tr>
                     <th><?= __('Call for') ?></th>
@@ -131,3 +146,9 @@
     })
   })
 </script>
+<style>
+  h4 {
+    border-bottom: 1px solid #999;
+    padding:5px;
+  }
+</style>

@@ -48,8 +48,10 @@ class MessagesController extends AppController
 
     public function with($otherUserId) {
         $userId = $this->Auth->user('id');
-        if($userId == $otherUserId) {
-            return false;
+        $this->loadModel("Users");
+        
+        if($userId == $otherUserId || ! $this->Users->exists(['id'=>$otherUserId])) {
+            exit;
         }
         $msgGroupTable = TableRegistry::get('MessageGroups');
         $groupId = $msgGroupTable->getGroupBetweenTwo($userId, $otherUserId);
