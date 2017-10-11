@@ -60,6 +60,15 @@ class EventApplicationsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
+            ->add(
+                'description',
+                    [
+                    'minLength' => [
+                        'rule' => ['minLength', 6],
+                        'message' => 'Description must contain at least 5 character'
+                        ]
+                    ]
+                )
             ->requirePresence('description', 'create')
             ->notEmpty('description');
         $validator

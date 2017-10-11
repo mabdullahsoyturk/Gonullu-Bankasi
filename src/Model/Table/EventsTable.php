@@ -70,10 +70,32 @@ class EventsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
+            ->add(
+                'title',
+                    [
+                    'minLength' => [
+                        'rule' => ['minLength', 5],
+                        'message' => 'Title must contain at least 5 character'
+                    ],
+                    'maxLength' => [
+                        'rule' => ['maxLength', 75],
+                        'message' => 'Titles cannot be longer than 75 characters.'
+                        ]
+                    ]
+                )
             ->requirePresence('title', 'create')
             ->notEmpty('title');
 
         $validator
+            ->add(
+                'description',
+                    [
+                    'minLength' => [
+                        'rule' => ['minLength', 6],
+                        'message' => 'Description must contain at least 5 character'
+                        ]
+                    ]
+                )
             ->requirePresence('description', 'create')
             ->notEmpty('description');
 

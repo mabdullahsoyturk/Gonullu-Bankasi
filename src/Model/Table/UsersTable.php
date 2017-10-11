@@ -71,6 +71,19 @@ class UsersTable extends Table
             ->notEmpty('username');
 
         $validator
+            ->add(
+                'password',
+                    [
+                    'minLength' => [
+                        'rule' => ['minLength', 6],
+                        'message' => 'Password must contain at least 6 character'
+                    ],
+                    'maxLength' => [
+                        'rule' => ['maxLength', 25],
+                        'message' => 'Passwords cannot be longer than 25 characters.'
+                    ]
+                ]
+            )
             ->requirePresence('password', 'create')
             ->notEmpty('password');
 
