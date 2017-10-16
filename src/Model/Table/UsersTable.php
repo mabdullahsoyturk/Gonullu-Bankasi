@@ -73,7 +73,11 @@ class UsersTable extends Table
         $validator
             ->add(
                 'password',
-                    [
+                [
+                    'compare' => [
+                        'rule' => ['compareWith', 'confirm_password'],
+                        'message' => 'Passwords did not match'
+                    ],
                     'minLength' => [
                         'rule' => ['minLength', 6],
                         'message' => 'Password must contain at least 6 character'
@@ -86,6 +90,10 @@ class UsersTable extends Table
             )
             ->requirePresence('password', 'create')
             ->notEmpty('password');
+
+        $validator
+            ->requirePresence('confirm_password', 'create')
+            ->notEmpty('confirm_password');    
 
         $validator
             ->email('email')
