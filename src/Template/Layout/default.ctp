@@ -24,6 +24,7 @@ $cakeDescription = 'Gönüllü Bankası';
         <?= $cakeDescription ?>
     </title>
     <?= $this->Html->meta('icon') ?>
+    <?= $this->Html->meta(array('name' => 'robots', 'content' => 'noindex, nofollow'),null,array('inline'=>false)); ?>
 
     <?= $this->Html->css('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'); ?>
     <?= $this->Html->css('https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext'); ?>
@@ -169,10 +170,22 @@ $cakeDescription = 'Gönüllü Bankası';
     <div class="jumbotron">
       <h1><?= __('Be a part of the change! ');?></h1>
       <p><?= __('You are welcome to join Gonullu Bank to make a difference in the society'); ?></p>
+      <?php if($this->request->Session()->read('Auth.User')): ?>
+
       <p><a href="<?= $this->Url->build([
+            "controller" => "Events",
+            "action" => "add"
+        ]); ?>" class="btn btn-lg"><?= __('Start now!'); ?></a></p>
+
+      <?php else: ?>
+
+        <p><a href="<?= $this->Url->build([
             "controller" => "Users",
             "action" => "add"
         ]); ?>" class="btn btn-lg"><?= __('Start now!'); ?></a></p>
+
+      <?php endif; ?>
+
     </div>
   <?php elseif(! empty($this->fetch('jumbotron_content'))): ?>
   <?php echo $this->fetch('jumbotron_content'); ?>
