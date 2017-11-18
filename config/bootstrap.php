@@ -224,3 +224,5 @@ if (Configure::read('debug')) {
 Plugin::load('Bootstrap');
 
 Plugin::load('Josegonzalez/Upload');
+
+Plugin::load('Bakkerij/Notifier', ['autoload' => true]);

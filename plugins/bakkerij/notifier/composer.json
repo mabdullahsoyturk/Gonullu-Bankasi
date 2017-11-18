@@ -1,0 +1,24 @@
+{
+    "name": "bakkerij/notifier",
+    "description": "Notifier plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "3.3.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "cakephp/cakephp-codesniffer": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bakkerij\\Notifier\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bakkerij\\Notifier\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}

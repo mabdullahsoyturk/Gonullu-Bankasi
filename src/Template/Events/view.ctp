@@ -15,7 +15,7 @@
                 <?= $this->Html->image('/files/Events/image/'.$event->image, array('border' => '0', 'style'=> 'width:100%')); ?>
               </div>
               <div class='col-md-8'>
-                
+
                 <h4 style='margin-top:0'><?= __('Why do we need volunteers?') ?></h4>
                 <?php if(empty($event->description)):?>
                 <?= __('No description is written.'); ?>
@@ -25,7 +25,7 @@
                 <?php if(empty($event->specification)): ?>
                 <?= __('No requirement is specified.'); ?>
                 <?php endif;?>
-                <?= $this->Text->autoParagraph(h($event->specification)); ?>                
+                <?= $this->Text->autoParagraph(h($event->specification)); ?>
                 <h4><?= __('How many volunteers do we need?') ?></h4>
                 <?php if(empty($event->volunteer_count)):?>
                 <?= __('No volunteer number is specified.'); ?>
@@ -39,7 +39,7 @@
                  <p>
                   <?= $event->deadline ?>
                  </p>
-                
+
                 <hr>
                 <h4 style='border:none'><?= __('Status');?>:</h4>
                 <table class="table">
@@ -64,11 +64,14 @@
                   </a>
                 <?php elseif($applied == 'applied'): ?>
                    <button type="button" class="btn btn-success" data-toggle="dropdown" aria-haspopup="true" disabled="disabled"><?= __('Applied') ?></button>
+                <?php elseif($applied == 'validate'):?>
+                    <?= $this->Form->postLink(__('Validate your application'), ['controller'=>'event_applications','action' => 'validate', $event->id], ['class'=>'btn btn-info']) ?>
                 <?php elseif($applied == 'must_login'): ?>
                     <?= $this->Html->link(__('Login to apply'), ['controller'=>'users','action' => 'login']) ?>
                 <?php endif; ?>
                 <?php if($belongsTo) :?>
-                  <br><?= $this->Html->link(__('See current applications'), '/event-applications/index/'.$event->id); ?>
+                  <br><?= $this->Html->link(__('See current applications'), '/event-applications/index/'.$event->id); ?><br>
+                  <?= $this->Html->link(__('Edit'), ['controller'=>'events', 'action'=>'edit', $event->id]); ?>
                 <?php endif; ?>
                 </p>
                 <div id="div-form-new-needuser">

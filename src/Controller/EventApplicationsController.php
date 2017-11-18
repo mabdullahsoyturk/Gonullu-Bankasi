@@ -135,6 +135,15 @@ class EventApplicationsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
+    public function validate($id = null)
+    {
+      $this->request->allowMethod(['post', 'validate']);
+      $application = $this->EventApplications->find()->where(['user_id'=>$this->Auth->user('id'), 'event_id' => $id])->first();
+      $application->status = 0;
+      $this->EventApplications->save($application);
+      return $this->redirect($this->referer());
+    }
+
     public function approve($id = null)
     {
       $eventApp = $this->EventApplications->get($id);
@@ -180,6 +189,10 @@ class EventApplicationsController extends AppController
         $event = $EventsTable->get($event_id);
         if($event->user_id == $this->Auth->user('id'))
           return true;
+      }
+      else if($this->request->action == 'validate'){
+        $event_id =  $this->request->getParam('pass.0');
+        return $this->EventApplications->find()->where(['event_id'=>$event_id, 'user_id' => $this->Auth->user('id')])->count() == 1;
       }
       else if($this->request->action == 'add')
       {

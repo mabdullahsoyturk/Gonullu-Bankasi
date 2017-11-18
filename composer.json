@@ -11,7 +11,9 @@
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "~1.0",
         "holt59/cakephp3-bootstrap-helpers": "dev-master",
-        "josegonzalez/cakephp-upload": "^3.6"
+        "josegonzalez/cakephp-upload": "^3.6",
+        "bakkerij/notifier": "^1.2"
+
     },
     "require-dev": {
         "psy/psysh": "@stable",

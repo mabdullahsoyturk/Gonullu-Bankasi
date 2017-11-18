@@ -18,7 +18,7 @@ use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\I18n\I18n;
 use Cake\ORM\TableRegistry;
-
+use Bakkerij\Notifier\Utility\NotificationManager;
 /**
  * Application Controller
  *
@@ -61,7 +61,7 @@ class AppController extends Controller
     public function initialize()
     {
         parent::initialize();
-
+        $this->loadComponent('Bakkerij/Notifier.Notifier');
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
@@ -99,6 +99,15 @@ class AppController extends Controller
      */
     public function beforeRender(Event $event)
     {
+      $notificationManager = NotificationManager::instance();
+      $notificationManager->addTemplate('event_changed', [
+      'title' => __("':event_title' has edited"),
+      'body' => __('There has been changes in the event, please re-confirm your application.') . "<a href='events/view/:event_id'>asd</a>" 
+      ]);
+
+      $notifications = $this->Notifier->getNotifications();
+      $this->set(compact('notifications'));
+
       $session = $this->request->session();
       if (!$session->check('Config.language')) {
         $session->write('Config.language', 'en');

@@ -4,7 +4,7 @@ namespace App\Controller;
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
 use Cake\I18n\I18n;
-
+use Bakkerij\Notifier\Utility\NotificationManager;
 /**
  * Events Controller
  *
@@ -19,6 +19,12 @@ class EventsController extends AppController
     parent::initialize();
     // Add logout to the allowed actions list.
     $this->Auth->allow(['index', 'view']);
+    $this->loadComponent('Bakkerij/Notifier.Notifier');
+    $notificationManager = NotificationManager::instance();
+    $notificationManager->addTemplate('event_changed', [
+    'title' => __("':event_title' has edited"),
+    'body' => __('There has been changes in the event, please re-confirm your application. :event_id')
+    ]);
   }
 
     /**
@@ -35,7 +41,6 @@ class EventsController extends AppController
         ]
         ];
         $events = $this->paginate($this->Events);
-
         $this->set(compact('events'));
         $this->set('_serialize', ['events']);
     }
@@ -50,7 +55,6 @@ class EventsController extends AppController
     public function view($id = null)
     {
         $applicationsTable = TableRegistry::get('EventApplications');
-
         $event = $this->Events->get($id, [
             'contain' => ['Users']
         ]);
@@ -65,20 +69,21 @@ class EventsController extends AppController
           $user_id = $this->Auth->user('id');
           $event_id = $id;
 
-          $applications = $applicationsTable->find()->where(['user_id'=>$user_id,'event_id'=>$event_id])->count();
+          $applications = $applicationsTable->find()->where(['user_id'=>$user_id,'event_id'=>$event_id]);
 
-          if($applications == 0)
+          if($applications->count() == 0)
           {
             $this->set('applied', 'can_apply');
           }
-          else {
+          else if($applications->first()->status != "3"){
             $this->set('applied', 'applied');
+          }else{
+            $this->set('applied', 'validate');
           }
           $this->set('belongsTo', $this->Events->get($id)->user_id == $this->Auth->user('id'));
         }
         $event->total = $applicationCount;
         $event->approved = $approved;
-
 
         $this->set('event', $event);
         $this->set('_serialize', ['event']);
@@ -115,6 +120,8 @@ class EventsController extends AppController
      */
     public function edit($id = null)
     {
+        $eventApplications = TableRegistry::get('event_applications');
+        $applicationNumber = $eventApplications->find()->where(['event_id'=>$id, 'status !=' => 2])->count() > 0;
         $event = $this->Events->get($id, [
             'contain' => []
         ]);
@@ -122,13 +129,30 @@ class EventsController extends AppController
             $event = $this->Events->patchEntity($event, $this->request->getData());
             if ($this->Events->save($event)) {
                 $this->Flash->success(__('The event has been saved.'));
-
+                if($applicationNumber){
+                  $this->loadModel('users');
+                  //Cancel the applications
+                  //Send notifications to users to approve or disapprove their applications
+                  $applications = $eventApplications->find()->where(['event_id'=>$id, 'status !=' => 2]);
+                  foreach ($applications as $application) {
+                    $application->status = 3;
+                    $eventApplications->save($application);
+                    $this->Notifier->notify(
+                      ['users' => [$application->user_id],
+                      'template' => 'event_changed',
+                      'vars'=>
+                    ['user' => $event->user_id,
+                          'event_id' => $event->id,
+                          'event_title' => $event->title,
+                          'event_link' => ['controller'=>'events', 'action' => 'view', $event->id]
+                          ]]);
+                  }
+                }
                 return $this->redirect(['action' => 'index']);
             }
             $this->Flash->error(__('The event could not be saved. Please, try again.'));
         }
-        $users = $this->Events->Users->find('list', ['limit' => 200]);
-        $this->set(compact('event', 'users'));
+        $this->set(compact('event', 'applicationNumber'));
         $this->set('_serialize', ['event']);
     }
 

@@ -39,7 +39,7 @@ $cakeDescription = 'Gönüllü Bankası';
   <div class="header">
     <a href="/"><?php echo $this->Html->image('agu.png', array('id'=>'header-logo', 'border' => '0', 'data-src' => 'img')); ?></a>
     <?= $this->Html->link('<h2>'.__('Gönüllü Bankası').'</h2>', ['controller'=>'events','action'=>'index'],['class'=>'header-name','escape'=>false]) ?>
-    
+
     </div>
 </div>
 
@@ -68,10 +68,10 @@ $cakeDescription = 'Gönüllü Bankası';
              </ul>
            </li>
         </ul>
-        
+
       </span>
       <span class="hidden-xs">
-        
+
       <a href="<?= $this->Url->build([
             "controller" => "Events",
             "action" => "index"
@@ -87,7 +87,7 @@ $cakeDescription = 'Gönüllü Bankası';
     </a>
     <ul class="dropdown-menu">
       <?php foreach($posts as $post): ?>
-      
+
         <li><a href="<?= $this->Url->build([
             "controller" => "Posts",
             "action" => "View",
@@ -126,7 +126,7 @@ $cakeDescription = 'Gönüllü Bankası';
     array('alt' => __('Contact'), 'border' => '0', 'data-src' => 'img')); ?><h4><?= strtoupper($reverseLang);?></h4></a>
 
       <span class="hidden-xs">
-        <?php if($this->request->Session()->read('Auth.User')): ?> 
+        <?php if($this->request->Session()->read('Auth.User')): ?>
      <a href="<?= $this->Url->build([
             "controller" => "Posts",
             "action" => "add"
@@ -143,7 +143,7 @@ $cakeDescription = 'Gönüllü Bankası';
             "controller" => "Users",
             "action" => "logout"
         ]); ?>" class="nav_icons navbarspace" align = 'middle'><h4><?= __('Log out'); ?></h4></a>
-        
+
         <?php else: ?>
          <a href="<?= $this->Url->build([
             "controller" => "Users",
@@ -157,16 +157,17 @@ $cakeDescription = 'Gönüllü Bankası';
       </span>
           </div>
 
-    
+
 </nav>
 <section>
 
   <div class="container" id='big-img' style='width:100%'>
+
     <?php if(empty($this->fetch('jumbotron_content')) && ! empty($this->fetch('jumbotron_enabled'))): ?>
-    
+
       <div id='jumbotron-bg'></div>
       <div id='jumbotron-bg2'></div>
-    
+
     <div class="jumbotron">
       <h1><?= __('Be a part of the change! ');?></h1>
       <p><?= __('You are welcome to join Gonullu Bank to make a difference in the society'); ?></p>
@@ -193,6 +194,14 @@ $cakeDescription = 'Gönüllü Bankası';
   </div>
 
     <div class="container">
+      <?php foreach ($notifications as $notification ): ?>
+        <div class="panel panel-warning">
+          <div class="panel-heading"><?= $notification->title ?><button type="button" class="close" data-dismiss="panel" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+            <div class="panel-body">
+                <?= $notification->body ?>
+            </div>
+        </div>
+      <?php endforeach;?>
         <div class="page-header">
           <?= $this->Flash->render() ?>
           <?= $this->fetch('page_title') ?>

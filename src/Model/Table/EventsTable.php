@@ -104,6 +104,9 @@ class EventsTable extends Table
             ->notEmpty('image');
 
         $validator
+            ->allowEmpty('image', 'update');
+
+        $validator
             ->requirePresence('volunteer_count', 'create')
             ->notEmpty('volunteer_count');
 

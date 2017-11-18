@@ -8,8 +8,10 @@
   <?= $this->Form->create($event, ['type' => 'file']) ?>
   <fieldset>
       <legend><?= __('Edit the event') ?></legend>
+      <?php if($applicationNumber) : ?>
+      <div class="alert alert-warning"><?= __("Changing an event where there are standing by or approved applications, will cancel the applications and will ask them to approve their applications.") ?></div>
+    <?php endif; ?>
       <?php
-
           echo $this->Form->control('user_id', [
                       'value' => $this->request->Session()->read('Auth.User')['id'],
                       'type'=> 'hidden']);
@@ -17,7 +19,7 @@
           echo $this->Form->control('description', ['label'=>'Açıklama']);
   ?>
   <div class="form-group">
-    <label for="">Şuanki resim</label>
+    <label for=""><?= __('Current picture') ?></label>
       <div class="form-group">
           <div class="row">
               <div class="col-md-8">
@@ -34,7 +36,7 @@
 
      ?>
      <div style="overflow:hidden;">
-       <label for="">Etkinlik zamanı</label>
+       <label for=""><?= __('Event time') ?></label>
          <div class="form-group">
              <div class="row">
                  <div class="col-md-8">
@@ -75,7 +77,7 @@
      </div>
   </fieldset>
   <hr>
-  <?= $this->Form->button('Kaydet', ['type'=>'button', 'id'=>'saveForm', 'class' => 'btn-primary btn-lg']) ?>
+  <?= $this->Form->button(__('Kaydet'), ['type'=>'button', 'id'=>'saveForm', 'class' => 'btn-primary btn-lg']) ?>
   <?= $this->Form->end() ?>
 </div>
 <?= $this->Html->script('/bower_components/moment/min/moment.min.js'); ?>

@@ -31,7 +31,6 @@
 </style>
 
   <div class="container">
-
     <div class="row text-center" style="display:flex; flex-wrap:wrap;">
       <?php $this->start('page_title'); ?>
       <h1><?= __('Call for Volunteers') ?></h1>
@@ -40,7 +39,7 @@
 
         <?php foreach ($events as $event): ?>
         <div class="col-md-4 col-sm-6">
-           
+
         <div class="thumbnail">
 
                 <?= $this->Html->image('/files/Events/image/'.$event->image, array('border' => '0', 'style'=> 'width:100%;height:100%', 'class' => 'responsive')); ?>
@@ -92,7 +91,7 @@
   <div class="pane-content">
     <div class="fieldable-panels-pane">
     <div class="field field-name-field-basic-text-text field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">
-      
+
       <?= $this->Html->image('start.jpg', array('class' => 'rounded', 'border' => '0', 'style'=> 'width:360px;height:220px;')); ?>
 
 <h4><a href="javascript:void(0)"><?= __('Be a part of the change!') ?></a></h4>
