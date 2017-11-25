@@ -106,6 +106,9 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
         //$this->loadComponent('Csrf');
+
+        $notification_count = sizeof($this->Notifier->getNotifications(null, 1));
+        $this->notification_count = $notification_count;
     }
 
     /**
@@ -116,9 +119,7 @@ class AppController extends Controller
      */
     public function beforeRender(Event $event)
     {
-
-      $notification_count = sizeof($this->Notifier->getNotifications(null, 1));
-      $this->set(compact('notification_count'));
+      $this->set('notification_count', $this->notification_count);
 
       $session = $this->request->session();
       if (!$session->check('Config.language')) {

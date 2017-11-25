@@ -14,6 +14,7 @@ class MessagesController extends AppController
         parent::initialize();
         // Add logout to the allowed actions list.
         $this->loadModel('Messages');
+        $this->loadComponent('Notifier');
     }
     public function index()
     {
@@ -49,7 +50,7 @@ class MessagesController extends AppController
     public function with($otherUserId) {
         $userId = $this->Auth->user('id');
         $this->loadModel("Users");
-        
+
         if($userId == $otherUserId || ! $this->Users->exists(['id'=>$otherUserId])) {
             exit;
         }
