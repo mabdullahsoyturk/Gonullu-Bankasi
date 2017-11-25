@@ -17,39 +17,22 @@
     <div class="row">
         <div class="col-md-8">
             <div class="well well-sm">
-                <form>
+               <?php echo $this->Form->create(null, [
+                    'url' => ['controller' => 'ContactMessages', 'action' => 'add']
+                ]); ?>
+
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="name">
-                                <?= __('Name') ?></label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
-                        </div>
-                        <div class="form-group">
-                            <label for="email">
-                                <?= __('Email Adress') ?></label>
-                            <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">
-                                <?= __('Subject') ?></label>
-                            <select id="subject" name="subject" class="form-control" required="required">
-                                <option value="na" selected=""><?= __('Select one:') ?></option>
-                                <option value="service"><?= __('Adding events') ?></option>
-                                <option value="suggestions"><?= __('Suggestions') ?></option>
-                                <option value="product"><?= __('Product support') ?></option>
-                            </select>
-                        </div>
+                <?php echo $this->Form->control('name'); ?>
+                 <div class="input-group">
+                <?php echo $this->Form->control('email'); ?>
+                </div>
+                <?php echo $this->Form->control('subject', ['type' => 'select', 'options' => ['Adding events', 'Suggestions', 'Product Support']]); ?>
+
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="name">
-                                <?= __('Message') ?></label>
-                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                placeholder="Message"></textarea>
+                            <?php echo $this->Form->control('message', ['rows' => '9', 'cols' => '25', 'required' => 'required', 'placeholder' => 'Message']); ?>
                         </div>
                     </div>
                     <div class="col-md-12">
