@@ -111,6 +111,8 @@ class ContactMessagesController extends AppController
 
     public function isAuthorized($user)
    {
-     return true;
+     if (in_array($this->request->action, ['add'])) {
+          return true;
+        }
    }
 }

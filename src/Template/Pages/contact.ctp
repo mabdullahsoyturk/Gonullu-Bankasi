@@ -23,13 +23,18 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                <?php echo $this->Form->control('name'); ?>
-                 <div class="input-group">
-                <?php echo $this->Form->control('email'); ?>
-                </div>
-                <?php echo $this->Form->control('subject', ['type' => 'select', 'options' => ['Adding events', 'Suggestions', 'Product Support']]); ?>
-
-                    </div>
+                         <div class="input-group">
+                            <?php echo $this->Form->control('name'); ?>
+                         </div>       
+                         <br>    
+                         <div class="input-group">
+                            <?php echo $this->Form->control('email'); ?>
+                         </div>
+                         <br>
+                         <div class="input-group">
+                            <?php echo $this->Form->control('subject', ['type' => 'select', 'options' => ['Adding events', 'Suggestions', 'Product Support']]); ?>
+                        </div>
+                     </div>   
                     <div class="col-md-6">
                         <div class="form-group">
                             <?php echo $this->Form->control('message', ['rows' => '9', 'cols' => '25', 'required' => 'required', 'placeholder' => 'Message']); ?>
