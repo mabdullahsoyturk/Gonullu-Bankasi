@@ -18,6 +18,7 @@ use Cake\Core\Configure;
 use Cake\Core\Plugin;
 use Cake\ORM\TableRegistry;
 use Cake\Utility\Text;
+use Cake\Mailer\Email;
 
 /**
  * Notifier component
@@ -102,10 +103,43 @@ class NotificationManager
             $entity->set('user_id', $user);
 
             $model->save($entity);
+
+            //$this->sendEmail($entity);
         }
 
         return $data['tracking_id'];
     }
+
+    /**
+    * This function should not be here. We should move it to a class
+    * Such as "EmailManager"
+    * sendEmail
+    *
+    * Method to send email to the user about the notification
+    */
+    public function sendEmail($notification) {
+
+      $vars = json_decode($notification->get('vars'));
+
+      $email = new Email('default');
+      $email->profile('default');
+
+      $user = TableRegistry::get('Users')->find()
+                                    ->where(['id'=>$vars->user])
+                                    ->select('email')
+                                    ->first();
+
+      try{
+      /*  $email->to($user->email)
+            ->subject($notification->getTitle())
+            ->send($notification->getBody());
+*/
+      } catch(Exception $e) {
+
+        print_r($e);
+      }
+    }
+
 
     /**
      * addRecipientList

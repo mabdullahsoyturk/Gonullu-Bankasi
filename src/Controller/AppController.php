@@ -61,7 +61,24 @@ class AppController extends Controller
     public function initialize()
     {
         parent::initialize();
+
         $this->loadComponent('Bakkerij/Notifier.Notifier');
+        $notificationManager = NotificationManager::instance();
+        $notificationManager->addTemplate('event_changed', [
+        'title' => __("':event_title' has edited"),
+        'body' => __('There has been changes in the event, please re-confirm your application.') . "<a href=':event_link'>asd</a>"
+        ]);
+
+        $notificationManager->addTemplate('new_event', [
+        'title' => __("Call for volunteers: ':event_title'"),
+        'body' => __('There is a new event call!') . "<a href=':event_link'>:event_title</a>"
+        ]);
+
+        $notificationManager->addTemplate('new_application', [
+        'title' => __("1 application to ':event_title'"),
+        'body' => __('There is a new application!') . ' '. __('Check it! ') . "<a href=':event_link'>:event_title</a>"
+        ]);
+
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
@@ -99,11 +116,6 @@ class AppController extends Controller
      */
     public function beforeRender(Event $event)
     {
-      $notificationManager = NotificationManager::instance();
-      $notificationManager->addTemplate('event_changed', [
-      'title' => __("':event_title' has edited"),
-      'body' => __('There has been changes in the event, please re-confirm your application.') . "<a href='events/view/:event_id'>asd</a>" 
-      ]);
 
       $notifications = $this->Notifier->getNotifications();
       $this->set(compact('notifications'));
