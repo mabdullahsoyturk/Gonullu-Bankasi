@@ -5,7 +5,7 @@ use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
 use Cake\I18n\I18n;
 use Cake\Routing\Router;
-use Bakkerij\Notifier\Utility\NotificationManager;
+use App\Utility\NotificationManager;
 /**
  * Events Controller
  *
@@ -21,7 +21,7 @@ class EventsController extends AppController
     parent::initialize();
     // Add logout to the allowed actions list.
     $this->Auth->allow(['index', 'view']);
-    $this->loadComponent('Bakkerij/Notifier.Notifier');
+    $this->loadComponent('Notifier');
     $notificationManager = NotificationManager::instance();
     $notificationManager->addTemplate('event_changed', [
     'title' => __("':event_title' has edited"),

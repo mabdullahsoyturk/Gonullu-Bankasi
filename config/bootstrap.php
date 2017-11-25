@@ -79,6 +79,13 @@ try {
     exit($e->getMessage() . "\n");
 }
 
+Configure::write('Notifier.templates.default', [
+    'title' => ':title',
+    'body' => ':body'
+]);
+
+Configure::write('Notifier.recipientLists', []);
+
 /*
  * Load an environment local configuration file.
  * You can use a file like app_local.php to provide local overrides to your
@@ -224,5 +231,3 @@ if (Configure::read('debug')) {
 Plugin::load('Bootstrap');
 
 Plugin::load('Josegonzalez/Upload');
-
-Plugin::load('Bakkerij/Notifier', ['autoload' => true]);

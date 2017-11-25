@@ -12,7 +12,7 @@
  * @since         1.0
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace Bakkerij\Notifier\Model\Table;
+namespace App\Model\Table;
 
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;

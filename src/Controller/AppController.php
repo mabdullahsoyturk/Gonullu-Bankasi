@@ -18,7 +18,7 @@ use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\I18n\I18n;
 use Cake\ORM\TableRegistry;
-use Bakkerij\Notifier\Utility\NotificationManager;
+use App\Utility\NotificationManager;
 /**
  * Application Controller
  *
@@ -62,7 +62,7 @@ class AppController extends Controller
     {
         parent::initialize();
 
-        $this->loadComponent('Bakkerij/Notifier.Notifier');
+        $this->loadComponent('Notifier');
         $notificationManager = NotificationManager::instance();
         $notificationManager->addTemplate('event_changed', [
         'title' => __("':event_title' has edited"),
