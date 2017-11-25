@@ -4,6 +4,7 @@ namespace App\Controller;
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
 use Cake\I18n\I18n;
+use Cake\Routing\Router;
 use Bakkerij\Notifier\Utility\NotificationManager;
 /**
  * Events Controller
@@ -16,6 +17,7 @@ class EventsController extends AppController
 {
   public function initialize()
   {
+
     parent::initialize();
     // Add logout to the allowed actions list.
     $this->Auth->allow(['index', 'view']);
@@ -24,7 +26,8 @@ class EventsController extends AppController
     $notificationManager->addTemplate('event_changed', [
     'title' => __("':event_title' has edited"),
     'body' => __('There has been changes in the event, please re-confirm your application. :event_id')
-    ]);
+  ]);
+
   }
 
     /**
@@ -100,9 +103,23 @@ class EventsController extends AppController
         if ($this->request->is('post')) {
             $event = $this->Events->patchEntity($event, $this->request->getData());
             if ($this->Events->save($event)) {
-                $this->Flash->success(__('The event has been saved.'));
+                $this->Flash->success(__('The event has been saved.'));;
+                $this->loadModel('users');
+
+                $this->Notifier->notify(
+                  // sorry for ugliness :/
+                  ['users' => array_map(function($a){ return $a->id; },
+                        $this->Events->Users->find('all', ['fields'=>'id'])->all()->toArray()),
+                  'template' => 'new_event',
+                  'vars'=>
+                ['user' => $event->user_id,
+                      'event_id' => $event->id,
+                      'event_title' => $event->title,
+                      'event_link' => Router::url(['controller'=>'events', 'action' => 'view', $event->id])
+                      ]]);
 
                 return $this->redirect(['action' => 'index']);
+
             }
             $this->Flash->error(__('The event could not be saved. Please, try again.'));
         }
@@ -144,7 +161,7 @@ class EventsController extends AppController
                     ['user' => $event->user_id,
                           'event_id' => $event->id,
                           'event_title' => $event->title,
-                          'event_link' => ['controller'=>'events', 'action' => 'view', $event->id]
+                          'event_link' => Router::url(['controller'=>'events', 'action' => 'view', $event->id])
                           ]]);
                   }
                 }

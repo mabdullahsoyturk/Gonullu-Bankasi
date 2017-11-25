@@ -76,6 +76,20 @@ class EventApplicationsController extends AppController
 
             if ($count == 0 && $this->EventApplications->save($eventApplication)) {
               $data['success'] = true;
+              $eventApplication = $this->EventApplications->get($id, [
+                  'contain' => ['Users', 'Events']
+              ]);
+
+              $this->Notifier->notify(
+                ['users' => [$eventApplication->event->user_id],
+                'template' => 'new_application',
+                'vars'=>
+              ['user' => $event->user_id,
+                    'event_id' => $event->id,
+                    'event_title' => $event->title,
+                    'event_link' => ['controller'=>'events', 'action' => 'view', $event->id]
+                    ]]);
+
             } else {
               $data['success'] = false;
               //debug($eventApplication->errors());

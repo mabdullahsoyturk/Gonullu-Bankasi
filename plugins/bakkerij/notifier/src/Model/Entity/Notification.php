@@ -97,6 +97,15 @@ class Notification extends Entity
         return '';
     }
 
+
+    public function getTitle() {
+        return $this->_getTitle();
+    }
+
+    public function getBody() {
+        return $this->_getBody();
+    }
+
     /**
      * _getBody
      *
