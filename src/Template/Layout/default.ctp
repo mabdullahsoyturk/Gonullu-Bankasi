@@ -131,6 +131,13 @@ $cakeDescription = 'Gönüllü Bankası';
             "controller" => "Posts",
             "action" => "add"
         ]); ?>" class="nav_icons navbarspace" align = 'middle'><h4><?= __('Add Post'); ?></h4></a>
+        <?php if($notification_count != 0) : ?>
+        <a href="<?=
+        $this->Url->build(['controller'=>'notifications', 'action' => 'index'])
+        ?>" style="color:white" class="nav_icons navbarspace"><h4><span class="glyphicon glyphicon-globe"></span> <?= __('Notifications') ?><span class="badge"><?= $notification_count ?></span></h4></a>
+        <?php else: ?>
+          <a href="" style="color:white" class="nav_icons navbarspace"><h4><span class="glyphicon glyphicon-globe"></span> <?= __('Notifications') ?></h4></a>
+        <?php endif; ?>
        <a href="<?= $this->Url->build([
             "controller" => "Messages",
             "action" => "index"
@@ -194,14 +201,6 @@ $cakeDescription = 'Gönüllü Bankası';
   </div>
 
     <div class="container">
-      <?php foreach ($notifications as $notification ): ?>
-        <div class="panel panel-warning">
-          <div class="panel-heading"><?= $notification->title ?><button type="button" class="close" data-dismiss="panel" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
-            <div class="panel-body">
-                <?= $notification->body ?>
-            </div>
-        </div>
-      <?php endforeach;?>
         <div class="page-header">
           <?= $this->Flash->render() ?>
           <?= $this->fetch('page_title') ?>

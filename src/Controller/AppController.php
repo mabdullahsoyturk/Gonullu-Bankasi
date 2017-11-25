@@ -117,8 +117,8 @@ class AppController extends Controller
     public function beforeRender(Event $event)
     {
 
-      $notifications = $this->Notifier->getNotifications();
-      $this->set(compact('notifications'));
+      $notification_count = sizeof($this->Notifier->getNotifications(null, 1));
+      $this->set(compact('notification_count'));
 
       $session = $this->request->session();
       if (!$session->check('Config.language')) {
