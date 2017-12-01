@@ -9,7 +9,37 @@
 
     <div class="events view large-9 medium-8 columns content">
         <div class="boxShadow padding-5">
+            <div class="row">
+                  <?php if($belongsTo) :?>
+              <nav class="navbar navbar-default">
+  <div class="container-fluid">
 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <?php
+    $editIcon = "<span class='glyphicon glyphicon-pencil'></span> ";
+    $seeIcon = "<span class='glyphicon glyphicon-list'></span> ";
+     ?>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><?= $this->Html->link($seeIcon .  __('See current applications'), '/event-applications/index/'.$event->id, ['escape'=>false]); ?></li>
+        <li><?= $this->Html->link($editIcon . __('Edit the call'), ['controller'=>'events', 'action'=>'edit', $event->id], ['escape'=>false]); ?> </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<?php endif; ?>
+            </div>
             <div class='row'>
               <div class='col-md-4'>
                 <?= $this->Html->image('/files/Events/image/'.$event->image, array('border' => '0', 'style'=> 'width:100%')); ?>
@@ -33,7 +63,7 @@
                 <?= $this->Text->autoParagraph(h($event->volunteer_count)); ?>
                 <h4><?= __('Address') ?></h4>
                   <p>
-                    <?= $event->address; ?>
+                    <?= h($event->address); ?>
                   </p>
                 <h4><?= __('When is deadline?'); ?></h4>
                  <p>
@@ -68,10 +98,6 @@
                     <?= $this->Form->postLink(__('Validate your application'), ['controller'=>'event_applications','action' => 'validate', $event->id], ['class'=>'btn btn-info']) ?>
                 <?php elseif($applied == 'must_login'): ?>
                     <?= $this->Html->link(__('Login to apply'), ['controller'=>'users','action' => 'login']) ?>
-                <?php endif; ?>
-                <?php if($belongsTo) :?>
-                  <br><?= $this->Html->link(__('See current applications'), '/event-applications/index/'.$event->id); ?><br>
-                  <?= $this->Html->link(__('Edit'), ['controller'=>'events', 'action'=>'edit', $event->id]); ?>
                 <?php endif; ?>
                 </p>
                 <div id="div-form-new-needuser">

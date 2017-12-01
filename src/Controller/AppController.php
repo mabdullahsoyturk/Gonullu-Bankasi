@@ -70,13 +70,13 @@ class AppController extends Controller
         ]);
 
         $notificationManager->addTemplate('new_event', [
-        'title' => __("Call for volunteers: ':event_title'"),
-        'body' => __('There is a new event call!') . "<a href=':event_link'>:event_title</a>"
+        'title' => __("New call! ':event_title'"),
+        'body' => ":event_summary" . " <a href=':event_link'>". __('Check the event!') . "</a>"
         ]);
 
         $notificationManager->addTemplate('new_application', [
         'title' => __("1 application to ':event_title'"),
-        'body' => __('There is a new application!') . ' '. __('Check it! ') . "<a href=':event_link'>:event_title</a>"
+        'body' => __('There is a new application to your event. ') . ' '. __('Check it! ') . "<a href=':event_link'>:event_title</a>"
         ]);
 
         $this->loadComponent('RequestHandler');
