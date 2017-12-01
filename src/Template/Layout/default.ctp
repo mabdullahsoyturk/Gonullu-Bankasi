@@ -136,7 +136,7 @@ $cakeDescription = 'Gönüllü Bankası';
         $this->Url->build(['controller'=>'notifications', 'action' => 'index'])
         ?>" style="color:white" class="nav_icons navbarspace"><h4><span class="glyphicon glyphicon-globe"></span> <?= __('Notifications') ?><span class="badge"><?= $notification_count ?></span></h4></a>
         <?php else: ?>
-          <a href="" style="color:white" class="nav_icons navbarspace"><h4><span class="glyphicon glyphicon-globe"></span> <?= __('Notifications') ?></h4></a>
+          <a href="<?=$this->Url->build(['controller'=>'notifications', 'action' => 'index'])?>" style="color:white" class="nav_icons navbarspace"><h4><span class="glyphicon glyphicon-globe"></span> <?= __('Notifications') ?></h4></a>
         <?php endif; ?>
        <a href="<?= $this->Url->build([
             "controller" => "Messages",

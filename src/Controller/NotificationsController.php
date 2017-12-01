@@ -16,6 +16,9 @@ class NotificationsController extends AppController
    {
      $user_id = $this->Auth->user('id');
      $notifications = $this->Notifier->getNotifications($user_id);
+     foreach ($notifications as $notification) {
+       $this->Notifier->markAsRead($notification->id);
+     }
      $this->set(compact('notifications'));
    }
 
