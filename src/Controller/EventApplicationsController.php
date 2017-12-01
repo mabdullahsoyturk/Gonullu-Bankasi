@@ -3,7 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
-
+use Cake\Routing\Router;
 /**
  * EventApplications Controller
  *
@@ -86,8 +86,8 @@ class EventApplicationsController extends AppController
                 'vars'=>
               ['user' => $eventApplication->event->user_id,
                     'event_id' => $eventApplication->event->id,
-                    'event_title' => $eventApplication->event->title,
-                    'event_link' => ['controller'=>'events', 'action' => 'view', $eventApplication->event->id]
+                    'event_title' => h($eventApplication->event->title),
+                    'event_link' =>  Router::url(['controller'=>'EventApplications', 'action' => 'view', $eventApplication->id])
                     ]]);
 
             } else {

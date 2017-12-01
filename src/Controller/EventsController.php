@@ -113,8 +113,9 @@ class EventsController extends AppController
                   'template' => 'new_event',
                   'vars'=>
                 ['user' => $event->user_id,
+                      'event_summary' => strlen($event->description) > 100 ? h(substr($event->description, 0, 100)) . "..." : h($event->description),
                       'event_id' => $event->id,
-                      'event_title' => $event->title,
+                      'event_title' => h($event->title),
                       'event_link' => Router::url(['controller'=>'events', 'action' => 'view', $event->id])
                       ]]);
 

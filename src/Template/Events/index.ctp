@@ -62,7 +62,7 @@
                 <?= __('Deadline'); ?>: <?= $event->deadline->nice(); ?>
             </h5>
 
-            <?= $this->Text->autoParagraph($this->Text->truncate($event->description, 200, ['exact'=>false, 'html'=>true])); ?>
+            <?= $this->Text->autoParagraph(h($this->Text->truncate($event->description, 200, ['exact'=>false, 'html'=>true]))); ?>
 
           <div class="details"><?= $this->Html->link(__('Details'), ['action' => 'view', $event->id]); ?></div>
         </div>
