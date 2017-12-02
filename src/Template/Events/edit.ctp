@@ -15,8 +15,8 @@
           echo $this->Form->control('user_id', [
                       'value' => $this->request->Session()->read('Auth.User')['id'],
                       'type'=> 'hidden']);
-          echo $this->Form->control('title', ['type'=>'text', 'label'=>'Başlık']);
-          echo $this->Form->control('description', ['label'=>'Açıklama']);
+          echo $this->Form->control('title', ['type'=>'text', 'label'=>'Title']);
+          echo $this->Form->control('description', ['label'=>'Description']);
   ?>
   <div class="form-group">
     <label for=""><?= __('Current picture') ?></label>
@@ -30,8 +30,8 @@
       </div>
   </div>
   <?php
-          echo $this->Form->control('image', ['type' => 'file', 'label'=>'Resim']);
-          echo $this->Form->control('address', ['type'=>'text', 'label'=>'Adres']);
+          echo $this->Form->control('image', ['type' => 'file', 'label'=>'Image']);
+          echo $this->Form->control('address', ['type'=>'text', 'label'=>'Adress']);
           echo $this->Form->control('deadline', ['type'=>'hidden']);
 
      ?>
@@ -77,7 +77,7 @@
      </div>
   </fieldset>
   <hr>
-  <?= $this->Form->button(__('Kaydet'), ['type'=>'button', 'id'=>'saveForm', 'class' => 'btn-primary btn-lg']) ?>
+  <?= $this->Form->button(__('Save'), ['type'=>'button', 'id'=>'saveForm', 'class' => 'btn-primary btn-lg']) ?>
   <?= $this->Form->end() ?>
 </div>
 <?= $this->Html->script('/bower_components/moment/min/moment.min.js'); ?>

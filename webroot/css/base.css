@@ -1,12 +1,9 @@
-#image-field {
-  visibility: hidden;
-}
 
 .file-upload {
   background-color: #ffffff;
   width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  margin-bottom: 50px;
+  padding: 0px;
 }
 
 .file-upload-btn {
