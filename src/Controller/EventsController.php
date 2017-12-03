@@ -37,15 +37,25 @@ class EventsController extends AppController
      */
     public function index()
     {
+        $query = $this->Events->find()->where(['approved'=>1, 'deleted'=>0]);
         $this->paginate = [
             'contain' => ['Users'],
-            'order' => [
-            'Events.created_time' => 'desc'
-        ]
+            'order' => ['Events.created_time' => 'desc']
         ];
-        $events = $this->paginate($this->Events);
+        $events = $this->paginate($query);
         $this->set(compact('events'));
         $this->set('_serialize', ['events']);
+    }
+
+    public function indexAdmin() {
+      $query = $this->Events->find()->where(['approved'=>0]);
+      $this->paginate = [
+          'contain' => ['Users'],
+          'order' => ['Events.created_time' => 'desc']
+      ];
+      $events = $this->paginate($query);
+      $this->set(compact('events'));
+      $this->set('_serialize', ['events']);
     }
 
     /**
@@ -61,6 +71,9 @@ class EventsController extends AppController
         $event = $this->Events->get($id, [
             'contain' => ['Users']
         ]);
+        if(! $event || $event->deleted == 1){
+          $this->redirect(['action'=>'index']);
+        }
         $applicationCount = $applicationsTable->find()->where(['event_id'=>$id])->count();
         $approved = $applicationsTable->find()->where(['event_id'=>$id,'status'=>1])->count();
         if($this->Auth->user('id') == null)
@@ -86,9 +99,13 @@ class EventsController extends AppController
           $this->set('belongsTo', $this->Events->get($id)->user_id == $this->Auth->user('id'));
         }
         $event->total = $applicationCount;
-        $event->approved = $approved;
+        $event->approved_applications = $approved;
+        $this->loadModel('Users');
+        $user = $this->Users->get($user_id, ['contain'=>['Groups']]);
+        $is_admin = $user['groups'][0]->name == 'Admin';
 
         $this->set('event', $event);
+        $this->set('is_admin', $is_admin);
         $this->set('_serialize', ['event']);
     }
 
@@ -183,9 +200,9 @@ class EventsController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
         $event = $this->Events->get($id);
-        if ($this->Events->delete($event)) {
+        $event->deleted = 1;
+        if ($this->Events->save($event)) {
             $this->Flash->success(__('The event has been deleted.'));
         } else {
             $this->Flash->error(__('The event could not be deleted. Please, try again.'));
@@ -193,9 +210,34 @@ class EventsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+    /**
+     * Approve method
+     *
+     * @param string|null $id Event id.
+     * @return \Cake\Http\Response|null Redirects to index.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function approve($id = null)
+    {
+        $this->request->allowMethod(['get']);
+        $event = $this->Events->get($id);
+        $event->approved = 1;
 
+        if ($this->Events->save($event)) {
+            $this->Flash->success(__('The event has been approved.'));
+        } else {
+            $this->Flash->error(__('The event could not be approved. Please, try again.'));
+        }
+
+
+        return $this->redirect(['action' => 'index']);
+    }
       public function isAuthorized($user)
       {
+        $this->loadModel('Users');
+        $user = $this->Users->get($user['id'], ['contain'=>['Groups']]);
+        $is_admin = $user['groups'][0]->name == 'Admin';
+
         if (in_array($this->request->action, ['add','index','view'])) {
           return true;
         }
@@ -204,8 +246,14 @@ class EventsController extends AppController
         {
           $id = $this->request->getParam('pass.0');
           $event = $this->Events->get($id);
-          if($event->user_id == $user['id'])
+          if($event->user_id == $user['id'] || $is_admin)
             return true;
+        }
+        if(in_array($this->request->action, ['indexAdmin', 'approve'])){
+            if($is_admin)
+                return true;
+            else
+                return false;
         }
         return parent::isAuthorized($user);
       }

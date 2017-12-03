@@ -135,4 +135,12 @@ class EventsTable extends Table
 
         return $rules;
     }
+
+    public function approve($event){
+
+      return $this->query()->update()
+        ->set(['approved' => 1])
+        ->where(['id' => $event->id])
+        ->execute();
+    }
 }

@@ -10,7 +10,8 @@
     <div class="events view large-9 medium-8 columns content">
         <div class="boxShadow padding-5">
             <div class="row">
-                  <?php if($belongsTo) :?>
+
+    <?php if($belongsTo || $is_admin) :?>
               <nav class="navbar navbar-default">
   <div class="container-fluid">
 
@@ -34,6 +35,17 @@
       <ul class="nav navbar-nav">
         <li><?= $this->Html->link($seeIcon .  __('See current applications'), '/event-applications/index/'.$event->id, ['escape'=>false]); ?></li>
         <li><?= $this->Html->link($editIcon . __('Edit the call'), ['controller'=>'events', 'action'=>'edit', $event->id], ['escape'=>false]); ?> </li>
+        <?php
+            if($is_admin && $event->approved == 0):
+        ?>
+        <li><?=$this->Html->link(__('Approve this event'), '/events/approve/'.$event->id, ['escape'=>false]); ?> </li>
+        <?php
+            endif;
+            if($is_admin):
+        ?>
+        <li><?=$this->Html->link(__('Delete this event'), '/events/delete/'.$event->id, ['escape'=>false]); ?> </li>
+
+        <?php endif;?>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -82,7 +94,7 @@
                   <tr>
                     <td><?= $event->volunteer_number; ?></td>
                     <td><?= $event->total;?></td>
-                    <td><?= $event->approved?></td>
+                    <td><?= $event->approved_applications; ?></td>
                     <td><?= $event->volunteer_number - $event->approved?></td>
                   </tr>
                 </table>
