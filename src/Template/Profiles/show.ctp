@@ -11,7 +11,7 @@
 			<div class="profile-sidebar">
 				<!-- SIDEBAR USERPIC -->
 				<div class="profile-userpic">
-          <?php if($image != null) echo $this->Html->image('/files/Users/image/'.$image, array('border' => '0', 'style'=> 'width:100%', 'class'=>'img-responsive')); 
+          <?php if($image != null) echo $this->Html->image('/files/Users/image/'.$image, array('border' => '0', 'style'=> 'width:100%', 'class'=>'img-responsive'));
                 else echo $this->Html->image("blank-profile-picture.png", ['class'=>'img-responsive']);  ?>
 				</div>
 				<!-- END SIDEBAR USERPIC -->
@@ -51,26 +51,50 @@
 		</div>
 		<div class="col-md-9">
         <div class="profile-content active" id='overview'>
-          <h4><?= __('About me'); ?></h4>  
+          <h4><?= __('About me'); ?></h4>
           <?php if(! empty($about)): ?>
           <p><?= $about; ?></p>
           <?php else: ?>
           <p><?= __('No information provided yet.'); ?></p>
           <?php endif; ?>
-          <h4><?= __('My skills and hobbies'); ?></h4>  
+          <h4><?= __('My skills and hobbies'); ?></h4>
           <?php if(! empty($skills_and_hobbies)): ?>
           <p><?= $skills_and_hobbies; ?></p>
           <?php else: ?>
           <p><?= __('No information provided yet.'); ?></p>
           <?php endif; ?>
-          <h4><?= __('My personal values'); ?></h4>  
+          <h4><?= __('My personal values'); ?></h4>
           <?php if(! empty($personal_values)): ?>
           <p><?= $personal_values; ?></p>
           <?php else: ?>
           <p><?= __('No information provided yet.'); ?></p>
           <?php endif;?>
+          <h4><?= __('My posts'); ?></h4>
+          <div class="posts">
+            <?php
+
+            ?>
+            <?php foreach ($userPosts as $post): ?>
+              <?php
+              $languages = ['en' => $post['post_contents'][0],
+                            'tr' => $post['post_contents'][1]];
+
+              $postContent = $languages[$lang];
+
+              ?>
+            <div class="col-md-4 col-sm-6">
+              <div class="caption">
+                    <h4><?= $this->Html->link($postContent->title, ['action' => 'view', $post->id]) ?></h4>
+                </div>
+                <?= $this->Text->autoParagraph(h($this->Text->truncate(strip_tags($postContent->description), 200, ['exact'=>false, 'html'=>true]))); ?>
+              <div class="details"><?= $this->Html->link(__('Details'), ['action' => 'view', $post->id]); ?></div>
+            </div>
+
+            <?php endforeach; ?>
+
+          </div>
         </div>
-        
+
         <div class="profile-content" id='applications'>
                 <table class="table table-striped">
                   <thead>
@@ -81,9 +105,9 @@
                   <tbody>
                     <?php if(count($applications) == 0): ?>
                       <tr>
-                       <td>-</td> 
-                       <td>-</td> 
-                       <td>-</td> 
+                       <td>-</td>
+                       <td>-</td>
+                       <td>-</td>
                       </tr>
                     <?php endif; ?>
                     <?php foreach ($applications as $row): ?>
@@ -99,20 +123,21 @@
                       <?= __('This user has not applied to any event so far.');?>
                     <?php endif; ?>
         </div>
-            
+
 		</div>
 	</div>
 </div>
+
 <script type='text/javascript'>
   $('.profile-usermenu a').click(function() {
     if($(this).hasClass('active'))
        return false;
-    
+
     $('.profile-usermenu li, .profile-content').removeClass('active');
     $(this).parent().addClass('active');
-    
+
     $('#'+$(this).data('href')).addClass('active');
-    
+
   })
 </script>
 <style>
@@ -131,7 +156,7 @@ Licensed under MIT
     padding: 5px;
     margin-top: 5px;
     border-bottom: 1px solid #999;
-    
+
   }
 /* Profile container */
 .profile {
@@ -190,7 +215,7 @@ Licensed under MIT
 .profile-userbuttons .btn:last-child {
   margin-right: 0px;
 }
-    
+
 .profile-usermenu {
   margin-top: 30px;
 }

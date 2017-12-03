@@ -11,7 +11,7 @@ class ProfilesController extends AppController
       // Add logout to the allowed actions list.
       $this->Auth->allow(['show']);
     }
-    
+
     public function isAuthorized($user)
     {
       $action = $this->request->action;
@@ -30,10 +30,11 @@ class ProfilesController extends AppController
     public function show($id)
     {
       $this->loadModel("Users");
+      $this->loadModel("Posts");
       $this->loadModel('EventApplications');
       if(true)
       {
-    
+
         $user = $this->Users->get($id);
         $first_name = $user->first_name;
         $last_name = $user->last_name;
@@ -44,6 +45,8 @@ class ProfilesController extends AppController
         $about = $user->about;
         $image = $user->image;
         $applications = $this->EventApplications->find('all')->contain(['Events'])->where(['EventApplications.user_id' => $id, 'status' => 1])->all();
+        $userPosts = $this->Posts->find('all')->contain(['Users', 'PostContents'])->where(['user_id'=>$id])->all();
+
         $this->set(compact('applications'));
         $this->set(compact('first_name'));
         $this->set(compact('last_name'));
@@ -54,6 +57,8 @@ class ProfilesController extends AppController
         $this->set(compact('id'));
         $this->set(compact('personal_values'));
         $this->set(compact('skills_and_hobbies'));
+        $this->set(compact('userPosts'));
+
       }
     }
 
@@ -82,7 +87,7 @@ class ProfilesController extends AppController
           $this->Flash->error(__('Your error could not be updated'));
         }
       }
-      
+
       $skills_and_hobbies = $user->skills_and_hobbies;
       $personal_values = $user->personal_values;
       $first_name = $user->first_name;
