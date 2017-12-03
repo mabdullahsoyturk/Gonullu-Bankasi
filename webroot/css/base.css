@@ -116,8 +116,8 @@
        #header-logo{
         display:none;
       }
-    }   
-    
+    }
+
 ul.custom-dropdown > li.dropdown > a.dropdown-toggle {
 color: white;
 font-size: 18px;
@@ -128,7 +128,7 @@ color: white;
 font-size: 18px;
 background:#61BFAD;
 }
-ul.custom-dropdown > li.dropdown > a:focus, 
+ul.custom-dropdown > li.dropdown > a:focus,
 ul.custom-dropdown > li.dropdown > a:hover{
 	background:white !important;
   color:#61BFAD;
@@ -219,7 +219,7 @@ ul.custom-dropdown > li.dropdown > a:hover{
            margin-bottom: 15px;
        }
        /*footer bottom*/
-       
+
        .footer-bottom {
            background-color: #6172BF;
            min-height: 30px;
@@ -245,7 +245,7 @@ ul.custom-dropdown > li.dropdown > a:hover{
            margin-top: 20px;
        }
        /*DROP DOWN*/
-       
+
        .icon-with-dropdown {
            position: relative;
            display: inline-block;
@@ -274,7 +274,7 @@ ul.custom-dropdown > li.dropdown > a:hover{
            color: #61BFAD;
        }
        /*BACKGROUND IMAGE*/
-       
+
        #background-image {
            width: 100%;
            position: fixed;
@@ -315,9 +315,9 @@ ul.custom-dropdown > li.dropdown > a:hover{
        }
 #jumbotron-bg {
 		overflow:hidden;
-	
+
 		background-image: url('../img/jumbotron.jpg');
-	
+
 	background-repeat: no-repeat;
 		background-position: center -200px;
 		background-attachment: scroll;
@@ -379,7 +379,7 @@ ul.custom-dropdown > li.dropdown > a:hover{
        }
        .header-name {
            display: inline;
-        
+
            margin-top: -50px;
        }
        .header-name:hover {
@@ -393,5 +393,17 @@ ul.custom-dropdown > li.dropdown > a:hover{
        }
 
 @media all and (min-width:987px) {
-  
+
+}
+
+.pagination{
+  width:100%;
+  float:left;
+}
+.pagination .pagination{
+  margin:0;
+  width:auto;
+}
+.pagination>li{
+  float:left;
 }

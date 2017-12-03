@@ -15,11 +15,13 @@ class NotificationsController extends AppController
    public function index()
    {
      $user_id = $this->Auth->user('id');
-     $notifications = $this->Notifier->getNotifications($user_id);
+     $notifications = $this->paginate($this->Notifier->getNotifications($user_id, null, true));
      foreach ($notifications as $notification) {
        $this->Notifier->markAsRead($notification->id);
      }
      $this->set(compact('notifications'));
+     $this->set('_serialize', ['notifications']);
+
    }
 
    public function isAuthorized($user)

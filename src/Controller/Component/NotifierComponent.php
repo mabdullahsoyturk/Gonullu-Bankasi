@@ -79,7 +79,7 @@ class NotifierComponent extends Component
      * @param bool|null $state The state of notifications: `true` for unread, `false` for read, `null` for all.
      * @return array
      */
-    public function getNotifications($userId = null, $state = null)
+    public function getNotifications($userId = null, $state = null, $returnQuery = false)
     {
         if (!$userId) {
             $userId = $this->Controller->Auth->user('id');
@@ -92,8 +92,10 @@ class NotifierComponent extends Component
         if (!is_null($state)) {
             $query->where(['Notifications.state' => $state]);
         }
-
-        return $query->toArray();
+        if($returnQuery)
+            $query;
+        else
+            return $query->toArray();
     }
 
     /**
