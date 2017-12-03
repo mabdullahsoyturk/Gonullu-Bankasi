@@ -93,7 +93,7 @@ class NotifierComponent extends Component
             $query->where(['Notifications.state' => $state]);
         }
         if($returnQuery)
-            $query;
+            return $query;
         else
             return $query->toArray();
     }
