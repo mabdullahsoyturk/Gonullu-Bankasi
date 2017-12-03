@@ -17,9 +17,7 @@ class EventsController extends AppController
 {
   public function initialize()
   {
-
     parent::initialize();
-    // Add logout to the allowed actions list.
     $this->Auth->allow(['index', 'view']);
     $this->loadComponent('Notifier');
     $notificationManager = NotificationManager::instance();
@@ -71,7 +69,7 @@ class EventsController extends AppController
         $event = $this->Events->get($id, [
             'contain' => ['Users']
         ]);
-        if(! $event || $event->deleted == 1){
+        if(! $event || $event->deleted == 1 || $event->approved == 0){
           $this->redirect(['action'=>'index']);
         }
         $applicationCount = $applicationsTable->find()->where(['event_id'=>$id])->count();
@@ -106,7 +104,7 @@ class EventsController extends AppController
           $user = $this->Users->get($user_id, ['contain'=>['Groups']]);
           $is_admin = $user['groups'][0]->name == 'Admin';
         }
-      
+
         $this->set('event', $event);
         $this->set('is_admin', $is_admin);
         $this->set('_serialize', ['event']);
@@ -235,17 +233,6 @@ class EventsController extends AppController
     }
       public function isAuthorized($user)
       {
-
-        if($this->request->action == 'view'){
-          $id = $this->request->getParam('pass.0');
-          $event = $this->Events->get($id);
-          if($event->approved == 1){
-            return true;
-          }else{
-            return false;
-          }
-        }
-
         if (in_array($this->request->action, ['add','index'])) {
           return true;
         }
