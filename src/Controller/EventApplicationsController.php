@@ -65,16 +65,19 @@ class EventApplicationsController extends AppController
         $eventApplication = $this->EventApplications->newEntity();
 
         if ($this->request->is('ajax')) {
+            $this->loadModel('Events');
+
             $eventApplication = $this->EventApplications->patchEntity($eventApplication, $this->request->getData());
             $eventApplication->user_id = $this->Auth->user('id');
 
             $user_id = $this->Auth->user('id');
             $event_id = $eventApplication->event_id;
+            $event = $this->Events->get($event_id);
 
             $count = $this->EventApplications->find()->where(['user_id'=>$user_id,'event_id'=>$event_id])->count();
             $data = [];
 
-            if ($count == 0 && $this->EventApplications->save($eventApplication)) {
+            if ($event->approved == 1 && $count == 0 && $this->EventApplications->save($eventApplication)) {
               $data['success'] = true;
               $eventApplication = $this->EventApplications->get($eventApplication->id, [
                   'contain' => ['Users', 'Events']

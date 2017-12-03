@@ -217,7 +217,7 @@ class EventsController extends AppController
         }
         $this->loadModel('users');
         $this->Notifier->notify(
-          // sorry for ugliness :/
+          // sorry for ugliness :/  
           ['users' => array_map(function($a){ return $a->id; },
                 $this->Events->Users->find('all', ['fields'=>'id'])->all()->toArray()),
           'template' => 'new_event',
