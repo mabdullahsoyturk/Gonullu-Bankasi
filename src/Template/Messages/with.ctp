@@ -15,7 +15,7 @@
     var username='<?= sprintf('%s %s', $user->first_name, $user->last_name); ?>';
 </script>
 <?= $this->Html->script('messagesApp.js'); ?>
-
+<h3><?= _('Chat with'). ' ' .h($user->first_name ." ". $user->last_name) ?></h3>
 <div class="container" ng-app="ChatApp" ng-controller="ChatAppCtrl">
     <div class="box box-warning direct-chat direct-chat-warning">
         <div class="box-body">

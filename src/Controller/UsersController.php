@@ -22,7 +22,7 @@ class UsersController extends AppController
 
     public function isAuthorized($user)
     {
-      if ($this->request->action == 'view') {
+      if (in_array($this->request->action, ['view', 'all'])) {
         return true;
       }
         return false;
@@ -186,5 +186,14 @@ class UsersController extends AppController
     {
         $this->Flash->success('You are now logged out.');
         return $this->redirect($this->Auth->logout());
+    }
+
+    public function all()
+    {
+      $users = $this->paginate($this->Users);
+
+      $this->set(compact('users'));
+      $this->set('_serialize', ['users']);
+
     }
 }

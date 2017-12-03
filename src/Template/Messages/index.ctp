@@ -1,4 +1,8 @@
-<h2><?= _('Messenger'); ?></h2>
+<h2><?= _('Messenger'); ?> <small style="float:right">
+  <a href="<?= $this->Url->build(['controller'=>'users', 'action'=>'all']); ?>">
+    <?= _('Send a message to a person'); ?>
+  </a>
+</small> </h2>
 <?php foreach($msgGroups as $group): ?>
 
     <div class="media">
