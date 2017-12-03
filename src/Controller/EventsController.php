@@ -100,10 +100,13 @@ class EventsController extends AppController
         }
         $event->total = $applicationCount;
         $event->approved_applications = $approved;
-        $this->loadModel('Users');
-        $user = $this->Users->get($user_id, ['contain'=>['Groups']]);
-        $is_admin = $user['groups'][0]->name == 'Admin';
-
+        $is_admin = false;
+        if($this->Auth->user('id') !== null){
+          $this->loadModel('Users');
+          $user = $this->Users->get($user_id, ['contain'=>['Groups']]);
+          $is_admin = $user['groups'][0]->name == 'Admin';
+        }
+      
         $this->set('event', $event);
         $this->set('is_admin', $is_admin);
         $this->set('_serialize', ['event']);
@@ -232,13 +235,24 @@ class EventsController extends AppController
     }
       public function isAuthorized($user)
       {
+
+        if($this->request->action == 'view'){
+          $id = $this->request->getParam('pass.0');
+          $event = $this->Events->get($id);
+          if($event->approved == 1){
+            return true;
+          }else{
+            return false;
+          }
+        }
+
+        if (in_array($this->request->action, ['add','index'])) {
+          return true;
+        }
+
         $this->loadModel('Users');
         $user = $this->Users->get($user['id'], ['contain'=>['Groups']]);
         $is_admin = $user['groups'][0]->name == 'Admin';
-
-        if (in_array($this->request->action, ['add','index','view'])) {
-          return true;
-        }
 
         if(in_array($this->request->action, ['edit','delete']))
         {
