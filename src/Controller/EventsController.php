@@ -120,21 +120,7 @@ class EventsController extends AppController
         if ($this->request->is('post')) {
             $event = $this->Events->patchEntity($event, $this->request->getData());
             if ($this->Events->save($event)) {
-                $this->Flash->success(__('The event has been saved.'));;
-                $this->loadModel('users');
-
-                $this->Notifier->notify(
-                  // sorry for ugliness :/
-                  ['users' => array_map(function($a){ return $a->id; },
-                        $this->Events->Users->find('all', ['fields'=>'id'])->all()->toArray()),
-                  'template' => 'new_event',
-                  'vars'=>
-                ['user' => $event->user_id,
-                      'event_summary' => strlen($event->description) > 100 ? h(substr($event->description, 0, 100)) . "..." : h($event->description),
-                      'event_id' => $event->id,
-                      'event_title' => h($event->title),
-                      'event_link' => Router::url(['controller'=>'events', 'action' => 'view', $event->id])
-                      ]]);
+                $this->Flash->success(__('The event is saved and waiting for approval.'));;
 
                 return $this->redirect(['action' => 'index']);
 
@@ -228,7 +214,19 @@ class EventsController extends AppController
         } else {
             $this->Flash->error(__('The event could not be approved. Please, try again.'));
         }
-
+        $this->loadModel('users');
+        $this->Notifier->notify(
+          // sorry for ugliness :/
+          ['users' => array_map(function($a){ return $a->id; },
+                $this->Events->Users->find('all', ['fields'=>'id'])->all()->toArray()),
+          'template' => 'new_event',
+          'vars'=>
+        ['user' => $event->user_id,
+              'event_summary' => strlen($event->description) > 100 ? h(substr($event->description, 0, 100)) . "..." : h($event->description),
+              'event_id' => $event->id,
+              'event_title' => h($event->title),
+              'event_link' => Router::url(['controller'=>'events', 'action' => 'view', $event->id])
+              ]]);
 
         return $this->redirect(['action' => 'index']);
     }

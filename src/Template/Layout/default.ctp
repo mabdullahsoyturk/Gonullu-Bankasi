@@ -39,7 +39,10 @@ $cakeDescription = 'Gönüllü Bankası';
   <div class="header">
     <a href="/"><?php echo $this->Html->image('agu.png', array('id'=>'header-logo', 'border' => '0', 'data-src' => 'img')); ?></a>
     <?= $this->Html->link('<h2>'.__('Gönüllü Bankası').'</h2>', ['controller'=>'events','action'=>'index'],['class'=>'header-name','escape'=>false]) ?>
+    <?php if($is_admin): ?>
+      <?= $this->Html->link('<h4>'.__('Admin page').'</h4>', ['controller'=>'admin','action'=>'index'],['style'=>'margin-top:30px;float:right','escape'=>false]) ?>
 
+    <?php endif; ?>
     </div>
 </div>
 

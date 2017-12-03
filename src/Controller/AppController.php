@@ -100,6 +100,14 @@ class AppController extends Controller
    ]);
    $this->Auth->allow(['display']);
 
+   $is_admin = false;
+   $this->loadModel('Users');
+   if($this->Auth->user('id') > 0) {
+       $user = $this->Users->get($this->Auth->user('id'), ['contain'=>['Groups']]);
+       $is_admin = $user['groups'][0]->name == 'Admin';
+   }
+
+   $this->is_admin = $is_admin;
         /*
          * Enable the following components for recommended CakePHP security settings.
          * see http://book.cakephp.org/3.0/en/controllers/components/security.html
@@ -143,6 +151,7 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
+        $this->set('is_admin', $this->is_admin);
     }
 
     public function isAuthorized($user)
