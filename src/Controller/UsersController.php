@@ -22,7 +22,7 @@ class UsersController extends AppController
 
     public function isAuthorized($user)
     {
-      if (in_array($this->request->action, ['view', 'all'])) {
+      if (in_array($this->request->action, ['all'])) {
         return true;
       }
         return false;
