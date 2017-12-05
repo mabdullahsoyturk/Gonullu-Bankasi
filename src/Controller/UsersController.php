@@ -47,14 +47,14 @@ class UsersController extends AppController
 
     private function sendVerificationEmail($user)
     {
-      /*$email = new Email('default');
+      $email = new Email('default');
                 $email->emailFormat('both');
                 $email->viewVars(['token' => $user->activation_code]);
                 $email->template('verification');
                 $email->from(['info@kucukdev.org' => 'kucukdev.org'])
                 ->to($user->email)
                 ->subject(__('[KucukDev] Email address verification.'))
-                ->send();*/
+                ->send();
     }
 
     /**
@@ -109,7 +109,7 @@ class UsersController extends AppController
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
             $user->activation_code = $this->createToken(40);
-            $user->active = 1;
+            $user->active = 0;
             $user->groups  = array($this->Users->Groups->get(4));
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
