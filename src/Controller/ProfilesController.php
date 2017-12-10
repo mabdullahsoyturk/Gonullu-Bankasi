@@ -23,6 +23,10 @@ class ProfilesController extends AppController
       {
         return true;
       }
+      else if($action == "view")
+      {
+        return true;
+      }
 
       return false;
     }
@@ -60,6 +64,22 @@ class ProfilesController extends AppController
         $this->set(compact('userPosts'));
 
       }
+    }
+
+    public function view($id){
+      $this->loadModel("Users");
+      $this->loadModel("Posts");
+      $this->loadModel('PostContents');
+
+      if(true){
+        $userPosts = $this->PostContents->find('all')->where(['post_id'=>$id])->all();
+        //$title = $post->title;
+        //$description = $post->description;
+        $this->set(compact('userPosts'));
+        //$this->set(compact('title'));
+        //$this->set(compact('description'));
+      }
+
     }
 
     public function edit()

@@ -50,7 +50,7 @@
         </div>
         <div class="col-md-4">
             <form>
-            <legend><span class="glyphicon glyphicon-globe"></span> <?= __('Ofisimiz') ?></legend>
+            <legend><span class="glyphicon glyphicon-globe"></span> <?= __('Our office') ?></legend>
             <address>
                 <strong><?= __('Abdullah Gul University') ?></strong><br>
                 <?= __('Sümer Campus') ?><br>
@@ -60,7 +60,7 @@
                 (352) 224 88 00 - 02 - 03
             </address>
             <address>
-                <strong><?= __('Mail adresimiz') ?></strong><br>
+                <strong><?= __('Our mail adress') ?></strong><br>
                 <a href="mailto:#">gonullubankasi@agu.edu.tr</a>
             </address>
             </form>

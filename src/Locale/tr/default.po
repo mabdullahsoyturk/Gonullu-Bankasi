@@ -5,15 +5,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2017-09-19 14:02+0000\n"
-"PO-Revision-Date: 2017-09-19 17:41+0300\n"
+"PO-Revision-Date: 2017-12-06 01:00+0300\n"
 "Last-Translator: Halil Bilgin <bilginhalil@gmail.com>\n"
-"Language-Team:  <EMAIL@ADDRESS>\n"
+"Language-Team: <EMAIL@ADDRESS>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.6.11\n"
+"X-Generator: Poedit 2.0.5\n"
 
 #: Controller/EventApplicationsController.php:106
 msgid "The event application has been saved."
@@ -1194,7 +1194,6 @@ msgstr "{0,number,#,###.##} TB"
 msgid "{0,number,integer} Byte"
 msgid_plural "{0,number,integer} Bytes"
 msgstr[0] ""
-msgstr[1] ""
 
 #: I18n/RelativeTimeFormatter.php:80
 #, fuzzy
@@ -1386,7 +1385,6 @@ msgid "March"
 msgstr "Mart"
 
 #: View/Widget/DateTimeWidget.php:543
-#, fuzzy
 msgid "April"
 msgstr "Nisan"
 

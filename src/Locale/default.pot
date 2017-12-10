@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2017-09-19 14:02+0000\n"
+"POT-Creation-Date: 2017-12-05 21:24+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -14,44 +14,109 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: Controller/EventApplicationsController.php:106
+#: Controller/AppController.php:68
+#: Controller/EventsController.php:25
+msgid "':event_title' has edited"
+msgstr ""
+
+#: Controller/AppController.php:69
+msgid "There has been changes in the event, please re-confirm your application."
+msgstr ""
+
+#: Controller/AppController.php:73
+msgid "New call! ':event_title'"
+msgstr ""
+
+#: Controller/AppController.php:74
+msgid "Check the event!"
+msgstr ""
+
+#: Controller/AppController.php:78
+msgid "1 application to ':event_title'"
+msgstr ""
+
+#: Controller/AppController.php:79
+msgid "There is a new application to your event. "
+msgstr ""
+
+#: Controller/AppController.php:79
+msgid "Check it! "
+msgstr ""
+
+#: Controller/ContactMessagesController.php:57
+msgid "Your message has been delivered."
+msgstr ""
+
+#: Controller/ContactMessagesController.php:61;86
+msgid "The contact message could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ContactMessagesController.php:82
+msgid "The contact message has been saved."
+msgstr ""
+
+#: Controller/ContactMessagesController.php:104
+msgid "The contact message has been deleted."
+msgstr ""
+
+#: Controller/ContactMessagesController.php:106
+msgid "The contact message could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/EventApplicationsController.php:123
 msgid "The event application has been saved."
 msgstr ""
 
-#: Controller/EventApplicationsController.php:110
+#: Controller/EventApplicationsController.php:127
 msgid "The event application could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/EventApplicationsController.php:130
+#: Controller/EventApplicationsController.php:147
 msgid "The event application has been deleted."
 msgstr ""
 
-#: Controller/EventApplicationsController.php:132
+#: Controller/EventApplicationsController.php:149
 msgid "The event application could not be deleted. Please, try again."
 msgstr ""
 
-#: Controller/EventApplicationsController.php:144
+#: Controller/EventApplicationsController.php:170
 msgid "You have successfully approved the application"
 msgstr ""
 
-#: Controller/EventApplicationsController.php:147
+#: Controller/EventApplicationsController.php:173
 msgid "The application could not be approved. Please, try again."
 msgstr ""
 
-#: Controller/EventsController.php:98;124
-msgid "The event has been saved."
+#: Controller/EventsController.php:26
+msgid "There has been changes in the event, please re-confirm your application. :event_id"
 msgstr ""
 
-#: Controller/EventsController.php:102;128
+#: Controller/EventsController.php:124
+msgid "The event is saved and waiting for approval."
+msgstr ""
+
+#: Controller/EventsController.php:129;175
 msgid "The event could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/EventsController.php:147
+#: Controller/EventsController.php:153
+msgid "The event has been saved."
+msgstr ""
+
+#: Controller/EventsController.php:193
 msgid "The event has been deleted."
 msgstr ""
 
-#: Controller/EventsController.php:149
+#: Controller/EventsController.php:195
 msgid "The event could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/EventsController.php:214
+msgid "The event has been approved."
+msgstr ""
+
+#: Controller/EventsController.php:216
+msgid "The event could not be approved. Please, try again."
 msgstr ""
 
 #: Controller/PostContentsController.php:60;86
@@ -87,11 +152,11 @@ msgstr ""
 msgid "The post could not be deleted. Please, try again."
 msgstr ""
 
-#: Controller/ProfilesController.php:79
+#: Controller/ProfilesController.php:84
 msgid "Your profile has been updated"
 msgstr ""
 
-#: Controller/ProfilesController.php:82
+#: Controller/ProfilesController.php:87
 msgid "Your error could not be updated"
 msgstr ""
 
@@ -111,17 +176,174 @@ msgstr ""
 msgid "The user could not be deleted. Please, try again."
 msgstr ""
 
-#: Template/EventApplications/edit.ctp:10
-msgid "Edit Event Application"
+#: Template/Admin/index.ctp:1
+msgid "Manage unapproved events"
 msgstr ""
 
+#: Template/ContactMessages/add.ctp:8
+#: Template/ContactMessages/edit.ctp:8
+#: Template/ContactMessages/index.ctp:8;20
+#: Template/ContactMessages/view.ctp:8
+#: Template/Posts/index.ctp:15
+#: Template/Users/edit.ctp:8
+#: Template/Users/index.ctp:8;40
+#: Template/Users/view.ctp:8;104;139;171
+msgid "Actions"
+msgstr ""
+
+#: Template/ContactMessages/add.ctp:9
+#: Template/ContactMessages/edit.ctp:15
+#: Template/ContactMessages/view.ctp:11
+msgid "List Contact Messages"
+msgstr ""
+
+#: Template/ContactMessages/add.ctp:15
+msgid "Add Contact Message"
+msgstr ""
+
+#: Template/ContactMessages/add.ctp:23
+#: Template/ContactMessages/edit.ctp:29
 #: Template/EventApplications/edit.ctp:18
 #: Template/Posts/add.ctp:29
 #: Template/Posts/edit.ctp:29
-#: Template/Users/add.ctp:27
+#: Template/Users/add.ctp:24
 #: Template/Users/edit.ctp:48
 #: View/Helper/FormHelper.php:1895
 msgid "Submit"
+msgstr ""
+
+#: Template/ContactMessages/edit.ctp:10
+#: Template/ContactMessages/index.ctp:32
+#: Template/Posts/index.ctp:28
+#: Template/Users/edit.ctp:10
+#: Template/Users/index.ctp:66
+#: Template/Users/view.ctp:117;156;181
+msgid "Delete"
+msgstr ""
+
+#: Template/ContactMessages/edit.ctp:12
+#: Template/ContactMessages/index.ctp:32
+#: Template/ContactMessages/view.ctp:10
+#: Template/Posts/index.ctp:28
+#: Template/Users/edit.ctp:12
+#: Template/Users/index.ctp:66
+#: Template/Users/view.ctp:10;117;156;181
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/ContactMessages/edit.ctp:21
+#: Template/ContactMessages/view.ctp:9
+msgid "Edit Contact Message"
+msgstr ""
+
+#: Template/ContactMessages/index.ctp:9
+#: Template/ContactMessages/view.ctp:12
+msgid "New Contact Message"
+msgstr ""
+
+#: Template/ContactMessages/index.ctp:13
+msgid "Contact Messages"
+msgstr ""
+
+#: Template/ContactMessages/index.ctp:30
+#: Template/Posts/index.ctp:26
+#: Template/Users/index.ctp:64
+#: Template/Users/view.ctp:115;154;179
+msgid "View"
+msgstr ""
+
+#: Template/ContactMessages/index.ctp:31
+#: Template/Posts/index.ctp:27
+#: Template/Posts/view.ctp:22
+#: Template/Users/index.ctp:65
+#: Template/Users/view.ctp:116;155;180
+msgid "Edit"
+msgstr ""
+
+#: Template/ContactMessages/index.ctp:40
+#: Template/EventApplications/index.ctp:47
+#: Template/Events/index.ctp:75
+#: Template/Events/index_admin.ctp:35
+#: Template/Notifications/index.ctp:13
+#: Template/Posts/index.ctp:36
+#: Template/Users/all.ctp:20
+#: Template/Users/index.ctp:74
+msgid "first"
+msgstr ""
+
+#: Template/ContactMessages/index.ctp:41
+#: Template/EventApplications/index.ctp:48
+#: Template/Events/index.ctp:76
+#: Template/Events/index_admin.ctp:36
+#: Template/Notifications/index.ctp:14
+#: Template/Posts/index.ctp:37
+#: Template/Users/all.ctp:21
+#: Template/Users/index.ctp:75
+msgid "previous"
+msgstr ""
+
+#: Template/ContactMessages/index.ctp:43
+#: Template/EventApplications/index.ctp:50
+#: Template/Events/index.ctp:78
+#: Template/Events/index_admin.ctp:38
+#: Template/Notifications/index.ctp:16
+#: Template/Posts/index.ctp:39
+#: Template/Users/all.ctp:23
+#: Template/Users/index.ctp:77
+msgid "next"
+msgstr ""
+
+#: Template/ContactMessages/index.ctp:44
+#: Template/EventApplications/index.ctp:51
+#: Template/Events/index.ctp:79
+#: Template/Events/index_admin.ctp:39
+#: Template/Notifications/index.ctp:17
+#: Template/Posts/index.ctp:40
+#: Template/Users/all.ctp:24
+#: Template/Users/index.ctp:78
+msgid "last"
+msgstr ""
+
+#: Template/ContactMessages/index.ctp:46
+#: Template/EventApplications/index.ctp:54
+#: Template/Events/index.ctp:82
+#: Template/Events/index_admin.ctp:42
+#: Template/Notifications/index.ctp:20
+#: Template/Posts/index.ctp:42
+#: Template/Users/all.ctp:26
+#: Template/Users/index.ctp:80
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr ""
+
+#: Template/ContactMessages/view.ctp:10
+msgid "Delete Contact Message"
+msgstr ""
+
+#: Template/ContactMessages/view.ctp:19
+#: Template/Users/view.ctp:33
+msgid "Email"
+msgstr ""
+
+#: Template/ContactMessages/view.ctp:23
+#: Template/Users/view.ctp:169
+msgid "Name"
+msgstr ""
+
+#: Template/ContactMessages/view.ctp:27
+#: Template/Users/view.ctp:77;98;129;168
+msgid "Id"
+msgstr ""
+
+#: Template/ContactMessages/view.ctp:32
+msgid "Message"
+msgstr ""
+
+#: Template/ContactMessages/view.ctp:36
+msgid "Subject"
+msgstr ""
+
+#: Template/EventApplications/edit.ctp:10
+msgid "Edit Event Application"
 msgstr ""
 
 #: Template/EventApplications/index.ctp:7
@@ -143,7 +365,7 @@ msgstr ""
 
 #: Template/EventApplications/index.ctp:29
 #: Template/EventApplications/view.ctp:21
-#: Template/Events/view.ctp:100
+#: Template/Events/view.ctp:144
 #: Template/Posts/add.ctp:19;23
 #: Template/Posts/edit.ctp:19;23
 #: Template/Users/view.ctp:101;132;170
@@ -152,14 +374,14 @@ msgstr ""
 
 #: Template/EventApplications/index.ctp:33
 #: Template/EventApplications/view.ctp:25
-#: Template/Events/view.ctp:41
+#: Template/Events/view.ctp:86
 #: Template/Users/view.ctp:103
 msgid "Status"
 msgstr ""
 
 #: Template/EventApplications/index.ctp:34
 #: Template/EventApplications/view.ctp:26
-#: Template/Events/view.ctp:46
+#: Template/Events/view.ctp:91
 msgid "Approved"
 msgstr ""
 
@@ -169,43 +391,8 @@ msgid "Not Approved"
 msgstr ""
 
 #: Template/EventApplications/index.ctp:37
-#: Template/Profiles/show.ctp:93
+#: Template/Profiles/show.ctp:117
 msgid "See"
-msgstr ""
-
-#: Template/EventApplications/index.ctp:47
-#: Template/Events/index.ctp:76
-#: Template/Posts/index.ctp:36
-#: Template/Users/index.ctp:74
-msgid "first"
-msgstr ""
-
-#: Template/EventApplications/index.ctp:48
-#: Template/Events/index.ctp:77
-#: Template/Posts/index.ctp:37
-#: Template/Users/index.ctp:75
-msgid "previous"
-msgstr ""
-
-#: Template/EventApplications/index.ctp:50
-#: Template/Events/index.ctp:79
-#: Template/Posts/index.ctp:39
-#: Template/Users/index.ctp:77
-msgid "next"
-msgstr ""
-
-#: Template/EventApplications/index.ctp:51
-#: Template/Events/index.ctp:80
-#: Template/Posts/index.ctp:40
-#: Template/Users/index.ctp:78
-msgid "last"
-msgstr ""
-
-#: Template/EventApplications/index.ctp:54
-#: Template/Events/index.ctp:83
-#: Template/Posts/index.ctp:42
-#: Template/Users/index.ctp:80
-msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
 msgstr ""
 
 #: Template/EventApplications/view.ctp:9
@@ -228,41 +415,38 @@ msgstr ""
 msgid "Create an event"
 msgstr ""
 
-#: Template/Events/add.ctp:17
+#: Template/Events/add.ctp:19
 msgid "Event Title"
 msgstr ""
 
-#: Template/Events/add.ctp:19
-#: Template/Events/index.ctp:60
-#: Template/Events/view.ctp:32
+#: Template/Events/add.ctp:21
+#: Template/Events/index.ctp:59
+#: Template/Events/index_admin.ctp:21
+#: Template/Events/view.ctp:76
 #: Template/Users/view.ctp:134
 msgid "Address"
 msgstr ""
 
-#: Template/Events/add.ctp:20
+#: Template/Events/add.ctp:22
 msgid "How many volunteers do you need?"
 msgstr ""
 
-#: Template/Events/add.ctp:21
+#: Template/Events/add.ctp:23
 msgid "Why do you need volunteers? Briefly explain."
 msgstr ""
 
-#: Template/Events/add.ctp:22
+#: Template/Events/add.ctp:24
 msgid "What are your requirements?"
 msgstr ""
 
-#: Template/Events/add.ctp:23
-#: Template/Users/view.ctp:73;133
-msgid "Image"
-msgstr ""
-
-#: Template/Events/add.ctp:26
+#: Template/Events/add.ctp:45
 #: Template/Pages/sample.ctp:29
-#: Template/Profiles/show.ctp:78
+#: Template/Profiles/show.ctp:102
 msgid "Event date"
 msgstr ""
 
-#: Template/Events/add.ctp:64
+#: Template/Events/add.ctp:121
+#: Template/Events/edit.ctp:80
 msgid "Save"
 msgstr ""
 
@@ -270,208 +454,252 @@ msgstr ""
 msgid "Edit the event"
 msgstr ""
 
-#: Template/Events/index.ctp:37
+#: Template/Events/edit.ctp:12
+msgid "Changing an event where there are standing by or approved applications, will cancel the applications and will ask them to approve their applications."
+msgstr ""
+
+#: Template/Events/edit.ctp:22
+msgid "Current picture"
+msgstr ""
+
+#: Template/Events/edit.ctp:39
+msgid "Event time"
+msgstr ""
+
+#: Template/Events/index.ctp:36
 msgid "Call for Volunteers"
 msgstr ""
 
-#: Template/Events/index.ctp:56
+#: Template/Events/index.ctp:55
+#: Template/Events/index_admin.ctp:17
 msgid "Event Owner"
 msgstr ""
 
-#: Template/Events/index.ctp:63
+#: Template/Events/index.ctp:62
+#: Template/Events/index_admin.ctp:24
 #: Template/Users/view.ctp:135
 msgid "Deadline"
 msgstr ""
 
-#: Template/Events/index.ctp:68
+#: Template/Events/index.ctp:67
+#: Template/Events/index_admin.ctp:29
+#: Template/Profiles/show.ctp:90
 msgid "Details"
 msgstr ""
 
-#: Template/Events/index.ctp:98
+#: Template/Events/index.ctp:97
 msgid "Be a part of the change!"
 msgstr ""
 
-#: Template/Events/index.ctp:99
+#: Template/Events/index.ctp:98
 msgid "Apply to the projects that need volunteers and become a part of their dream."
 msgstr ""
 
-#: Template/Events/index.ctp:116
+#: Template/Events/index.ctp:115
 msgid "Be the change itself"
 msgstr ""
 
-#: Template/Events/index.ctp:117
+#: Template/Events/index.ctp:116
 msgid "Share your project and find your dream mates!"
 msgstr ""
 
-#: Template/Events/index.ctp:132
+#: Template/Events/index.ctp:131
 msgid "Explore"
 msgstr ""
 
-#: Template/Events/index.ctp:133
+#: Template/Events/index.ctp:132
 msgid "Explore yourself and decide your role for the future!"
 msgstr ""
 
-#: Template/Events/view.ctp:19
-msgid "Why do we need volunteers?"
-msgstr ""
-
-#: Template/Events/view.ctp:21
-msgid "No description is written."
-msgstr ""
-
-#: Template/Events/view.ctp:24
-msgid "What are our requirements?"
-msgstr ""
-
-#: Template/Events/view.ctp:26
-msgid "No requirement is specified."
-msgstr ""
-
-#: Template/Events/view.ctp:29
-msgid "How many volunteers do we need?"
-msgstr ""
-
-#: Template/Events/view.ctp:35
-msgid "When is deadline?"
-msgstr ""
-
-#: Template/Events/view.ctp:44
-msgid "Call for"
-msgstr ""
-
-#: Template/Events/view.ctp:45;63
-msgid "Applied"
-msgstr ""
-
-#: Template/Events/view.ctp:47
-msgid "Left"
-msgstr ""
-
-#: Template/Events/view.ctp:59;60
-msgid "I want to apply"
-msgstr ""
-
-#: Template/Events/view.ctp:65
-msgid "Login to apply"
-msgstr ""
-
-#: Template/Events/view.ctp:68
+#: Template/Events/view.ctp:36
 msgid "See current applications"
 msgstr ""
 
-#: Template/Events/view.ctp:88
+#: Template/Events/view.ctp:37
+msgid "Edit the call"
+msgstr ""
+
+#: Template/Events/view.ctp:41
+msgid "Approve this event"
+msgstr ""
+
+#: Template/Events/view.ctp:46
+msgid "Delete this event"
+msgstr ""
+
+#: Template/Events/view.ctp:61
+msgid "Why do we need volunteers?"
+msgstr ""
+
+#: Template/Events/view.ctp:63
+msgid "No description is written."
+msgstr ""
+
+#: Template/Events/view.ctp:66
+msgid "What are our requirements?"
+msgstr ""
+
+#: Template/Events/view.ctp:68
+msgid "No requirement is specified."
+msgstr ""
+
+#: Template/Events/view.ctp:71
+msgid "How many volunteers do we need?"
+msgstr ""
+
+#: Template/Events/view.ctp:73
+msgid "No volunteer number is specified."
+msgstr ""
+
+#: Template/Events/view.ctp:80
+msgid "When is deadline?"
+msgstr ""
+
+#: Template/Events/view.ctp:89
+msgid "Call for"
+msgstr ""
+
+#: Template/Events/view.ctp:90;108
+msgid "Applied"
+msgstr ""
+
+#: Template/Events/view.ctp:92
+msgid "Left"
+msgstr ""
+
+#: Template/Events/view.ctp:104;105
+msgid "I want to apply"
+msgstr ""
+
+#: Template/Events/view.ctp:110
+msgid "Validate your application"
+msgstr ""
+
+#: Template/Events/view.ctp:112
+msgid "Login to apply"
+msgstr ""
+
+#: Template/Events/view.ctp:132
 msgid "Application"
 msgstr ""
 
-#: Template/Events/view.ctp:96
+#: Template/Events/view.ctp:140
 msgid "Please fill the form now"
 msgstr ""
 
-#: Template/Events/view.ctp:101
+#: Template/Events/view.ctp:145
 msgid "Explain yourself briefly"
 msgstr ""
 
-#: Template/Events/view.ctp:104
+#: Template/Events/view.ctp:148
 msgid "Explain who you are. Why do you want to apply to this? What makes you different bla bla."
 msgstr ""
 
-#: Template/Events/view.ctp:111
+#: Template/Events/view.ctp:155
 msgid "Thanks for application."
 msgstr ""
 
-#: Template/Events/view.ctp:128
+#: Template/Events/view.ctp:172
 msgid "Description should be filled."
 msgstr ""
 
-#: Template/Events/view.ctp:137
+#: Template/Events/view.ctp:181
 msgid "Application successfully submitted"
 msgstr ""
 
-#: Template/Events/view.ctp:142
+#: Template/Events/view.ctp:186
 msgid "An error occured"
 msgstr ""
 
-#: Template/Layout/default.ctp:40;255
+#: Template/Layout/default.ctp:41;236
 msgid "Gönüllü Bankası"
 msgstr ""
 
-#: Template/Layout/default.ctp:99
+#: Template/Layout/default.ctp:43
+msgid "Admin page"
+msgstr ""
+
+#: Template/Layout/default.ctp:54
 msgid "Menu"
 msgstr ""
 
-#: Template/Layout/default.ctp:102;189
+#: Template/Layout/default.ctp:57;151
 msgid "Profile"
 msgstr ""
 
-#: Template/Layout/default.ctp:103;193
+#: Template/Layout/default.ctp:58;155
 msgid "Log out"
 msgstr ""
 
-#: Template/Layout/default.ctp:105;181
+#: Template/Layout/default.ctp:60;136
 #: Template/Posts/add.ctp:9
 #: Template/Posts/edit.ctp:9
 msgid "Add Post"
 msgstr ""
 
-#: Template/Layout/default.ctp:106;154
+#: Template/Layout/default.ctp:61;109
 msgid "Add Event"
 msgstr ""
 
-#: Template/Layout/default.ctp:108;199
+#: Template/Layout/default.ctp:63;161
 msgid "Sign Up"
 msgstr ""
 
-#: Template/Layout/default.ctp:109;203
+#: Template/Layout/default.ctp:64;165
 msgid "Sign In"
 msgstr ""
 
-#: Template/Layout/default.ctp:112;127
+#: Template/Layout/default.ctp:67;82
 msgid "Homepage"
 msgstr ""
 
-#: Template/Layout/default.ctp:113;134
+#: Template/Layout/default.ctp:68;89
 msgid "Volunteams"
 msgstr ""
 
-#: Template/Layout/default.ctp:114;160
+#: Template/Layout/default.ctp:69;115
 msgid "FAQ"
 msgstr ""
 
-#: Template/Layout/default.ctp:115;165;174
+#: Template/Layout/default.ctp:70;120;129
 msgid "Contact"
 msgstr ""
 
-#: Template/Layout/default.ctp:146
+#: Template/Layout/default.ctp:101
 #: Template/Pages/volunteams.ctp:19
 msgid "İhtiyaç Haritası"
 msgstr ""
 
-#: Template/Layout/default.ctp:160
+#: Template/Layout/default.ctp:115
 #: Template/Pages/faq.ctp:2
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: Template/Layout/default.ctp:185
+#: Template/Layout/default.ctp:140;142
+msgid "Notifications"
+msgstr ""
+
+#: Template/Layout/default.ctp:147
 msgid "Messages"
 msgstr ""
 
-#: Template/Layout/default.ctp:216
+#: Template/Layout/default.ctp:182
 msgid "Be a part of the change! "
 msgstr ""
 
-#: Template/Layout/default.ctp:217
+#: Template/Layout/default.ctp:183
 msgid "You are welcome to join Gonullu Bank to make a difference in the society"
 msgstr ""
 
-#: Template/Layout/default.ctp:218
+#: Template/Layout/default.ctp:189;196
 msgid "Start now!"
 msgstr ""
 
-#: Template/Layout/default.ctp:245
+#: Template/Layout/default.ctp:226
 msgid "© 2017, AGU Developers, All rights reserved"
 msgstr ""
 
-#: Template/Layout/default.ctp:255
+#: Template/Layout/default.ctp:236
 msgid "Abdullah Gül Üniversitesi"
 msgstr ""
 
@@ -493,61 +721,28 @@ msgstr ""
 msgid "Contact us <small>You can send us message anytime you want</small>"
 msgstr ""
 
-#: Template/Pages/contact.ctp:25
-#: Template/Users/view.ctp:169
-msgid "Name"
-msgstr ""
-
-#: Template/Pages/contact.ctp:30
-msgid "Email Adress"
-msgstr ""
-
-#: Template/Pages/contact.ctp:38
-msgid "Subject"
-msgstr ""
-
-#: Template/Pages/contact.ctp:40
-msgid "Select one:"
-msgstr ""
-
-#: Template/Pages/contact.ctp:41
-msgid "Adding events"
-msgstr ""
-
-#: Template/Pages/contact.ctp:42
-msgid "Suggestions"
-msgstr ""
-
-#: Template/Pages/contact.ctp:43
-msgid "Product support"
-msgstr ""
-
-#: Template/Pages/contact.ctp:50
-msgid "Message"
-msgstr ""
-
-#: Template/Pages/contact.ctp:57
+#: Template/Pages/contact.ctp:45
 msgid "Send Message"
 msgstr ""
 
-#: Template/Pages/contact.ctp:65
-msgid "Ofisimiz"
+#: Template/Pages/contact.ctp:53
+msgid "Our office"
 msgstr ""
 
-#: Template/Pages/contact.ctp:67
+#: Template/Pages/contact.ctp:55
 msgid "Abdullah Gul University"
 msgstr ""
 
-#: Template/Pages/contact.ctp:68
+#: Template/Pages/contact.ctp:56
 msgid "Sümer Campus"
 msgstr ""
 
-#: Template/Pages/contact.ctp:69
+#: Template/Pages/contact.ctp:57
 msgid "Kayseri, Turkey"
 msgstr ""
 
-#: Template/Pages/contact.ctp:75
-msgid "Mail adresimiz"
+#: Template/Pages/contact.ctp:63
+msgid "Our mail adress"
 msgstr ""
 
 #: Template/Pages/faq.ctp:6
@@ -728,7 +923,7 @@ msgid "AGU İşletme Kulübü"
 msgstr ""
 
 #: Template/Pages/sample.ctp:28
-#: Template/Profiles/show.ctp:77
+#: Template/Profiles/show.ctp:101
 msgid "Event name"
 msgstr ""
 
@@ -820,46 +1015,22 @@ msgstr ""
 msgid "Posts"
 msgstr ""
 
-#: Template/Posts/index.ctp:15
-#: Template/Users/edit.ctp:8
-#: Template/Users/index.ctp:8;40
-#: Template/Users/view.ctp:8;104;139;171
-msgid "Actions"
-msgstr ""
-
-#: Template/Posts/index.ctp:26
-#: Template/Users/index.ctp:64
-#: Template/Users/view.ctp:115;154;179
-msgid "View"
-msgstr ""
-
-#: Template/Posts/index.ctp:27
-#: Template/Posts/view.ctp:22
-#: Template/Users/index.ctp:65
-#: Template/Users/view.ctp:116;155;180
-msgid "Edit"
-msgstr ""
-
-#: Template/Posts/index.ctp:28
-#: Template/Users/edit.ctp:10
-#: Template/Users/index.ctp:66
-#: Template/Users/view.ctp:117;156;181
-msgid "Delete"
-msgstr ""
-
-#: Template/Posts/index.ctp:28
-#: Template/Users/edit.ctp:12
-#: Template/Users/index.ctp:66
-#: Template/Users/view.ctp:10;117;156;181
-msgid "Are you sure you want to delete # {0}?"
-msgstr ""
-
 #: Template/Posts/view.ctp:28
 msgid "Author:"
 msgstr ""
 
 #: Template/Profiles/edit.ctp:4
 msgid "Preview"
+msgstr ""
+
+#: Template/Profiles/edit.ctp:17
+#: Template/Profiles/show.ctp:66
+msgid "My personal values"
+msgstr ""
+
+#: Template/Profiles/edit.ctp:21
+#: Template/Profiles/show.ctp:60
+msgid "My skills and hobbies"
 msgstr ""
 
 #: Template/Profiles/show.ctp:40
@@ -878,15 +1049,11 @@ msgstr ""
 msgid "No information provided yet."
 msgstr ""
 
-#: Template/Profiles/show.ctp:60
-msgid "My skills and hobbies"
+#: Template/Profiles/show.ctp:72
+msgid "My posts"
 msgstr ""
 
-#: Template/Profiles/show.ctp:66
-msgid "My personal values"
-msgstr ""
-
-#: Template/Profiles/show.ctp:99
+#: Template/Profiles/show.ctp:123
 msgid "This user has not applied to any event so far."
 msgstr ""
 
@@ -957,10 +1124,6 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
-#: Template/Users/view.ctp:33
-msgid "Email"
-msgstr ""
-
 #: Template/Users/view.ctp:37
 msgid "Activation Code"
 msgstr ""
@@ -997,8 +1160,8 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: Template/Users/view.ctp:77;98;129;168
-msgid "Id"
+#: Template/Users/view.ctp:73;133
+msgid "Image"
 msgstr ""
 
 #: Template/Users/view.ctp:81
