@@ -64,10 +64,10 @@
                 <?php endif;?>
                 <?= $this->Text->autoParagraph(h($event->description)); ?>
                 <h4><?= __('What are our requirements?') ?></h4>
-                <?php if(empty($event->specification)): ?>
+                <?php if(empty($event->specifications)): ?>
                 <?= __('No requirement is specified.'); ?>
                 <?php endif;?>
-                <?= $this->Text->autoParagraph(h($event->specification)); ?>
+                <?= $this->Text->autoParagraph(h($event->specifications)); ?>
                 <h4><?= __('How many volunteers do we need?') ?></h4>
                 <?php if(empty($event->volunteer_count)):?>
                 <?= __('No volunteer number is specified.'); ?>
@@ -95,7 +95,7 @@
                     <td><?= $event->volunteer_number; ?></td>
                     <td><?= $event->total;?></td>
                     <td><?= $event->approved_applications; ?></td>
-                    <td><?= $event->volunteer_number - $event->approved?></td>
+                    <td><?= $event->volunteer_number - $event->approved_applications; ?></td>
                   </tr>
                 </table>
 

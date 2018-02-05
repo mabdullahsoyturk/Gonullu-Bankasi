@@ -17,6 +17,8 @@
                       'type'=> 'hidden']);
           echo $this->Form->control('title', ['type'=>'text', 'label'=>'Title']);
           echo $this->Form->control('description', ['label'=>'Description']);
+          echo $this->Form->control('specifications', ['label'=>'Specifications']);
+    
   ?>
   <div class="form-group">
     <label for=""><?= __('Current picture') ?></label>
