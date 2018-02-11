@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Mailer\Email;
+use Cake\ORM\TableRegistry;
 
 /**
  * Users Controller
@@ -17,7 +18,7 @@ class UsersController extends AppController
     {
       parent::initialize();
       // Add logout to the allowed actions list.
-      $this->Auth->allow(['logout', 'add', 'verify']);
+      $this->Auth->allow(['logout', 'add', 'verify','password']);
     }
 
     public function isAuthorized($user)
@@ -45,6 +46,20 @@ class UsersController extends AppController
         }
     }
 
+    public function verifyForgottenCode($token = ''){
+        if($token == '')
+          return;
+        $user = $this->Users->find()->where(['forgotten_password_code'=>$token])->first();
+        if($this->Users->save($user))
+        {
+          return $this->redirect(['controller'=>'users','action' => 'reset', $token]);
+        }
+        else {
+          $this->Flash->error('An error occured!');
+          return $this->redirect(['controller'=>'pages','action' => 'display','home']);
+        }
+    }
+
     private function sendVerificationEmail($user)
     {
       $email = new Email('default');
@@ -54,6 +69,18 @@ class UsersController extends AppController
                 $email->from(['no-reply@gonullubankasi.org' => 'gonullubankasi.org'])
                 ->to($user->email)
                 ->subject(__('[Gonullubankasi] Email address verification.'))
+                ->send();
+    }
+
+    private function sendVerificationEmailForPassword($user)
+    {
+      $email = new Email('default');
+                $email->emailFormat('both');
+                $email->viewVars(['token' => $user->forgotten_password_code]);
+                $email->template('reset');
+                $email->from(['no-reply@gonullubankasi.org' => 'gonullubankasi.org'])
+                ->to($user->email)
+                ->subject(__('[Gonullubankasi] Password change.'))
                 ->send();
     }
 
@@ -96,6 +123,42 @@ class UsersController extends AppController
         $token .= $charset{$charPos};
       }
       return $token;
+    }
+
+    public function password(){
+
+          $users = TableRegistry::get('Users');
+          $query = $users->findByEmail($this->request->getData('email'));
+
+          $user = $this->Users->newEntity();
+        if ($this->request->is('post')) {
+            $user = $query->first();
+            //$user = $this->Users->patchEntity($user, $this->request->getData());
+            $user->forgotten_password_code = $this->createToken(40);
+            if ($this->Users->save($user)) {
+                $this->Flash->success(__('Please check your mailbox to change your password'));
+                $this->sendVerificationEmailForPassword($user);
+
+                return $this->redirect(['controller'=>'pages','action' => 'display','home']);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
+    }
+
+    public function reset($token = null){
+      if ($this->request->is('post')) {
+            $user = $this->Auth->identify();
+            if ($user) {
+                $this->Auth->setUser($user);
+                $user->password = $this->request->getData('password');
+                if ($this->Users->save($user)) {
+                $this->Flash->success(__('The user has been saved.'));
+
+                return $this->redirect(['controller'=>'pages','action' => 'display','home']);
+            }
+            }
+            $this->Flash->error('Your password could not be changed.');
+        }
     }
 
     /**

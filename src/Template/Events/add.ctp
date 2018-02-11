@@ -25,13 +25,12 @@
        ?>
 
 <div class="file-upload">
-       <?php echo $this->Form->control('image', ['onchange' => 'readURL(this);','type' => 'file', 'class' => 'file-upload-btn', 'id' => 'image-field', 'label' => 'Image']); ?>
-</div>
-
+  <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
 
   <div class="image-upload-wrap">
+    <input class="file-upload-input" type='file' name="image" onchange="readURL(this);" accept="image/*" />
     <div class="drag-text">
-      <h3>Preview of the image you upload</h3>
+      <h3>Drag and drop a file or select add Image</h3>
     </div>
   </div>
   <div class="file-upload-content">
@@ -40,6 +39,7 @@
       <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
     </div>
   </div>
+</div>
 
        <div style="overflow:hidden;">
          <label for=""><?= __('Event date') ?></label>
