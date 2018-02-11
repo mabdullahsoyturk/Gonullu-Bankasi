@@ -63,6 +63,7 @@ class MessagesController extends AppController
         $this->loadModel("Users");
         $this->set('user', $this->Users->get($userId));
         $this->set('groupId', $groupId);
+        $this->set('otherUser', $this->Users->get($otherUserId));
         $this->set('otherUserId', $otherUserId);
     }
 

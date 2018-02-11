@@ -18,7 +18,7 @@
 				<!-- SIDEBAR USER TITLE -->
 				<div class="profile-usertitle">
 					<div class="profile-usertitle-name">
-						<?= h($first_name . " " . $last_name) ?>
+						<?= h($username) ?>
 					</div>
 					<div class="profile-usertitle-job">
 						<?= h($university) ?> - <?= h($department) ?>

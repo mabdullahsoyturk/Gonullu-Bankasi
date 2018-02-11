@@ -50,11 +50,12 @@ class ProfilesController extends AppController
         $image = $user->image;
         $applications = $this->EventApplications->find('all')->contain(['Events'])->where(['EventApplications.user_id' => $id, 'status' => 1])->all();
         $userPosts = $this->Posts->find('all')->contain(['Users', 'PostContents'])->where(['user_id'=>$id])->all();
-
+        $username = $user->username;
         $this->set(compact('applications'));
         $this->set(compact('first_name'));
         $this->set(compact('last_name'));
         $this->set(compact('university'));
+        $this->set(compact('username'));
         $this->set(compact('department'));
         $this->set(compact('about'));
         $this->set(compact('image'));

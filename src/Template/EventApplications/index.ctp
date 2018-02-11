@@ -22,6 +22,10 @@
               <td class="lPad"><?= $this->Html->link($eventApplication->user->username, ['controller'=>'Users','action'=>'view',$eventApplication->user->id]) ?></td>
             </tr>
             <tr>
+              <td class="rTA"><b><?= __('Email address')?>: </b></td>
+              <td class="lPad"><?= $eventApplication->user->email; ?></td>
+            </tr>
+            <tr>
               <td class="rTA"><b><?= __('Application Date')?>: </b></td>
               <td class="lPad"><?= h($eventApplication->created_time) ?></td>
             </tr>
