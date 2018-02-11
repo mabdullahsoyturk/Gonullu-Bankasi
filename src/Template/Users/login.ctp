@@ -9,6 +9,7 @@
 <?= $this->Form->control('password') ?>
 <?= $this->Form->button('Login') ?>
 <?= $this->Form->end() ?>
+<?= $this->Html->link('Forgot your password?', ['controller' => 'users', 'action' => 'password']); ?>
 		</div>
     </div>
 </div>
