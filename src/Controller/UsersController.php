@@ -18,7 +18,7 @@ class UsersController extends AppController
     {
       parent::initialize();
       // Add logout to the allowed actions list.
-      $this->Auth->allow(['logout', 'add', 'verify','password']);
+      $this->Auth->allow(['logout', 'add', 'verify','password','reset']);
     }
 
     public function isAuthorized($user)
@@ -134,14 +134,18 @@ class UsersController extends AppController
         if ($this->request->is('post')) {
             $user = $query->first();
             //$user = $this->Users->patchEntity($user, $this->request->getData());
-            $user->forgotten_password_code = $this->createToken(40);
-            if ($this->Users->save($user)) {
-                $this->Flash->success(__('Please check your mailbox to change your password'));
-                $this->sendVerificationEmailForPassword($user);
+            if(isset($user)){
+                $user->forgotten_password_code = $this->createToken(40);
+              if ($this->Users->save($user)) {
+                  $this->Flash->success(__('Please check your mailbox to change your password'));
+                  $this->sendVerificationEmailForPassword($user);
 
-                return $this->redirect(['controller'=>'pages','action' => 'display','home']);
+                  return $this->redirect(['controller'=>'pages','action' => 'display','home']);
+              }
+              $this->Flash->error(__('The email could not be found. Please, try again.'));
             }
-            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            
+            $this->Flash->error(__('The email could not be found in the records. Please, try again.'));
         }
     }
 
